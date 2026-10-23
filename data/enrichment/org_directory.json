@@ -1,0 +1,1018 @@
+{
+  "departments": [
+    {
+      "department_id": "dept-eng",
+      "name": "Engineering"
+    },
+    {
+      "department_id": "dept-data",
+      "name": "Data & Analytics"
+    },
+    {
+      "department_id": "dept-ops",
+      "name": "IT Operations"
+    }
+  ],
+  "users": [
+    {
+      "user_id": "user-815ef6d13b8faa1837f8a88b17fc695a",
+      "name": "Hannah Smith",
+      "email": "hannah.smith@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": null,
+      "joined_org_at": "2025-12-17"
+    },
+    {
+      "user_id": "user-01a9e71fde8a774bcf36d58b47378190",
+      "name": "Sofia Shah",
+      "email": "sofia.shah@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-07-11"
+    },
+    {
+      "user_id": "user-1a2a73ed562b0f79c37459eef50bea63",
+      "name": "Ethan Johnson",
+      "email": "ethan.johnson@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-08-12"
+    },
+    {
+      "user_id": "user-1ff49b7889463e85759cde66bacfb3d0",
+      "name": "Ravi Tanaka",
+      "email": "ravi.tanaka@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "QA Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-03-21"
+    },
+    {
+      "user_id": "user-93cd59bf5c941cf0dc98d2c1e2acf72f",
+      "name": "Jordan Shah",
+      "email": "jordan.shah@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-08-26"
+    },
+    {
+      "user_id": "user-19db3ad0ddd1dfb23b982ef8daf61a26",
+      "name": "Priya Muller",
+      "email": "priya.muller@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Business Analyst",
+      "is_developer": false,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-02-10"
+    },
+    {
+      "user_id": "user-efc89849b3aa7efe4458a885ab9099a4",
+      "name": "Mateo Tanaka",
+      "email": "mateo.tanaka@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-08-25"
+    },
+    {
+      "user_id": "user-fd5166e6451b4cf36123fdf77656af72",
+      "name": "Grace Khan",
+      "email": "grace.khan@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-10-13"
+    },
+    {
+      "user_id": "user-d261a7ab3aa2e4f90e51f30dc6a7ee39",
+      "name": "Hannah Muller",
+      "email": "hannah.muller@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "QA Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-04-22"
+    },
+    {
+      "user_id": "user-508ebad7b7c93acfe059a0ee9132b63e",
+      "name": "Chen Okafor",
+      "email": "chen.okafor@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-01-18"
+    },
+    {
+      "user_id": "user-434308bc89fa6a688fb5d27bbeb79919",
+      "name": "Chen Ivanova",
+      "email": "chen.ivanova@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-02-23"
+    },
+    {
+      "user_id": "user-1745d6d87e570ddf827050a82369b584",
+      "name": "Ibrahim Haddad",
+      "email": "ibrahim.haddad@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-07-17"
+    },
+    {
+      "user_id": "user-62801c4510435a1098ae43346c12ace8",
+      "name": "Wei Kim",
+      "email": "wei.kim@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "QA Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-02-03"
+    },
+    {
+      "user_id": "user-1d53434bb88139b9ae270da702f06b90",
+      "name": "Diego Okafor",
+      "email": "diego.okafor@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Researcher",
+      "is_developer": false,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-12-30"
+    },
+    {
+      "user_id": "user-b8db0672f42d47cc00d4af5974273ca3",
+      "name": "Aisha Cohen",
+      "email": "aisha.cohen@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-05-19"
+    },
+    {
+      "user_id": "user-a39231a7d777a4774c66e0a8a013ac6e",
+      "name": "Diego Khan",
+      "email": "diego.khan@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-06-21"
+    },
+    {
+      "user_id": "user-eb2263dd87c5421eec24a3c5c754108f",
+      "name": "Maria Tanaka",
+      "email": "maria.tanaka@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Business Analyst",
+      "is_developer": false,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-04-18"
+    },
+    {
+      "user_id": "user-4eb93effce88cb2dd4e80839fc3e058b",
+      "name": "Yuki Patel",
+      "email": "yuki.patel@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-05-30"
+    },
+    {
+      "user_id": "user-885f6e66c2b6d2c5fa5d310011b7e948",
+      "name": "Ibrahim Smith",
+      "email": "ibrahim.smith@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-07-27"
+    },
+    {
+      "user_id": "user-6c52c49f9b49bd26df57c59a8715a103",
+      "name": "Zara Mensah",
+      "email": "zara.mensah@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Business Analyst",
+      "is_developer": false,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-12-28"
+    },
+    {
+      "user_id": "user-702753a15f987c71a65e688eabf3ad39",
+      "name": "Leila Rossi",
+      "email": "leila.rossi@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "QA Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-02-11"
+    },
+    {
+      "user_id": "user-96a402f23ae8cc938dcdcd03969b6662",
+      "name": "Wei Muller",
+      "email": "wei.muller@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-08-25"
+    },
+    {
+      "user_id": "user-839fbc501223b5135496f63cdc1110c1",
+      "name": "Ethan Nguyen",
+      "email": "ethan.nguyen@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-10-23"
+    },
+    {
+      "user_id": "user-7900f7f993829b43922fe15ae1e3db63",
+      "name": "Yuki Rossi",
+      "email": "yuki.rossi@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-01-31"
+    },
+    {
+      "user_id": "user-778eedb3693dffbc6c6fa6115ab33edf",
+      "name": "Fatima Rossi",
+      "email": "fatima.rossi@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-09-03"
+    },
+    {
+      "user_id": "user-3fa7f1041bf90e27dc96925eccf3a171",
+      "name": "Zara Garcia",
+      "email": "zara.garcia@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-12-30"
+    },
+    {
+      "user_id": "user-134c6c92ec5b227cdfde4fbf3ff350bf",
+      "name": "Lucas Kim",
+      "email": "lucas.kim@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-07-16"
+    },
+    {
+      "user_id": "user-17e011b7f810238303c72ba8d605e770",
+      "name": "Hannah Garcia",
+      "email": "hannah.garcia@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-07-23"
+    },
+    {
+      "user_id": "user-0f02bad0e7067ef466aa9385dd59ba71",
+      "name": "Liam Khan",
+      "email": "liam.khan@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-09-29"
+    },
+    {
+      "user_id": "user-a97065e18e46d534c88a618efed4057d",
+      "name": "Lucas Silva",
+      "email": "lucas.silva@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-07-13"
+    },
+    {
+      "user_id": "user-bf7b539b0f9aea4b8acd4e10bc594585",
+      "name": "Sofia Silva",
+      "email": "sofia.silva@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-09-05"
+    },
+    {
+      "user_id": "user-82010c62f5f59b220e8fa8e0284d82e5",
+      "name": "Ibrahim Mensah",
+      "email": "ibrahim.mensah@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-06-27"
+    },
+    {
+      "user_id": "user-e3e9de99f10c718b1eb0e38a675dd5af",
+      "name": "Jordan Ali",
+      "email": "jordan.ali@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-12-08"
+    },
+    {
+      "user_id": "user-50fd9d3f85d5169590b2b633956b8c0c",
+      "name": "Grace Nguyen",
+      "email": "grace.nguyen@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "QA Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-06-18"
+    },
+    {
+      "user_id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+      "name": "Zara Cohen",
+      "email": "zara.cohen@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-09-11"
+    },
+    {
+      "user_id": "user-89a2688b12c136e019985f15ff002d4d",
+      "name": "Jordan Patel",
+      "email": "jordan.patel@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-05-18"
+    },
+    {
+      "user_id": "user-4d71c366b41b31438b10550cd5704f32",
+      "name": "Jordan Muller",
+      "email": "jordan.muller@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-08-13"
+    },
+    {
+      "user_id": "user-1a84a51aa9d3d7c7ee87905e4ca415ea",
+      "name": "Mateo Lopez",
+      "email": "mateo.lopez@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-07-24"
+    },
+    {
+      "user_id": "user-9ad620ab48212ddb45b89cd927cb6f2a",
+      "name": "Aisha Garcia",
+      "email": "aisha.garcia@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Business Analyst",
+      "is_developer": false,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-04-08"
+    },
+    {
+      "user_id": "user-17a0df490d01280fd89a40c0e87d1c78",
+      "name": "Sofia Okafor",
+      "email": "sofia.okafor@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-08-02"
+    },
+    {
+      "user_id": "user-295d6fbf430f801dfad409e2a319dcb4",
+      "name": "Aisha Nguyen",
+      "email": "aisha.nguyen@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-12-22"
+    },
+    {
+      "user_id": "user-8babce3b26286bfbe767dceab0e6a969",
+      "name": "Hannah Patel",
+      "email": "hannah.patel@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-03-25"
+    },
+    {
+      "user_id": "user-eededb07e623a6895d59cd2a4eea04e7",
+      "name": "Ibrahim Shah",
+      "email": "ibrahim.shah@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-07-17"
+    },
+    {
+      "user_id": "user-8f5486b7c7b5b2bc5a8aaeca1a50aec3",
+      "name": "Priya Tanaka",
+      "email": "priya.tanaka@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-03-06"
+    },
+    {
+      "user_id": "user-cf8ebc5accc56569f9e8a3692999b735",
+      "name": "Grace Kim",
+      "email": "grace.kim@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Business Analyst",
+      "is_developer": false,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-03-03"
+    },
+    {
+      "user_id": "user-ab7f089acd5f4822696608aaee49f329",
+      "name": "Alex Khan",
+      "email": "alex.khan@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "QA Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-08-11"
+    },
+    {
+      "user_id": "user-dbccc47709e9db0adf46529061ee411a",
+      "name": "Liam Okafor",
+      "email": "liam.okafor@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-06-20"
+    },
+    {
+      "user_id": "user-a8f7ef5a060edf5b391184973a43b2ba",
+      "name": "Lucas Tanaka",
+      "email": "lucas.tanaka@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-04-15"
+    },
+    {
+      "user_id": "user-adf4e62d6651529e8268690ba43825b5",
+      "name": "Aisha Smith",
+      "email": "aisha.smith@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Researcher",
+      "is_developer": false,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2025-12-30"
+    },
+    {
+      "user_id": "user-fbc9f87af668a61794a1875d2db69edb",
+      "name": "Elena Patel",
+      "email": "elena.patel@acme.example",
+      "department_id": "dept-eng",
+      "job_function": "Software Engineer",
+      "is_developer": true,
+      "manager_email": "hannah.smith@acme.example",
+      "joined_org_at": "2026-08-06"
+    },
+    {
+      "user_id": "user-82ec9f2dfbf6e16f9b3080d56fb78271",
+      "name": "Grace Johnson",
+      "email": "grace.johnson@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Scientist",
+      "is_developer": false,
+      "manager_email": null,
+      "joined_org_at": "2025-06-27"
+    },
+    {
+      "user_id": "user-ce777f00ecf27e7685197ff4006ed6e3",
+      "name": "Ibrahim Rossi",
+      "email": "ibrahim.rossi@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Engineer",
+      "is_developer": true,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2025-09-27"
+    },
+    {
+      "user_id": "user-a9d3c2e6505cc6869f871ce75487fd4f",
+      "name": "Ravi Johnson",
+      "email": "ravi.johnson@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Engineer",
+      "is_developer": true,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2025-09-27"
+    },
+    {
+      "user_id": "user-8dedf9fb4bb00f20b27c40266703b636",
+      "name": "Noah Lopez",
+      "email": "noah.lopez@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Scientist",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-02-27"
+    },
+    {
+      "user_id": "user-67f48ad54d0b0d1a91b0e1d99d9262af",
+      "name": "Zara Haddad",
+      "email": "zara.haddad@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Researcher",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-09-30"
+    },
+    {
+      "user_id": "user-77097749527eecfaa79ac9aa9b4e2c24",
+      "name": "Noah Silva",
+      "email": "noah.silva@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Engineer",
+      "is_developer": true,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2025-10-20"
+    },
+    {
+      "user_id": "user-a8aa71582b70e525bc67f831cbc84759",
+      "name": "Sofia Lopez",
+      "email": "sofia.lopez@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Scientist",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-01-10"
+    },
+    {
+      "user_id": "user-4f77a665ac3c56403c20592fc04a96c4",
+      "name": "Zara Ali",
+      "email": "zara.ali@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Scientist",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-06-21"
+    },
+    {
+      "user_id": "user-12a4def0c4bbb7a9d98868dd9c7c7377",
+      "name": "Maria Patel",
+      "email": "maria.patel@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Engineer",
+      "is_developer": true,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2025-07-04"
+    },
+    {
+      "user_id": "user-25c73c443e75c3b4664fa6637e8f8095",
+      "name": "Mateo Brown",
+      "email": "mateo.brown@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Engineer",
+      "is_developer": true,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-09-28"
+    },
+    {
+      "user_id": "user-0cdb1ca476ecbdd68498e113b227462c",
+      "name": "Wei Johnson",
+      "email": "wei.johnson@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Engineer",
+      "is_developer": true,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2025-07-23"
+    },
+    {
+      "user_id": "user-986f90258f15ba58fce6850487f8424d",
+      "name": "Wei Ivanova",
+      "email": "wei.ivanova@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Engineer",
+      "is_developer": true,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2025-09-09"
+    },
+    {
+      "user_id": "user-8c41561be827a1b9d4a02e536d3ee1dc",
+      "name": "Lucas Ali",
+      "email": "lucas.ali@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Researcher",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-07-11"
+    },
+    {
+      "user_id": "user-c40c5d9146fde062a33dc7afd701410d",
+      "name": "Leila Mensah",
+      "email": "leila.mensah@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Scientist",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-01-25"
+    },
+    {
+      "user_id": "user-55fa1ab8458f1f193c07c57449257af1",
+      "name": "Mateo Muller",
+      "email": "mateo.muller@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Engineer",
+      "is_developer": true,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2025-12-28"
+    },
+    {
+      "user_id": "user-10714d5136c59dacb4d7e28e271e3ee2",
+      "name": "Jordan Kim",
+      "email": "jordan.kim@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Engineer",
+      "is_developer": true,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-04-14"
+    },
+    {
+      "user_id": "user-c51155ffe7a37e8163b4c08b6b8e869f",
+      "name": "Hannah Ivanova",
+      "email": "hannah.ivanova@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Scientist",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2025-10-09"
+    },
+    {
+      "user_id": "user-63d62a39c0e3befd4c71e0fe5a0cdd7c",
+      "name": "Alex Brown",
+      "email": "alex.brown@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Scientist",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2025-07-30"
+    },
+    {
+      "user_id": "user-7cfc9b793875394ce5d6f6e69a6ec2f5",
+      "name": "Fatima Shah",
+      "email": "fatima.shah@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Researcher",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-02-19"
+    },
+    {
+      "user_id": "user-77a6e17cd72b61082a405f12b963f37f",
+      "name": "Chen Cohen",
+      "email": "chen.cohen@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Researcher",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2025-11-16"
+    },
+    {
+      "user_id": "user-dde9f86322bd33886db99102a48b3dbe",
+      "name": "Chen Brown",
+      "email": "chen.brown@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Scientist",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-09-05"
+    },
+    {
+      "user_id": "user-610e6a64e1301617c2dff33556666f9f",
+      "name": "Aisha Haddad",
+      "email": "aisha.haddad@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Scientist",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2025-08-01"
+    },
+    {
+      "user_id": "user-fff9f5850d557b618a175dfebfc00dc8",
+      "name": "Fatima Okafor",
+      "email": "fatima.okafor@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Researcher",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-06-08"
+    },
+    {
+      "user_id": "user-3f4df561f319c12507f194f9c1156d6d",
+      "name": "Mateo Smith",
+      "email": "mateo.smith@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Researcher",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-09-20"
+    },
+    {
+      "user_id": "user-b31022f0770c779837cc863bf2a03459",
+      "name": "Liam Kim",
+      "email": "liam.kim@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Data Scientist",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-03-26"
+    },
+    {
+      "user_id": "user-29ec8e49d1bdb8c0c71d5e601d5206ab",
+      "name": "Omar Ali",
+      "email": "omar.ali@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Researcher",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-08-06"
+    },
+    {
+      "user_id": "user-658b252360141de9f54ad0a2e87466d7",
+      "name": "Ibrahim Patel",
+      "email": "ibrahim.patel@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Business Analyst",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-06-21"
+    },
+    {
+      "user_id": "user-4d3485c5c5c14eb4b27b3d901a16342c",
+      "name": "Jordan Brown",
+      "email": "jordan.brown@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Researcher",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2025-11-27"
+    },
+    {
+      "user_id": "user-11a726095eddbbbfa95976636daa2e68",
+      "name": "Wei Brown",
+      "email": "wei.brown@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Researcher",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2026-04-09"
+    },
+    {
+      "user_id": "user-e43e4288a2b5b4985cb85aedf5f62c97",
+      "name": "Alex Johnson",
+      "email": "alex.johnson@acme.example",
+      "department_id": "dept-data",
+      "job_function": "Researcher",
+      "is_developer": false,
+      "manager_email": "grace.johnson@acme.example",
+      "joined_org_at": "2025-10-03"
+    },
+    {
+      "user_id": "user-cee624d09dac6e8345241ea6a6846099",
+      "name": "Maria Johnson",
+      "email": "maria.johnson@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "DevOps / SRE",
+      "is_developer": true,
+      "manager_email": null,
+      "joined_org_at": "2025-08-30"
+    },
+    {
+      "user_id": "user-3ed8c56cda09dfa052828d8044b591f7",
+      "name": "Yuki Ivanova",
+      "email": "yuki.ivanova@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "DevOps / SRE",
+      "is_developer": true,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2026-08-17"
+    },
+    {
+      "user_id": "user-561e16d16105716bab0e664e9c3eb2d5",
+      "name": "Aisha Ivanova",
+      "email": "aisha.ivanova@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "DevOps / SRE",
+      "is_developer": true,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2025-07-22"
+    },
+    {
+      "user_id": "user-e15ca6664797b2c9572072464223623b",
+      "name": "Elena Khan",
+      "email": "elena.khan@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "IT Analyst",
+      "is_developer": false,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2025-07-07"
+    },
+    {
+      "user_id": "user-680bac63b856d0353dc9829015eabb27",
+      "name": "Aisha Shah",
+      "email": "aisha.shah@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "DevOps / SRE",
+      "is_developer": true,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2025-09-07"
+    },
+    {
+      "user_id": "user-4b5305e517d2582e046a0df5cafda613",
+      "name": "Liam Mensah",
+      "email": "liam.mensah@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "IT Analyst",
+      "is_developer": false,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2025-10-11"
+    },
+    {
+      "user_id": "user-6cedd15d58007c0287ea7ff58db06746",
+      "name": "Liam Silva",
+      "email": "liam.silva@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "IT Analyst",
+      "is_developer": false,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2025-12-23"
+    },
+    {
+      "user_id": "user-b8a6171f1ee34dc43b048a8b405bfdc9",
+      "name": "Elena Tanaka",
+      "email": "elena.tanaka@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "IT Analyst",
+      "is_developer": false,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2026-07-31"
+    },
+    {
+      "user_id": "user-7bf47042bd1531c83764fbda3108d448",
+      "name": "Leila Shah",
+      "email": "leila.shah@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "Business Analyst",
+      "is_developer": false,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2025-12-03"
+    },
+    {
+      "user_id": "user-5c62b3a23a3c563e4bd6cee631b1b099",
+      "name": "Diego Ali",
+      "email": "diego.ali@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "DevOps / SRE",
+      "is_developer": true,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2026-09-23"
+    },
+    {
+      "user_id": "user-b289f2244ac9778d8da8eee40df56ac6",
+      "name": "Ethan Shah",
+      "email": "ethan.shah@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "DevOps / SRE",
+      "is_developer": true,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2025-11-08"
+    },
+    {
+      "user_id": "user-5738811d70c2903f7a8d03aa782a65e0",
+      "name": "Yuki Garcia",
+      "email": "yuki.garcia@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "Business Analyst",
+      "is_developer": false,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2026-09-04"
+    },
+    {
+      "user_id": "user-a1235a8c93b7a88612f70c977de31a51",
+      "name": "Aisha Mensah",
+      "email": "aisha.mensah@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "DevOps / SRE",
+      "is_developer": true,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2026-07-15"
+    },
+    {
+      "user_id": "user-c3b290d08edddfcd1e52d7703f897142",
+      "name": "Maria Brown",
+      "email": "maria.brown@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "Business Analyst",
+      "is_developer": false,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2025-11-29"
+    },
+    {
+      "user_id": "user-dc33e1f94c1f55ab715629eee893be3d",
+      "name": "Grace Muller",
+      "email": "grace.muller@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "IT Analyst",
+      "is_developer": false,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2026-02-23"
+    },
+    {
+      "user_id": "user-c342bd2bf295456e19675f06bd767e35",
+      "name": "Noah Brown",
+      "email": "noah.brown@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "IT Analyst",
+      "is_developer": false,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2026-06-14"
+    },
+    {
+      "user_id": "user-b07aa066735435ea68949b8d00af5b3a",
+      "name": "Omar Muller",
+      "email": "omar.muller@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "DevOps / SRE",
+      "is_developer": true,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2026-05-04"
+    },
+    {
+      "user_id": "user-a003cd28ca8f3653c9af18f843b9da13",
+      "name": "Ethan Ivanova",
+      "email": "ethan.ivanova@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "DevOps / SRE",
+      "is_developer": true,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2025-08-15"
+    },
+    {
+      "user_id": "user-d39e198b44007d5ae88da71926242b40",
+      "name": "Sofia Johnson",
+      "email": "sofia.johnson@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "DevOps / SRE",
+      "is_developer": true,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2026-08-31"
+    },
+    {
+      "user_id": "user-1fd5a423706c5c5649e2623debd34616",
+      "name": "Omar Silva",
+      "email": "omar.silva@acme.example",
+      "department_id": "dept-ops",
+      "job_function": "IT Analyst",
+      "is_developer": false,
+      "manager_email": "maria.johnson@acme.example",
+      "joined_org_at": "2026-04-28"
+    }
+  ]
+}

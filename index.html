@@ -1,0 +1,1548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devin Leaderboard</title>
+  <style>
+    /* ── Reset & Base ── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      background: #f4f5f7;
+      color: #172b4d;
+      min-height: 100vh;
+    }
+
+    /* ── Header ── */
+    header {
+      background: #0052cc;
+      color: #fff;
+      padding: 12px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+
+    /* ── Filter Bar ── */
+    #filters {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      align-items: center;
+    }
+    #filters select {
+      padding: 6px 10px;
+      border: 1px solid rgba(255,255,255,0.4);
+      border-radius: 4px;
+      background: rgba(255,255,255,0.15);
+      color: #fff;
+      font-size: 13px;
+      cursor: pointer;
+      outline: none;
+      min-width: 140px;
+    }
+    #filters select option {
+      background: #0052cc;
+      color: #fff;
+    }
+    #filters select:focus {
+      border-color: rgba(255,255,255,0.8);
+    }
+    #filters select:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    /* ── Tab Navigation ── */
+    #tabs {
+      display: flex;
+      background: #fff;
+      border-bottom: 2px solid #dfe1e6;
+      padding: 0 24px;
+    }
+    #tabs button {
+      padding: 12px 20px;
+      border: none;
+      background: transparent;
+      color: #5e6c84;
+      font-size: 14px;
+      font-weight: 500;
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      margin-bottom: -2px;
+      transition: color 0.15s, border-color 0.15s;
+    }
+    #tabs button:hover {
+      color: #0052cc;
+      background: #f4f5f7;
+    }
+    #tabs button.active {
+      color: #0052cc;
+      border-bottom-color: #0052cc;
+    }
+
+    /* ── Main Content ── */
+    main {
+      padding: 24px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* ── Tab Panes: switching ── */
+    #tab-overview,
+    #tab-leaderboard,
+    #tab-creator-bonus {
+      display: none;
+    }
+    #tab-overview.active,
+    #tab-leaderboard.active,
+    #tab-creator-bonus.active {
+      display: block;
+    }
+    #user-insight {
+      display: none;
+    }
+    #user-insight.active {
+      display: block;
+    }
+
+    /* ── Stat Cards ── */
+    .stat-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+    .stat-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 16px 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+    .stat-card .stat-label {
+      font-size: 12px;
+      color: #5e6c84;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+    }
+    .stat-card .stat-value {
+      font-size: 28px;
+      font-weight: 700;
+      color: #0052cc;
+    }
+
+    /* ── Tier Badges ── */
+    .tier-badge {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 12px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .tier-1 {
+      background: #ffd700;
+      color: #5a4000;
+    }
+    .tier-2 {
+      background: #c0c0c0;
+      color: #3d3d3d;
+    }
+    .tier-3 {
+      background: #b0b3b8;
+      color: #fff;
+    }
+
+    /* ── Tables ── */
+    .table-wrap {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      overflow: auto;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    thead th {
+      background: #f4f5f7;
+      padding: 10px 14px;
+      text-align: left;
+      font-weight: 600;
+      color: #5e6c84;
+      text-transform: uppercase;
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      white-space: nowrap;
+      cursor: pointer;
+      user-select: none;
+      border-bottom: 2px solid #dfe1e6;
+    }
+    thead th:hover {
+      background: #ebecf0;
+      color: #0052cc;
+    }
+    thead th .sort-indicator {
+      margin-left: 4px;
+      opacity: 0.4;
+    }
+    thead th.sort-asc .sort-indicator::after  { content: ' ▲'; opacity: 1; }
+    thead th.sort-desc .sort-indicator::after { content: ' ▼'; opacity: 1; }
+    tbody tr {
+      border-bottom: 1px solid #f4f5f7;
+      transition: background 0.1s;
+    }
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: #f4f5f7; cursor: pointer; }
+    tbody td {
+      padding: 10px 14px;
+      color: #172b4d;
+      white-space: nowrap;
+    }
+    .empty-state {
+      padding: 40px;
+      text-align: center;
+      color: #5e6c84;
+      font-style: italic;
+    }
+
+    /* ── Chart Containers ── */
+    .charts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+    .chart-container {
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      padding: 20px;
+      position: relative;
+      min-height: 300px;
+      display: flex;
+      flex-direction: column;
+    }
+    .chart-container h3 {
+      font-size: 14px;
+      font-weight: 600;
+      color: #172b4d;
+      margin-bottom: 16px;
+    }
+    .chart-container canvas {
+      flex: 1;
+    }
+
+    /* ── Error Banner ── */
+    .error-banner {
+      background: #ffebe6;
+      border: 1px solid #ff5630;
+      border-radius: 6px;
+      color: #bf2600;
+      padding: 10px 16px;
+      margin-bottom: 16px;
+      font-size: 13px;
+    }
+
+    /* ── File Upload Prompt ── */
+    .upload-prompt {
+      background: #fffae6;
+      border: 1px solid #f6c142;
+      border-radius: 6px;
+      padding: 12px 16px;
+      margin-bottom: 10px;
+      font-size: 13px;
+    }
+    .upload-prompt label {
+      display: block;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #172b4d;
+    }
+
+    /* ── Loading Indicator ── */
+    #loading {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 16px;
+      padding: 60px 24px;
+      color: #5e6c84;
+      font-size: 15px;
+    }
+    .spinner {
+      width: 36px;
+      height: 36px;
+      border: 4px solid #dfe1e6;
+      border-top-color: #0052cc;
+      border-radius: 50%;
+      animation: spin 0.8s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── User Insight ── */
+    .insight-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 20px;
+    }
+    .insight-header h2 {
+      font-size: 18px;
+      font-weight: 600;
+    }
+    .btn-back {
+      padding: 8px 16px;
+      background: #fff;
+      border: 1px solid #dfe1e6;
+      border-radius: 4px;
+      font-size: 13px;
+      cursor: pointer;
+      color: #0052cc;
+      font-weight: 500;
+      transition: background 0.1s;
+    }
+    .btn-back:hover { background: #f4f5f7; }
+
+    .insight-section {
+      margin-top: 24px;
+    }
+    .insight-section h3 {
+      font-size: 15px;
+      font-weight: 600;
+      margin-bottom: 12px;
+      color: #172b4d;
+    }
+
+    /* ── Scrollbar ── */
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #f4f5f7; }
+    ::-webkit-scrollbar-thumb { background: #c1c7d0; border-radius: 3px; }
+    ::-webkit-scrollbar-thumb:hover { background: #5e6c84; }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Devin Leaderboard</h1>
+    <div id="filters">
+      <select id="filter-month" aria-label="Filter by month">
+        <option value="All">All Months</option>
+      </select>
+      <select id="filter-dept" aria-label="Filter by department">
+        <option value="All">All Departments</option>
+      </select>
+      <select id="filter-jobfn" aria-label="Filter by job function">
+        <option value="All">All Job Functions</option>
+      </select>
+    </div>
+  </header>
+
+  <nav id="tabs" role="tablist" aria-label="Main navigation">
+    <button data-tab="overview"      role="tab" aria-selected="true"  aria-controls="tab-overview">Overview</button>
+    <button data-tab="leaderboard"   role="tab" aria-selected="false" aria-controls="tab-leaderboard">Leaderboard</button>
+    <button data-tab="creator-bonus" role="tab" aria-selected="false" aria-controls="tab-creator-bonus">Creator Bonus</button>
+  </nav>
+
+  <main>
+    <!-- Loading state rendered here until DataLoader finishes -->
+    <div id="loading">
+      <div class="spinner" role="status" aria-label="Loading data"></div>
+      <span>Loading data…</span>
+    </div>
+
+    <!-- Overview Tab -->
+    <div id="tab-overview" role="tabpanel" aria-labelledby="tab-btn-overview">
+      <div class="stat-cards" id="overview-stat-cards"></div>
+      <div class="charts-grid">
+        <div class="chart-container" id="chart-top10-container">
+          <h3>Top-10 Scorers</h3>
+          <canvas id="chart-top10" aria-label="Top 10 scorers bar chart"></canvas>
+        </div>
+        <div class="chart-container" id="chart-session-size-container">
+          <h3>Session Size Distribution</h3>
+          <canvas id="chart-session-size" aria-label="Session size distribution donut chart"></canvas>
+        </div>
+        <div class="chart-container" id="chart-dept-container">
+          <h3>Sessions by Department</h3>
+          <canvas id="chart-dept" aria-label="Sessions by department donut chart"></canvas>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leaderboard Tab -->
+    <div id="tab-leaderboard" role="tabpanel" aria-labelledby="tab-btn-leaderboard">
+      <div class="stat-cards" id="leaderboard-stat-cards"></div>
+      <div class="table-wrap" id="leaderboard-table-wrap">
+        <div class="empty-state">No data loaded yet.</div>
+      </div>
+    </div>
+
+    <!-- Creator Bonus Tab -->
+    <div id="tab-creator-bonus" role="tabpanel" aria-labelledby="tab-btn-creator-bonus">
+      <div class="stat-cards" id="creator-bonus-stat-cards"></div>
+      <div class="table-wrap" id="creator-bonus-table-wrap">
+        <div class="empty-state">No data loaded yet.</div>
+      </div>
+    </div>
+
+    <!-- User Session Insight (hidden until row click) -->
+    <div id="user-insight" hidden aria-live="polite">
+      <div class="insight-header">
+        <button class="btn-back" id="btn-back-insight" aria-label="Back to leaderboard">← Back</button>
+        <h2 id="insight-user-name">User Insight</h2>
+      </div>
+      <div class="stat-cards" id="insight-stat-cards"></div>
+      <div class="chart-container" style="margin-bottom: 24px;">
+        <h3>Score Trend</h3>
+        <canvas id="chart-score-trend" aria-label="User score trend line chart"></canvas>
+      </div>
+      <div class="insight-section">
+        <h3>Sessions</h3>
+        <div class="table-wrap" id="insight-sessions-table-wrap">
+          <div class="empty-state">No sessions in this window.</div>
+        </div>
+      </div>
+      <div class="insight-section">
+        <h3>PR Output</h3>
+        <div class="table-wrap" id="insight-pr-table-wrap">
+          <div class="empty-state">No PR output in this window.</div>
+        </div>
+      </div>
+      <div class="insight-section">
+        <h3>Doc Output</h3>
+        <div class="table-wrap" id="insight-doc-table-wrap">
+          <div class="empty-state">No document output in this window.</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Chart.js from CDN (Requirement 6.5 / 11.2) -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+  <script>
+    (function () {
+      'use strict';
+
+      // ── DataLoader ────────────────────────────────────────────────────────
+      const DataLoader = {
+        // Paths are relative to where index.html is served (project root).
+        // data/ subdirectory holds devin_api/ and enrichment/ sub-folders.
+        FILES: [
+          'data/devin_api/sessions.json',
+          'data/devin_api/assets.json',
+          'data/enrichment/org_directory.json',
+          'data/enrichment/document_reviews.json',
+          'data/enrichment/knowledge_note_owners.json',
+          'data/enrichment/knowledge_note_usage.json',
+          'data/enrichment/automation_triggers.json',
+        ],
+
+        // Priority 1: embedded data (index.dist.html via build.js)
+        // Priority 2: fetch() each file in parallel
+        // Priority 3: file-upload prompt for any failed fetch
+        async load() {
+          if (window.__DATA__) {
+            return this._fromEmbedded(window.__DATA__);
+          }
+          return this._fromNetwork();
+        },
+
+        // ── Priority 1 ────────────────────────────────────────────────────
+        // Validates that all required keys exist on window.__DATA__ and
+        // returns a normalised payload object.  Uses `in` operator so that
+        // empty arrays (valid data) are not incorrectly flagged as missing.
+        _fromEmbedded(data) {
+          const required = [
+            'sessions', 'assets', 'orgDirectory', 'documentReviews',
+            'knowledgeNoteOwners', 'knowledgeNoteUsage', 'automationTriggers',
+          ];
+          for (const key of required) {
+            if (!(key in data)) {
+              UI._showError(`window.__DATA__ is missing required key: "${key}"`);
+            }
+          }
+          return {
+            sessions:            data.sessions,
+            assets:              data.assets,
+            orgDirectory:        data.orgDirectory,
+            documentReviews:     data.documentReviews,
+            knowledgeNoteOwners: data.knowledgeNoteOwners,
+            knowledgeNoteUsage:  data.knowledgeNoteUsage,
+            automationTriggers:  data.automationTriggers,
+          };
+        },
+
+        // ── Priority 2 ────────────────────────────────────────────────────
+        // Fetches all 7 files in parallel.  Individual failures fall through
+        // to _promptUpload() (Priority 3) without aborting the others.
+        async _fromNetwork() {
+          const results = await Promise.all(
+            this.FILES.map(file => this._fetchOrUpload(file))
+          );
+          const [
+            sessions, assets, orgDirectory, documentReviews,
+            knowledgeNoteOwners, knowledgeNoteUsage, automationTriggers,
+          ] = results;
+          return {
+            sessions, assets, orgDirectory, documentReviews,
+            knowledgeNoteOwners, knowledgeNoteUsage, automationTriggers,
+          };
+        },
+
+        // Attempts fetch(); on any failure (network error or non-OK status)
+        // falls back to _promptUpload() for that specific file only.
+        async _fetchOrUpload(filePath) {
+          try {
+            const res = await fetch(filePath);
+            if (!res.ok) throw new Error(`HTTP ${res.status}`);
+            const text = await res.text();
+            return this._parseJSON(text, filePath);
+          } catch (_err) {
+            return this._promptUpload(filePath);
+          }
+        },
+
+        // Parses JSON and surfaces a visible error banner on failure;
+        // returns null so the rest of loading can continue (Requirement 1.4).
+        _parseJSON(text, fileName) {
+          try {
+            return JSON.parse(text);
+          } catch (e) {
+            UI._showError(`Failed to parse JSON for "${fileName}": ${e.message}`);
+            return null;
+          }
+        },
+
+        // ── Priority 3 ────────────────────────────────────────────────────
+        // Renders an <input type="file"> labelled with the file name and
+        // returns a Promise that resolves when the user selects a file.
+        _promptUpload(filePath) {
+          return new Promise((resolve) => {
+            const shortName = filePath.split('/').pop();
+            const container = document.getElementById('loading');
+            const wrapper = document.createElement('div');
+            wrapper.className = 'upload-prompt';
+            wrapper.innerHTML = `
+              <label>Could not fetch <strong>${shortName}</strong>. Please select the file manually:</label>
+              <input type="file" accept=".json" aria-label="Upload ${shortName}" />
+            `;
+            container.appendChild(wrapper);
+            wrapper.querySelector('input').addEventListener('change', (e) => {
+              const file = e.target.files[0];
+              if (!file) return;
+              const reader = new FileReader();
+              reader.onload = (evt) => {
+                const parsed = this._parseJSON(evt.target.result, shortName);
+                wrapper.remove();
+                resolve(parsed);
+              };
+              reader.readAsText(file);
+            });
+          });
+        },
+      };
+
+      // ── monthKey utility ──────────────────────────────────────────────────
+      // Converts a Unix timestamp in seconds to a 'YYYY-MM' string (UTC).
+      function monthKey(unixSecs) {
+        const d = new Date(unixSecs * 1000);
+        return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}`;
+      }
+
+      // ── Indexer ───────────────────────────────────────────────────────────
+      const Indexer = {
+        // LookupMaps
+        userById:      new Map(),
+        sessionById:   new Map(),
+        reviewByAttId: new Map(),
+        noteOwnerById: new Map(),
+        assetById:     new Map(),
+        assetByAutoId: new Map(),
+
+        // MonthlyBucket map: Map<userId, Map<YYYY-MM, Bucket>>
+        monthlyBuckets: new Map(),
+
+        // CreatorBonus index: Map<userId, Map<YYYY-MM, { playbookBonus, automationBonus, knowledgeNoteBonus }>>
+        creatorBonusIndex: new Map(),
+
+        build(rawData) {
+          this._buildLookupMaps(rawData);
+          this._buildMonthlyBuckets(rawData.sessions);
+          this._buildCreatorBonusIndex(rawData);
+        },
+
+        _buildLookupMaps(rawData) {
+          // Normalise each data source to a plain array regardless of
+          // whether it arrived as { items: [...] } or as a bare array.
+          const sessions      = Array.isArray(rawData.sessions)
+            ? rawData.sessions
+            : (rawData.sessions?.items ?? []);
+
+          const assets        = Array.isArray(rawData.assets)
+            ? rawData.assets
+            : (rawData.assets?.items ?? []);
+
+          const users         = Array.isArray(rawData.orgDirectory)
+            ? rawData.orgDirectory
+            : (rawData.orgDirectory?.users ?? []);
+
+          const reviews       = Array.isArray(rawData.documentReviews)
+            ? rawData.documentReviews
+            : (rawData.documentReviews?.items ?? rawData.documentReviews ?? []);
+
+          const noteOwners    = Array.isArray(rawData.knowledgeNoteOwners)
+            ? rawData.knowledgeNoteOwners
+            : (rawData.knowledgeNoteOwners?.items ?? rawData.knowledgeNoteOwners ?? []);
+
+          // userById: user_id → user record
+          this.userById = new Map();
+          for (const user of users) {
+            if (user.user_id != null) {
+              this.userById.set(user.user_id, user);
+            }
+          }
+
+          // sessionById: session_id → session record
+          this.sessionById = new Map();
+          for (const session of sessions) {
+            if (session.session_id != null) {
+              this.sessionById.set(session.session_id, session);
+            }
+          }
+
+          // reviewByAttId: attachment_id → document review record
+          this.reviewByAttId = new Map();
+          for (const review of reviews) {
+            if (review.attachment_id != null) {
+              this.reviewByAttId.set(review.attachment_id, review);
+            }
+          }
+
+          // noteOwnerById: note_id → knowledge note owner record
+          this.noteOwnerById = new Map();
+          for (const owner of noteOwners) {
+            if (owner.note_id != null) {
+              this.noteOwnerById.set(owner.note_id, owner);
+            }
+          }
+
+          // assetById: asset_id → asset record (all asset types)
+          // assetByAutoId: automation_id → asset record (automation assets only)
+          // For automation assets, asset_id IS the automation_id (both use the auto-* prefix).
+          this.assetById     = new Map();
+          this.assetByAutoId = new Map();
+          for (const asset of assets) {
+            if (asset.asset_id != null) {
+              this.assetById.set(asset.asset_id, asset);
+              if (asset.asset_type === 'automation') {
+                this.assetByAutoId.set(asset.asset_id, asset);
+              }
+            }
+          }
+        },
+
+        _buildMonthlyBuckets(sessions) {
+          // Accept either a plain array or the { items: [...] } envelope shape.
+          const sessionList = Array.isArray(sessions) ? sessions : (sessions?.items ?? []);
+
+          // Iterate sessions exactly once (Requirement 2.2).
+          for (const session of sessionList) {
+            const mk = monthKey(session.created_at);  // Requirement 2.3
+
+            // Get-or-create the per-user bucket map.
+            let userBuckets = this.monthlyBuckets.get(session.user_id);
+            if (!userBuckets) {
+              userBuckets = new Map();
+              this.monthlyBuckets.set(session.user_id, userBuckets);
+            }
+
+            // Get-or-create the bucket for this calendar month.
+            let bucket = userBuckets.get(mk);
+            if (!bucket) {
+              bucket = {
+                outputCount:        0,
+                playbookCount:      0,
+                sessionCount:       0,
+                totalACUs:          0,
+                totalDurationHours: 0,
+                childCount:         0,
+                pullRequests:       [],
+                devinAttachments:   [],
+              };
+              userBuckets.set(mk, bucket);
+            }
+
+            // Increment counters.
+            bucket.sessionCount += 1;
+            bucket.totalACUs    += (session.acus_consumed ?? 0);
+            bucket.totalDurationHours += (session.updated_at - session.created_at) / 3600;
+            bucket.childCount   += (session.child_session_ids || []).length;
+
+            if (session.playbook_id != null) {
+              bucket.playbookCount += 1;
+            }
+
+            // Classify as OutputSession: has PR(s) OR has a devin-source attachment.
+            const pullRequests     = session.pull_requests  ?? [];
+            const attachments      = session.attachments    ?? [];
+            const devinAttachments = attachments.filter(a => a.source === 'devin');
+
+            const isOutput = pullRequests.length > 0 || devinAttachments.length > 0;
+            if (isOutput) {
+              bucket.outputCount += 1;
+            }
+
+            // Accumulate PR and devin-attachment arrays for later use by the UI.
+            for (const pr  of pullRequests)     bucket.pullRequests.push(pr);
+            for (const att of devinAttachments) bucket.devinAttachments.push(att);
+          }
+        },
+
+        _buildCreatorBonusIndex(rawData) {
+          this.creatorBonusIndex = new Map();
+
+          // Helper: get-or-create the bonus entry for a given userId + month key.
+          const getOrCreateBonus = (index, userId, mk) => {
+            let userMap = index.get(userId);
+            if (!userMap) { userMap = new Map(); index.set(userId, userMap); }
+            let entry = userMap.get(mk);
+            if (!entry) {
+              entry = { playbookBonus: 0, automationBonus: 0, knowledgeNoteBonus: 0 };
+              userMap.set(mk, entry);
+            }
+            return entry;
+          };
+
+          // ── Pass 1: Playbook bonus ──────────────────────────────────────
+          // For each session with a non-null playbook_id, reward the playbook
+          // creator once (if they are not the session owner).
+          for (const session of this.sessionById.values()) {
+            if (session.playbook_id == null) continue;
+
+            const asset = this.assetById.get(session.playbook_id);
+            if (!asset) continue;
+
+            const creatorId = asset.created_by_user_id;
+            if (!creatorId || creatorId === session.user_id) continue; // self-attribution excluded
+
+            const mk = monthKey(session.created_at);
+            getOrCreateBonus(this.creatorBonusIndex, creatorId, mk).playbookBonus += 1;
+          }
+
+          // ── Pass 2: Automation bonus ────────────────────────────────────
+          // Normalise automation_triggers to a plain array (may be { items:[…] } or bare array).
+          const triggers = Array.isArray(rawData.automationTriggers)
+            ? rawData.automationTriggers
+            : (rawData.automationTriggers?.items ?? []);
+
+          for (const record of triggers) {
+            if (record.triggered_by_user_id == null) continue; // scheduled run — skip
+
+            const asset = this.assetByAutoId.get(record.automation_id);
+            if (!asset) continue;
+
+            const creatorId = asset.created_by_user_id;
+            if (!creatorId || creatorId === record.triggered_by_user_id) continue; // self-attribution excluded
+
+            const session = this.sessionById.get(record.session_id);
+            if (!session) continue; // no session → no month → skip
+
+            const mk = monthKey(session.created_at);
+            getOrCreateBonus(this.creatorBonusIndex, creatorId, mk).automationBonus += 1;
+          }
+
+          // ── Pass 3: Knowledge note bonus ────────────────────────────────
+          // Normalise knowledge_note_usage to a plain array.
+          const noteUsages = Array.isArray(rawData.knowledgeNoteUsage)
+            ? rawData.knowledgeNoteUsage
+            : (rawData.knowledgeNoteUsage?.items ?? []);
+
+          for (const record of noteUsages) {
+            if (record.classification !== 'useful') continue; // only 'useful' notes count
+
+            const owner = this.noteOwnerById.get(record.note_id);
+            if (!owner) continue;
+
+            const creatorId = owner.creator_user_id;
+            if (!creatorId || creatorId === record.session_user_id) continue; // self-attribution excluded
+
+            const session = this.sessionById.get(record.session_id);
+            if (!session) continue; // no session → no month → skip
+
+            const mk = monthKey(session.created_at);
+            getOrCreateBonus(this.creatorBonusIndex, creatorId, mk).knowledgeNoteBonus += 1;
+          }
+        },
+      };
+
+      // ── ScoreEngine ───────────────────────────────────────────────────────
+      const ScoreEngine = {
+        compute(filterState) {
+          // Step 1: get all users from userById and apply Department / Job-Function filters
+          // (Requirements 3.7, 3.8 — exclude non-matching users before aggregation and normalisation)
+          const users = this._filterUsers(filterState);
+
+          if (users.length === 0) return [];
+
+          // Step 2: aggregate MonthlyBuckets for each user under the selected month filter
+          const aggs = users.map(user => ({
+            user,
+            agg: this._aggregate(user.user_id, filterState.month),
+          }));
+
+          // Step 3: compute raw sub-scores for every user
+          const withRaw = aggs.map(({ user, agg }) => ({
+            user,
+            agg,
+            raw: this._computeSubScores(agg),
+          }));
+
+          // Step 4: normalise each sub-score across the FilterWindow population
+          const normOutput     = this._normalise(withRaw.map(x => x.raw.rawOutput));
+          const normPlaybook   = this._normalise(withRaw.map(x => x.raw.rawPlaybook));
+          const normFrequency  = this._normalise(withRaw.map(x => x.raw.rawFrequency));
+          const normImpact     = this._normalise(withRaw.map(x => x.raw.rawImpact));
+
+          // EfficiencyScore is inverted before normalisation (Requirement 3.4):
+          // lower ACU-per-output → higher normalised score.
+          const rawEffValues   = withRaw.map(x => x.raw.rawEfficiency);
+          const maxRawEff      = Math.max(...rawEffValues);
+          const invertedEff    = rawEffValues.map(v => maxRawEff - v);
+          const normEfficiency = this._normalise(invertedEff);
+
+          // Step 5: attach creator bonuses and compute TotalScore
+          const results = withRaw.map((x, i) => {
+            const creatorBonusEntry = this._creatorBonus(x.user.user_id, filterState.month);
+            const totalCreatorBonus = creatorBonusEntry.playbookBonus
+                                    + creatorBonusEntry.automationBonus
+                                    + creatorBonusEntry.knowledgeNoteBonus;
+
+            const normScores = {
+              normOutput:     normOutput[i],
+              normPlaybook:   normPlaybook[i],
+              normFrequency:  normFrequency[i],
+              normImpact:     normImpact[i],
+              normEfficiency: normEfficiency[i],
+            };
+
+            const totalScore = this._computeTotalScore(normScores, totalCreatorBonus);
+
+            return {
+              user_id:        x.user.user_id,
+              name:           x.user.name        ?? '(unknown)',
+              department:     x.user.department_name ?? '—',
+              jobFunction:    x.user.job_function ?? '—',
+              // raw sub-scores
+              rawOutput:      x.raw.rawOutput,
+              rawPlaybook:    x.raw.rawPlaybook,
+              rawFrequency:   x.raw.rawFrequency,
+              rawImpact:      x.raw.rawImpact,
+              rawEfficiency:  x.raw.rawEfficiency,
+              // normalised sub-scores
+              normOutput:     normScores.normOutput,
+              normPlaybook:   normScores.normPlaybook,
+              normFrequency:  normScores.normFrequency,
+              normImpact:     normScores.normImpact,
+              normEfficiency: normScores.normEfficiency,
+              // creator bonus breakdown
+              playbookBonus:      creatorBonusEntry.playbookBonus,
+              automationBonus:    creatorBonusEntry.automationBonus,
+              knowledgeNoteBonus: creatorBonusEntry.knowledgeNoteBonus,
+              creatorBonus:       totalCreatorBonus,
+              // total
+              totalScore,
+              // agg kept for downstream use (User Session Insight)
+              agg: x.agg,
+            };
+          });
+
+          // Step 6: sort descending by TotalScore and assign rank + tiers
+          results.sort((a, b) => b.totalScore - a.totalScore);
+          this._assignTiers(results);
+          results.forEach((r, i) => { r.rank = i + 1; });
+
+          return results;
+        },
+
+        // Returns the subset of org-directory users that pass the active
+        // department and job-function filters (Requirements 3.7, 3.8).
+        _filterUsers(filterState) {
+          const allUsers = [...Indexer.userById.values()];
+          return allUsers.filter(user => {
+            if (filterState.department !== 'All' &&
+                user.department_name !== filterState.department) {
+              return false;
+            }
+            if (filterState.jobFunction !== 'All' &&
+                user.job_function !== filterState.jobFunction) {
+              return false;
+            }
+            return true;
+          });
+        },
+
+        // Returns the aggregated CreatorBonus entry for a user in the given month filter.
+        _creatorBonus(userId, monthFilter) {
+          const index = Indexer.creatorBonusIndex.get(userId) ?? new Map();
+          const keys  = monthFilter === 'All' ? [...index.keys()] : [monthFilter];
+          return keys.reduce((sum, k) => {
+            const b = index.get(k) ?? {};
+            sum.playbookBonus      += (b.playbookBonus      ?? 0);
+            sum.automationBonus    += (b.automationBonus    ?? 0);
+            sum.knowledgeNoteBonus += (b.knowledgeNoteBonus ?? 0);
+            return sum;
+          }, { playbookBonus: 0, automationBonus: 0, knowledgeNoteBonus: 0 });
+        },
+
+        _aggregate(userId, monthFilter) {
+          const emptyBucket = () => ({
+            outputCount:        0,
+            playbookCount:      0,
+            sessionCount:       0,
+            totalACUs:          0,
+            totalDurationHours: 0,
+            childCount:         0,
+            pullRequests:       [],
+            devinAttachments:   [],
+          });
+
+          const buckets = Indexer.monthlyBuckets.get(userId) ?? new Map();
+          const keys = monthFilter === 'All'
+            ? [...buckets.keys()]
+            : [monthFilter];
+
+          return keys.reduce((acc, k) => {
+            const b = buckets.get(k);
+            if (!b) return acc;
+            acc.outputCount        += b.outputCount;
+            acc.playbookCount      += b.playbookCount;
+            acc.sessionCount       += b.sessionCount;
+            acc.totalACUs          += b.totalACUs;
+            acc.totalDurationHours += b.totalDurationHours;
+            acc.childCount         += b.childCount;
+            acc.pullRequests        = acc.pullRequests.concat(b.pullRequests);
+            acc.devinAttachments    = acc.devinAttachments.concat(b.devinAttachments);
+            return acc;
+          }, emptyBucket());
+        },
+
+        _normalise(values) {
+          const min = Math.min(...values);
+          const max = Math.max(...values);
+          if (max === min) return values.map(() => 0);
+          return values.map(v => ((v - min) / (max - min)) * 100);
+        },
+
+        _computeSubScores(agg) {
+          return {
+            rawOutput:     agg.outputCount,
+            rawPlaybook:   agg.playbookCount,
+            rawFrequency:  agg.sessionCount,
+            rawImpact:     agg.totalACUs + agg.totalDurationHours,
+            rawEfficiency: agg.outputCount > 0 ? agg.totalACUs / agg.outputCount : 0,
+          };
+        },
+
+        _computeTotalScore(normScores, creatorBonus) {
+          return (normScores.normOutput    * 0.50)
+               + (normScores.normPlaybook  * 0.20)
+               + (normScores.normFrequency * 0.20)
+               + (normScores.normImpact    * 0.05)
+               + (normScores.normEfficiency * 0.05)
+               + creatorBonus;
+        },
+
+        _assignTiers(sorted) {
+          const n = sorted.length;
+          if (n === 0) return;
+          const t1 = Math.ceil(n * 0.10);
+          const t2 = Math.ceil((n - t1) * (0.20 / 0.90));
+          sorted.forEach((item, i) => {
+            item.tier = i < t1 ? 1 : i < t1 + t2 ? 2 : 3;
+          });
+        },
+      };
+
+      // ── FilterState ───────────────────────────────────────────────────────
+      const FilterState = {
+        month:       'All',
+        department:  'All',
+        jobFunction: 'All',
+
+        set(key, value) {
+          this[key] = value;
+          UI.onFilterChange();
+        },
+
+        // Called once after Indexer.build() completes.
+        // Derives distinct option values from the already-built LookupMaps /
+        // MonthlyBuckets and populates the three <select> elements.
+        init() {
+          this._populateMonthFilter();
+          this._populateDeptFilter();
+          this._populateJobFnFilter();
+        },
+
+        // Requirement 4.1 — all YYYY-MM months present in session data, sorted chronologically.
+        _populateMonthFilter() {
+          // Collect every month key that appears in any user's MonthlyBucket map.
+          const monthSet = new Set();
+          for (const userBuckets of Indexer.monthlyBuckets.values()) {
+            for (const mk of userBuckets.keys()) {
+              monthSet.add(mk);
+            }
+          }
+
+          const sorted = [...monthSet].sort(); // lexicographic sort is correct for YYYY-MM
+          const select = document.getElementById('filter-month');
+
+          // Keep the existing "All Months" option and append month options.
+          for (const mk of sorted) {
+            const opt = document.createElement('option');
+            opt.value       = mk;
+            opt.textContent = mk;
+            select.appendChild(opt);
+          }
+        },
+
+        // Requirement 4.2 — all distinct department_name values, sorted alphabetically.
+        _populateDeptFilter() {
+          const deptSet = new Set();
+          for (const user of Indexer.userById.values()) {
+            if (user.department_name != null && user.department_name !== '') {
+              deptSet.add(user.department_name);
+            }
+          }
+
+          const sorted = [...deptSet].sort((a, b) => a.localeCompare(b));
+          const select = document.getElementById('filter-dept');
+
+          for (const dept of sorted) {
+            const opt = document.createElement('option');
+            opt.value       = dept;
+            opt.textContent = dept;
+            select.appendChild(opt);
+          }
+        },
+
+        // Requirement 4.3 — all distinct job_function values, sorted alphabetically.
+        _populateJobFnFilter() {
+          const jfSet = new Set();
+          for (const user of Indexer.userById.values()) {
+            if (user.job_function != null && user.job_function !== '') {
+              jfSet.add(user.job_function);
+            }
+          }
+
+          const sorted = [...jfSet].sort((a, b) => a.localeCompare(b));
+          const select = document.getElementById('filter-jobfn');
+
+          for (const jf of sorted) {
+            const opt = document.createElement('option');
+            opt.value       = jf;
+            opt.textContent = jf;
+            select.appendChild(opt);
+          }
+        },
+      };
+
+      // ── ChartManager ──────────────────────────────────────────────────────
+      const ChartManager = {
+        _instances: {},
+
+        create(canvasId, config) {
+          if (this._instances[canvasId]) {
+            this._instances[canvasId].destroy();
+            delete this._instances[canvasId];
+          }
+          if (!window.Chart) {
+            const canvas = document.getElementById(canvasId);
+            if (canvas) {
+              const container = canvas.closest('.chart-container');
+              if (container) container.textContent = 'Chart.js failed to load.';
+            }
+            return;
+          }
+          const canvas = document.getElementById(canvasId);
+          if (!canvas) return;
+          this._instances[canvasId] = new window.Chart(canvas, config);
+        },
+
+        destroy(canvasId) {
+          if (this._instances[canvasId]) {
+            this._instances[canvasId].destroy();
+            delete this._instances[canvasId];
+          }
+        },
+      };
+
+      // ── UI ────────────────────────────────────────────────────────────────
+      const UI = {
+        activeTab: 'overview',
+        insightUserId: null,
+
+        // Leaderboard sort state
+        _lbSortCol: 'rank',
+        _lbSortDir: 'asc',
+
+        init() {
+          this._initTabs();
+          this._initFilters();
+        },
+
+        _initTabs() {
+          const tabBtns = document.querySelectorAll('#tabs button[data-tab]');
+          tabBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+              this._switchTab(btn.dataset.tab);
+            });
+          });
+          // Show first tab by default
+          this._switchTab('overview');
+        },
+
+        _switchTab(tabName) {
+          // Hide user insight if visible
+          const insight = document.getElementById('user-insight');
+          insight.hidden = true;
+          insight.classList.remove('active');
+
+          // Toggle pane visibility
+          ['overview', 'leaderboard', 'creator-bonus'].forEach(name => {
+            const pane = document.getElementById(`tab-${name}`);
+            const btn  = document.querySelector(`#tabs button[data-tab="${name}"]`);
+            if (name === tabName) {
+              pane.classList.add('active');
+              if (btn) {
+                btn.classList.add('active');
+                btn.setAttribute('aria-selected', 'true');
+              }
+            } else {
+              pane.classList.remove('active');
+              if (btn) {
+                btn.classList.remove('active');
+                btn.setAttribute('aria-selected', 'false');
+              }
+            }
+          });
+
+          this.activeTab = tabName;
+        },
+
+        _initFilters() {
+          document.getElementById('filter-month').addEventListener('change', e => {
+            FilterState.set('month', e.target.value);
+          });
+          document.getElementById('filter-dept').addEventListener('change', e => {
+            FilterState.set('department', e.target.value);
+          });
+          document.getElementById('filter-jobfn').addEventListener('change', e => {
+            FilterState.set('jobFunction', e.target.value);
+          });
+
+          document.getElementById('btn-back-insight').addEventListener('click', () => {
+            this._closeInsight();
+          });
+        },
+
+        onFilterChange() {
+          // Disable all filter controls to prevent concurrent recomputations (Requirements 10.4, 10.5)
+          const filterSelects = document.querySelectorAll('#filters select');
+          filterSelects.forEach(sel => { sel.disabled = true; });
+
+          // Recompute scores across only the filtered user population (Requirements 3.7, 3.8)
+          const results = ScoreEngine.compute(FilterState);
+
+          // Re-render all visible views with updated results
+          this._render(results);
+
+          // Re-enable filter controls after computation and render are complete
+          filterSelects.forEach(sel => { sel.disabled = false; });
+        },
+
+        _render(results) {
+          this.renderOverview(results);
+          this.renderLeaderboard(results);
+          this.renderCreatorBonus(results);
+          if (this.insightUserId) {
+            this.renderUserInsight(this.insightUserId, results);
+          }
+        },
+
+        renderOverview(results) {
+          const stats = this._computeStats(results);
+          this._renderStatCards(stats, 'overview-stat-cards');
+          // Charts — implemented in task 13.2
+        },
+
+        renderLeaderboard(results) {
+          const stats = this._computeStats(results);
+          this._renderStatCards(stats, 'leaderboard-stat-cards');
+          this._renderLeaderboardTable(results);
+        },
+
+        _renderLeaderboardTable(results) {
+          const wrap = document.getElementById('leaderboard-table-wrap');
+          if (!wrap) return;
+
+          // ── Sort ──────────────────────────────────────────────────────────
+          const colAccessors = {
+            rank:           r => r.rank,
+            name:           r => r.name,
+            department:     r => r.department,
+            jobFunction:    r => r.jobFunction,
+            tier:           r => r.tier,
+            totalScore:     r => r.totalScore,
+            normOutput:     r => r.normOutput,
+            normPlaybook:   r => r.normPlaybook,
+            normFrequency:  r => r.normFrequency,
+            normImpact:     r => r.normImpact,
+            normEfficiency: r => r.normEfficiency,
+            creatorBonus:   r => r.creatorBonus,
+          };
+
+          const col      = this._lbSortCol;
+          const dir      = this._lbSortDir;
+          const accessor = colAccessors[col] ?? (r => r.rank);
+
+          const sorted = [...results].sort((a, b) => {
+            const va = accessor(a);
+            const vb = accessor(b);
+            const cmp = typeof va === 'string' ? va.localeCompare(vb) : va - vb;
+            return dir === 'asc' ? cmp : -cmp;
+          });
+
+          // ── Column definitions ────────────────────────────────────────────
+          const columns = [
+            { key: 'rank',          label: 'Rank' },
+            { key: 'name',          label: 'Name' },
+            { key: 'department',    label: 'Department' },
+            { key: 'jobFunction',   label: 'Job Function' },
+            { key: 'tier',          label: 'Tier' },
+            { key: 'totalScore',    label: 'Total Score' },
+            { key: 'normOutput',    label: 'Output Score' },
+            { key: 'normPlaybook',  label: 'Playbook Score' },
+            { key: 'normFrequency', label: 'Frequency Score' },
+            { key: 'normImpact',    label: 'Impact Score' },
+            { key: 'normEfficiency', label: 'Efficiency Score' },
+            { key: 'creatorBonus',  label: 'Creator Bonus' },
+          ];
+
+          // ── Build HTML ────────────────────────────────────────────────────
+          const headerCells = columns.map(c => {
+            const isActive = c.key === col;
+            const sortClass = isActive ? ` class="sort-${dir}"` : '';
+            return `<th data-col="${c.key}"${sortClass} scope="col">${c.label}<span class="sort-indicator"></span></th>`;
+          }).join('');
+
+          const rowsHtml = sorted.length === 0
+            ? `<tr><td colspan="${columns.length}" class="empty-state">No data available.</td></tr>`
+            : sorted.map(r => {
+                const tierLabel = r.tier === 1 ? 'Gold' : r.tier === 2 ? 'Silver' : 'Bronze';
+                return [
+                  `<tr data-user-id="${this._esc(String(r.user_id))}">`,
+                  `<td>${r.rank}</td>`,
+                  `<td>${this._esc(r.name)}</td>`,
+                  `<td>${this._esc(r.department)}</td>`,
+                  `<td>${this._esc(r.jobFunction)}</td>`,
+                  `<td><span class="tier-badge tier-${r.tier}">${tierLabel}</span></td>`,
+                  `<td>${r.totalScore.toFixed(2)}</td>`,
+                  `<td>${r.normOutput.toFixed(2)}</td>`,
+                  `<td>${r.normPlaybook.toFixed(2)}</td>`,
+                  `<td>${r.normFrequency.toFixed(2)}</td>`,
+                  `<td>${r.normImpact.toFixed(2)}</td>`,
+                  `<td>${r.normEfficiency.toFixed(2)}</td>`,
+                  `<td>${r.creatorBonus.toFixed(2)}</td>`,
+                  `</tr>`,
+                ].join('');
+              }).join('');
+
+          // Single innerHTML assignment — Requirement 10.1
+          wrap.innerHTML = [
+            `<table role="grid" aria-label="Leaderboard">`,
+            `<thead><tr>${headerCells}</tr></thead>`,
+            `<tbody>${rowsHtml}</tbody>`,
+            `</table>`,
+          ].join('');
+
+          // ── Attach column-header click listeners (sort) ───────────────────
+          wrap.querySelectorAll('thead th[data-col]').forEach(th => {
+            th.addEventListener('click', () => {
+              const clickedCol = th.dataset.col;
+              if (this._lbSortCol === clickedCol) {
+                this._lbSortDir = this._lbSortDir === 'asc' ? 'desc' : 'asc';
+              } else {
+                this._lbSortCol = clickedCol;
+                this._lbSortDir = 'asc';
+              }
+              this._renderLeaderboardTable(results);
+            });
+          });
+
+          // ── Attach row click listeners (User Session Insight) ─────────────
+          wrap.querySelectorAll('tbody tr[data-user-id]').forEach(tr => {
+            tr.addEventListener('click', () => {
+              this.insightUserId = tr.dataset.userId;
+              this.renderUserInsight(tr.dataset.userId, results);
+            });
+          });
+        },
+
+        // HTML-escape helper — prevents XSS when inserting user data into innerHTML
+        _esc(str) {
+          return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;');
+        },
+
+        renderCreatorBonus(results) {
+          const stats = this._computeStats(results);
+          this._renderStatCards(stats, 'creator-bonus-stat-cards');
+
+          // ── Creator Bonus table (Requirements 9.1, 9.2, 9.6, 10.1) ──────
+
+          // Filter to only users with at least one bonus point (Req 9.2).
+          const rows = results
+            .map(r => ({
+              name:               r.name,
+              department:         r.department,
+              playbookBonus:      r.playbookBonus      ?? 0,
+              automationBonus:    r.automationBonus    ?? 0,
+              knowledgeNoteBonus: r.knowledgeNoteBonus ?? 0,
+              totalBonus:         (r.playbookBonus ?? 0)
+                                + (r.automationBonus ?? 0)
+                                + (r.knowledgeNoteBonus ?? 0),
+            }))
+            .filter(r => r.totalBonus > 0);
+
+          const wrap = document.getElementById('creator-bonus-table-wrap');
+          if (!wrap) return;
+
+          if (rows.length === 0) {
+            wrap.innerHTML = '<div class="empty-state">No creator bonuses in this window.</div>';
+            return;
+          }
+
+          // Sort state — default: Total Bonus descending.
+          let sortCol = 'totalBonus';
+          let sortDir = 'desc';   // 'asc' | 'desc'
+
+          // Column definitions: { key, label, numeric }
+          const COLS = [
+            { key: 'name',               label: 'Creator Name',        numeric: false },
+            { key: 'department',         label: 'Department',          numeric: false },
+            { key: 'playbookBonus',      label: 'Playbook Bonus',      numeric: true  },
+            { key: 'automationBonus',    label: 'Automation Bonus',    numeric: true  },
+            { key: 'knowledgeNoteBonus', label: 'Knowledge Note Bonus',numeric: true  },
+            { key: 'totalBonus',         label: 'Total Bonus',         numeric: true  },
+          ];
+
+          // Builds and injects the full table HTML — called on initial
+          // render and on every sort-header click (Req 10.1: single
+          // innerHTML assignment per table update).
+          const render = () => {
+            // Sort a copy so the original rows array remains stable.
+            const sorted = rows.slice().sort((a, b) => {
+              const va = a[sortCol];
+              const vb = b[sortCol];
+              const cmp = typeof va === 'number'
+                ? va - vb
+                : String(va).localeCompare(String(vb));
+              return sortDir === 'asc' ? cmp : -cmp;
+            });
+
+            const thead = COLS.map(c => {
+              let cls = '';
+              if (c.key === sortCol) cls = ` class="sort-${sortDir}"`;
+              return `<th data-col="${c.key}"${cls}>${c.label}<span class="sort-indicator"></span></th>`;
+            }).join('');
+
+            const tbody = sorted.map(r => `
+              <tr>
+                <td>${r.name}</td>
+                <td>${r.department}</td>
+                <td>${r.playbookBonus}</td>
+                <td>${r.automationBonus}</td>
+                <td>${r.knowledgeNoteBonus}</td>
+                <td>${r.totalBonus}</td>
+              </tr>
+            `).join('');
+
+            // Single innerHTML assignment — Req 10.1
+            wrap.innerHTML = `
+              <table aria-label="Creator Bonus table">
+                <thead><tr>${thead}</tr></thead>
+                <tbody>${tbody}</tbody>
+              </table>
+            `;
+
+            // Attach sort listeners after DOM is updated (Req 9.6).
+            wrap.querySelectorAll('thead th[data-col]').forEach(th => {
+              th.addEventListener('click', () => {
+                const col = th.dataset.col;
+                if (col === sortCol) {
+                  sortDir = sortDir === 'asc' ? 'desc' : 'asc';
+                } else {
+                  sortCol = col;
+                  // Numeric cols default desc; string cols default asc.
+                  sortDir = COLS.find(c => c.key === col)?.numeric ? 'desc' : 'asc';
+                }
+                render();
+              });
+            });
+          };
+
+          render();
+        },
+
+        renderUserInsight(_userId, results) {
+          const stats = this._computeStats(results);
+          this._renderStatCards(stats, 'insight-stat-cards');
+          // Insight view — implemented in task 11.1
+        },
+
+        // ── _computeStats ─────────────────────────────────────────────────
+        // Derives the four stat-card values from the current ScoreEngine
+        // results and the active FilterState.  Called before every render.
+        //
+        // totalSessions        — all sessions belonging to users in the
+        //                        FilterWindow, accumulated from MonthlyBuckets.
+        //                        Uses the same month / dept / jobFunction
+        //                        filters that ScoreEngine.compute() used.
+        // powerUsers           — count of Tier 1 entries in results.
+        // limitedUsers         — count of Tier 3 entries in results.
+        // sessionsWithOrgContext — sessions whose user_id resolves in
+        //                         Indexer.userById (i.e. has an org record).
+        //
+        // Requirements 5.2–5.6
+        _computeStats(results) {
+          let totalSessions = 0;
+          let sessionsWithOrgContext = 0;
+
+          // Aggregate session counts from MonthlyBuckets for every user
+          // that passed the department / job-function filters (i.e. is
+          // represented in results).  This matches the FilterWindow
+          // exactly without re-scanning the raw sessions array.
+          const resultUserIds = new Set(results.map(r => r.user_id));
+
+          for (const [userId, userBuckets] of Indexer.monthlyBuckets) {
+            const monthFilter = FilterState.month;
+            const keys = monthFilter === 'All'
+              ? [...userBuckets.keys()]
+              : [monthFilter];
+
+            for (const mk of keys) {
+              const bucket = userBuckets.get(mk);
+              if (!bucket) continue;
+
+              totalSessions += bucket.sessionCount;
+
+              // Sessions with org context: user_id resolves in userById.
+              if (Indexer.userById.has(userId)) {
+                sessionsWithOrgContext += bucket.sessionCount;
+              }
+            }
+          }
+
+          return {
+            totalSessions,
+            powerUsers:           results.filter(r => r.tier === 1).length,
+            limitedUsers:         results.filter(r => r.tier === 3).length,
+            sessionsWithOrgContext,
+          };
+        },
+
+        // ── _renderStatCards ──────────────────────────────────────────────
+        // Builds the four stat-card HTML block and injects it into the
+        // container identified by containerId.
+        //
+        // stats shape:
+        //   { totalSessions, powerUsers, limitedUsers, sessionsWithOrgContext }
+        //
+        // Requirements 5.1, 5.2, 5.3, 5.4, 5.5, 5.6
+        _renderStatCards(stats, containerId) {
+          const container = document.getElementById(containerId);
+          if (!container) return;
+
+          const cards = [
+            { label: 'Total Sessions',           value: stats.totalSessions },
+            { label: 'Power Users',              value: stats.powerUsers },
+            { label: 'Limited Users',            value: stats.limitedUsers },
+            { label: 'Sessions with Org Context', value: stats.sessionsWithOrgContext },
+          ];
+
+          container.innerHTML = cards.map(({ label, value }) => `
+            <div class="stat-card">
+              <span class="stat-label">${label}</span>
+              <span class="stat-value">${value}</span>
+            </div>
+          `).join('');
+        },
+
+        _closeInsight() {
+          const insight = document.getElementById('user-insight');
+          insight.hidden = true;
+          insight.classList.remove('active');
+          this.insightUserId = null;
+          this._switchTab('leaderboard');
+        },
+
+        _showError(message) {
+          const banner = document.createElement('div');
+          banner.className = 'error-banner';
+          banner.setAttribute('role', 'alert');
+          banner.textContent = `⚠ ${message}`;
+          document.querySelector('main').prepend(banner);
+        },
+
+        _hideLoading() {
+          const el = document.getElementById('loading');
+          if (el) el.remove();
+        },
+      };
+
+      // ── Bootstrap ─────────────────────────────────────────────────────────
+      async function main() {
+        UI.init();
+        try {
+          const rawData = await DataLoader.load();
+          Indexer.build(rawData);
+          FilterState.init();
+          UI._hideLoading();
+          const results = ScoreEngine.compute(FilterState);
+          UI._render(results);
+        } catch (err) {
+          UI._showError(`Unexpected error during initialisation: ${err.message}`);
+          console.error(err);
+        }
+      }
+
+      main();
+
+    })();
+  </script>
+
+</body>
+</html>

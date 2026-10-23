@@ -1,0 +1,3049 @@
+{
+  "items": [
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-fe0490593985fb6217dc8eff687213f9",
+      "name": "Fix failing CI",
+      "created_by_user_id": "user-815ef6d13b8faa1837f8a88b17fc695a",
+      "created_at": 1789652441,
+      "updated_at": 1791898841,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nFix failing CI for dept-eng.\n\n## Procedure\n1. ...",
+        "created_at": 1789652441,
+        "created_by": "user-815ef6d13b8faa1837f8a88b17fc695a",
+        "macro": "!fix-failing-ci-1",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-fe0490593985fb6217dc8eff687213f9",
+        "title": "Fix failing CI",
+        "updated_at": 1791898841,
+        "updated_by": "user-815ef6d13b8faa1837f8a88b17fc695a",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-aca2b148da330aa1541cdfcdda0d4a5f",
+      "name": "Ticket to PR",
+      "created_by_user_id": "user-eededb07e623a6895d59cd2a4eea04e7",
+      "created_at": 1781734667,
+      "updated_at": 1784067467,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nTicket to PR for dept-eng.\n\n## Procedure\n1. ...",
+        "created_at": 1781734667,
+        "created_by": "user-eededb07e623a6895d59cd2a4eea04e7",
+        "macro": "!ticket-to-pr-2",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-aca2b148da330aa1541cdfcdda0d4a5f",
+        "title": "Ticket to PR",
+        "updated_at": 1784067467,
+        "updated_by": "user-eededb07e623a6895d59cd2a4eea04e7",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-9b689c883ae909fecc8218dac696f5e6",
+      "name": "Upgrade dependency",
+      "created_by_user_id": "user-b289f2244ac9778d8da8eee40df56ac6",
+      "created_at": 1785188741,
+      "updated_at": 1787348741,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nUpgrade dependency for dept-ops.\n\n## Procedure\n1. ...",
+        "created_at": 1785188741,
+        "created_by": "user-b289f2244ac9778d8da8eee40df56ac6",
+        "macro": "!upgrade-dependency-3",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-9b689c883ae909fecc8218dac696f5e6",
+        "title": "Upgrade dependency",
+        "updated_at": 1787348741,
+        "updated_by": "user-b289f2244ac9778d8da8eee40df56ac6",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-899ca782e3236d1a3c1bdacc18e19331",
+      "name": "Add unit tests",
+      "created_by_user_id": "user-986f90258f15ba58fce6850487f8424d",
+      "created_at": 1782335378,
+      "updated_at": 1782680978,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nAdd unit tests for dept-data.\n\n## Procedure\n1. ...",
+        "created_at": 1782335378,
+        "created_by": "user-986f90258f15ba58fce6850487f8424d",
+        "macro": "!add-unit-tests-4",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-899ca782e3236d1a3c1bdacc18e19331",
+        "title": "Add unit tests",
+        "updated_at": 1782680978,
+        "updated_by": "user-986f90258f15ba58fce6850487f8424d",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-ddf275ebe8a3f341c8819065ba2c98ce",
+      "name": "Data pipeline backfill",
+      "created_by_user_id": "user-55fa1ab8458f1f193c07c57449257af1",
+      "created_at": 1781114744,
+      "updated_at": 1782929144,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nData pipeline backfill for dept-data.\n\n## Procedure\n1. ...",
+        "created_at": 1781114744,
+        "created_by": "user-55fa1ab8458f1f193c07c57449257af1",
+        "macro": "!data-pipeline-backfill-5",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-ddf275ebe8a3f341c8819065ba2c98ce",
+        "title": "Data pipeline backfill",
+        "updated_at": 1782929144,
+        "updated_by": "user-55fa1ab8458f1f193c07c57449257af1",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-92f837d447503f1dc33a1f6c1d691fba",
+      "name": "SQL migration review",
+      "created_by_user_id": "user-d39e198b44007d5ae88da71926242b40",
+      "created_at": 1786553851,
+      "updated_at": 1787158651,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nSQL migration review for dept-ops.\n\n## Procedure\n1. ...",
+        "created_at": 1786553851,
+        "created_by": "user-d39e198b44007d5ae88da71926242b40",
+        "macro": "!sql-migration-review-6",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-92f837d447503f1dc33a1f6c1d691fba",
+        "title": "SQL migration review",
+        "updated_at": 1787158651,
+        "updated_by": "user-d39e198b44007d5ae88da71926242b40",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-ebd14d2c75b2745504cc3ede6fac1673",
+      "name": "Incident triage",
+      "created_by_user_id": "user-434308bc89fa6a688fb5d27bbeb79919",
+      "created_at": 1781096914,
+      "updated_at": 1781269714,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nIncident triage for dept-eng.\n\n## Procedure\n1. ...",
+        "created_at": 1781096914,
+        "created_by": "user-434308bc89fa6a688fb5d27bbeb79919",
+        "macro": "!incident-triage-7",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-ebd14d2c75b2745504cc3ede6fac1673",
+        "title": "Incident triage",
+        "updated_at": 1781269714,
+        "updated_by": "user-434308bc89fa6a688fb5d27bbeb79919",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-e5582e16bd29ede9cab4923bf4488385",
+      "name": "Terraform drift fix",
+      "created_by_user_id": "user-a1235a8c93b7a88612f70c977de31a51",
+      "created_at": 1789687085,
+      "updated_at": 1789773485,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nTerraform drift fix for dept-ops.\n\n## Procedure\n1. ...",
+        "created_at": 1789687085,
+        "created_by": "user-a1235a8c93b7a88612f70c977de31a51",
+        "macro": "!terraform-drift-fix-8",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-e5582e16bd29ede9cab4923bf4488385",
+        "title": "Terraform drift fix",
+        "updated_at": 1789773485,
+        "updated_by": "user-a1235a8c93b7a88612f70c977de31a51",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-bd17c5e8d5ca69ab8a2e6a93c5580bb2",
+      "name": "API endpoint scaffold",
+      "created_by_user_id": "user-fd5166e6451b4cf36123fdf77656af72",
+      "created_at": 1788904819,
+      "updated_at": 1791324019,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nAPI endpoint scaffold for dept-eng.\n\n## Procedure\n1. ...",
+        "created_at": 1788904819,
+        "created_by": "user-fd5166e6451b4cf36123fdf77656af72",
+        "macro": "!api-endpoint-scaffold-9",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-bd17c5e8d5ca69ab8a2e6a93c5580bb2",
+        "title": "API endpoint scaffold",
+        "updated_at": 1791324019,
+        "updated_by": "user-fd5166e6451b4cf36123fdf77656af72",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-45d5a68d290a3abbc35b9fea1578d709",
+      "name": "Requirements to user stories",
+      "created_by_user_id": "user-63d62a39c0e3befd4c71e0fe5a0cdd7c",
+      "created_at": 1785169763,
+      "updated_at": 1786379363,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nRequirements to user stories for dept-data.\n\n## Procedure\n1. ...",
+        "created_at": 1785169763,
+        "created_by": "user-63d62a39c0e3befd4c71e0fe5a0cdd7c",
+        "macro": "!requirements-to-user-stories-10",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-45d5a68d290a3abbc35b9fea1578d709",
+        "title": "Requirements to user stories",
+        "updated_at": 1786379363,
+        "updated_by": "user-63d62a39c0e3befd4c71e0fe5a0cdd7c",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-5a5226e69d6429320066853d6de299a1",
+      "name": "Competitive research brief",
+      "created_by_user_id": "user-cf8ebc5accc56569f9e8a3692999b735",
+      "created_at": 1785273933,
+      "updated_at": 1785878733,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nCompetitive research brief for dept-eng.\n\n## Procedure\n1. ...",
+        "created_at": 1785273933,
+        "created_by": "user-cf8ebc5accc56569f9e8a3692999b735",
+        "macro": "!competitive-research-brief-11",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-5a5226e69d6429320066853d6de299a1",
+        "title": "Competitive research brief",
+        "updated_at": 1785878733,
+        "updated_by": "user-cf8ebc5accc56569f9e8a3692999b735",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-7930ba208b040f49d0be73eefd372539",
+      "name": "Process map from SOP",
+      "created_by_user_id": "user-b31022f0770c779837cc863bf2a03459",
+      "created_at": 1787068290,
+      "updated_at": 1787759490,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nProcess map from SOP for dept-data.\n\n## Procedure\n1. ...",
+        "created_at": 1787068290,
+        "created_by": "user-b31022f0770c779837cc863bf2a03459",
+        "macro": "!process-map-from-sop-12",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-7930ba208b040f49d0be73eefd372539",
+        "title": "Process map from SOP",
+        "updated_at": 1787759490,
+        "updated_by": "user-b31022f0770c779837cc863bf2a03459",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-adedda80bff9507dcd14a03e83599af6",
+      "name": "Stakeholder deck from notes",
+      "created_by_user_id": "user-1fd5a423706c5c5649e2623debd34616",
+      "created_at": 1786482549,
+      "updated_at": 1786914549,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nStakeholder deck from notes for dept-ops.\n\n## Procedure\n1. ...",
+        "created_at": 1786482549,
+        "created_by": "user-1fd5a423706c5c5649e2623debd34616",
+        "macro": "!stakeholder-deck-from-notes-13",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-adedda80bff9507dcd14a03e83599af6",
+        "title": "Stakeholder deck from notes",
+        "updated_at": 1786914549,
+        "updated_by": "user-1fd5a423706c5c5649e2623debd34616",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-d9f2dd0d4cc9f5f2e42e50374a552ea0",
+      "name": "Literature review",
+      "created_by_user_id": "user-b31022f0770c779837cc863bf2a03459",
+      "created_at": 1789483326,
+      "updated_at": 1789915326,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nLiterature review for dept-data.\n\n## Procedure\n1. ...",
+        "created_at": 1789483326,
+        "created_by": "user-b31022f0770c779837cc863bf2a03459",
+        "macro": "!literature-review-14",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-d9f2dd0d4cc9f5f2e42e50374a552ea0",
+        "title": "Literature review",
+        "updated_at": 1789915326,
+        "updated_by": "user-b31022f0770c779837cc863bf2a03459",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-92779574c4576cc335f789bca6b07458",
+      "name": "Dashboard refresh",
+      "created_by_user_id": "user-d39e198b44007d5ae88da71926242b40",
+      "created_at": 1784827389,
+      "updated_at": 1785950589,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nDashboard refresh for dept-ops.\n\n## Procedure\n1. ...",
+        "created_at": 1784827389,
+        "created_by": "user-d39e198b44007d5ae88da71926242b40",
+        "macro": "!dashboard-refresh-15",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-92779574c4576cc335f789bca6b07458",
+        "title": "Dashboard refresh",
+        "updated_at": 1785950589,
+        "updated_by": "user-d39e198b44007d5ae88da71926242b40",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-8116e3fc62e7c1a612d2fa0649e1cd13",
+      "name": "On-call runbook",
+      "created_by_user_id": "user-55fa1ab8458f1f193c07c57449257af1",
+      "created_at": 1789668740,
+      "updated_at": 1790878340,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nOn-call runbook for dept-data.\n\n## Procedure\n1. ...",
+        "created_at": 1789668740,
+        "created_by": "user-55fa1ab8458f1f193c07c57449257af1",
+        "macro": "!on-call-runbook-16",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-8116e3fc62e7c1a612d2fa0649e1cd13",
+        "title": "On-call runbook",
+        "updated_at": 1790878340,
+        "updated_by": "user-55fa1ab8458f1f193c07c57449257af1",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-ba370623bc5fd4ddd92f3c1edf70fb2a",
+      "name": "Fix failing CI",
+      "created_by_user_id": "user-b07aa066735435ea68949b8d00af5b3a",
+      "created_at": 1788299426,
+      "updated_at": 1788385826,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nFix failing CI for dept-ops.\n\n## Procedure\n1. ...",
+        "created_at": 1788299426,
+        "created_by": "user-b07aa066735435ea68949b8d00af5b3a",
+        "macro": "!fix-failing-ci-17",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-ba370623bc5fd4ddd92f3c1edf70fb2a",
+        "title": "Fix failing CI",
+        "updated_at": 1788385826,
+        "updated_by": "user-b07aa066735435ea68949b8d00af5b3a",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-c1836315330f8be1a689b4247a3a10e1",
+      "name": "Ticket to PR",
+      "created_by_user_id": "user-b289f2244ac9778d8da8eee40df56ac6",
+      "created_at": 1788368115,
+      "updated_at": 1790960115,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nTicket to PR for dept-ops.\n\n## Procedure\n1. ...",
+        "created_at": 1788368115,
+        "created_by": "user-b289f2244ac9778d8da8eee40df56ac6",
+        "macro": "!ticket-to-pr-18",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-c1836315330f8be1a689b4247a3a10e1",
+        "title": "Ticket to PR",
+        "updated_at": 1790960115,
+        "updated_by": "user-b289f2244ac9778d8da8eee40df56ac6",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-80a52e65afa2855967c9620428e333b6",
+      "name": "Upgrade dependency",
+      "created_by_user_id": "user-5c62b3a23a3c563e4bd6cee631b1b099",
+      "created_at": 1785534556,
+      "updated_at": 1788040156,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nUpgrade dependency for dept-ops.\n\n## Procedure\n1. ...",
+        "created_at": 1785534556,
+        "created_by": "user-5c62b3a23a3c563e4bd6cee631b1b099",
+        "macro": "!upgrade-dependency-19",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-80a52e65afa2855967c9620428e333b6",
+        "title": "Upgrade dependency",
+        "updated_at": 1788040156,
+        "updated_by": "user-5c62b3a23a3c563e4bd6cee631b1b099",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-f6d22a7baec76a82148b4376602a4e57",
+      "name": "Add unit tests",
+      "created_by_user_id": "user-55fa1ab8458f1f193c07c57449257af1",
+      "created_at": 1786720537,
+      "updated_at": 1788534937,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nAdd unit tests for dept-data.\n\n## Procedure\n1. ...",
+        "created_at": 1786720537,
+        "created_by": "user-55fa1ab8458f1f193c07c57449257af1",
+        "macro": "!add-unit-tests-20",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-f6d22a7baec76a82148b4376602a4e57",
+        "title": "Add unit tests",
+        "updated_at": 1788534937,
+        "updated_by": "user-55fa1ab8458f1f193c07c57449257af1",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-2f12b150605fb1eb4cc57e0d26332018",
+      "name": "Data pipeline backfill",
+      "created_by_user_id": "user-561e16d16105716bab0e664e9c3eb2d5",
+      "created_at": 1787236652,
+      "updated_at": 1789310252,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nData pipeline backfill for dept-ops.\n\n## Procedure\n1. ...",
+        "created_at": 1787236652,
+        "created_by": "user-561e16d16105716bab0e664e9c3eb2d5",
+        "macro": "!data-pipeline-backfill-21",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-2f12b150605fb1eb4cc57e0d26332018",
+        "title": "Data pipeline backfill",
+        "updated_at": 1789310252,
+        "updated_by": "user-561e16d16105716bab0e664e9c3eb2d5",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-3ee82983d557424191ddb9bf613d2de9",
+      "name": "SQL migration review",
+      "created_by_user_id": "user-778eedb3693dffbc6c6fa6115ab33edf",
+      "created_at": 1784246272,
+      "updated_at": 1785542272,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nSQL migration review for dept-eng.\n\n## Procedure\n1. ...",
+        "created_at": 1784246272,
+        "created_by": "user-778eedb3693dffbc6c6fa6115ab33edf",
+        "macro": "!sql-migration-review-22",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-3ee82983d557424191ddb9bf613d2de9",
+        "title": "SQL migration review",
+        "updated_at": 1785542272,
+        "updated_by": "user-778eedb3693dffbc6c6fa6115ab33edf",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-0e5d8c6a79db78628d7dd772608e2f5c",
+      "name": "Incident triage",
+      "created_by_user_id": "user-10714d5136c59dacb4d7e28e271e3ee2",
+      "created_at": 1786750194,
+      "updated_at": 1788478194,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nIncident triage for dept-data.\n\n## Procedure\n1. ...",
+        "created_at": 1786750194,
+        "created_by": "user-10714d5136c59dacb4d7e28e271e3ee2",
+        "macro": "!incident-triage-23",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-0e5d8c6a79db78628d7dd772608e2f5c",
+        "title": "Incident triage",
+        "updated_at": 1788478194,
+        "updated_by": "user-10714d5136c59dacb4d7e28e271e3ee2",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "playbook",
+      "asset_id": "playbook-1a2bd69c450f69eec2e79a985c238d8d",
+      "name": "Terraform drift fix",
+      "created_by_user_id": "user-4eb93effce88cb2dd4e80839fc3e058b",
+      "created_at": 1787848629,
+      "updated_at": 1788194229,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "## Overview\nTerraform drift fix for dept-eng.\n\n## Procedure\n1. ...",
+        "created_at": 1787848629,
+        "created_by": "user-4eb93effce88cb2dd4e80839fc3e058b",
+        "macro": "!terraform-drift-fix-24",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "playbook_id": "playbook-1a2bd69c450f69eec2e79a985c238d8d",
+        "title": "Terraform drift fix",
+        "updated_at": 1788194229,
+        "updated_by": "user-4eb93effce88cb2dd4e80839fc3e058b",
+        "structured_output_schema": null
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "name": "Nightly test sweep (ops)",
+      "created_by_user_id": "user-a003cd28ca8f3653c9af18f843b9da13",
+      "created_at": 1781904649,
+      "updated_at": 1783200649,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+        "name": "Nightly test sweep (ops)",
+        "enabled": true,
+        "created_at": 1781904649,
+        "updated_at": 1783200649,
+        "created_by": {
+          "id": "user-a003cd28ca8f3653c9af18f843b9da13",
+          "type": "user",
+          "name": "Ethan Ivanova"
+        },
+        "last_edited_by": {
+          "id": "user-a003cd28ca8f3653c9af18f843b9da13",
+          "type": "user",
+          "name": "Ethan Ivanova"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-f90c9f84b184071c7b35b9f96c80423a",
+            "event_type": "schedule:recurring",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Nightly test sweep.",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": null,
+              "repos": [
+                "acme-corp/platform-config"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1792442401,
+          "status": "succeeded"
+        },
+        "next_run_at": 1792647051
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-5cda038513eb43581ab9f6621bc02912",
+      "name": "PR auto-review (data)",
+      "created_by_user_id": "user-b31022f0770c779837cc863bf2a03459",
+      "created_at": 1784915698,
+      "updated_at": 1784915698,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-5cda038513eb43581ab9f6621bc02912",
+        "name": "PR auto-review (data)",
+        "enabled": true,
+        "created_at": 1784915698,
+        "updated_at": 1784915698,
+        "created_by": {
+          "id": "user-b31022f0770c779837cc863bf2a03459",
+          "type": "user",
+          "name": "Liam Kim"
+        },
+        "last_edited_by": {
+          "id": "user-b31022f0770c779837cc863bf2a03459",
+          "type": "user",
+          "name": "Liam Kim"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-8aa431e929aaaa7e483eb6a13d51d528",
+            "event_type": "github:pull_request",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "PR auto-review.",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": null,
+              "repos": [
+                "acme-corp/data-pipelines"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1791989670,
+          "status": "succeeded"
+        },
+        "next_run_at": null
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "name": "Dependency bump (data)",
+      "created_by_user_id": "user-55fa1ab8458f1f193c07c57449257af1",
+      "created_at": 1781103177,
+      "updated_at": 1782571977,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+        "name": "Dependency bump (data)",
+        "enabled": true,
+        "created_at": 1781103177,
+        "updated_at": 1782571977,
+        "created_by": {
+          "id": "user-55fa1ab8458f1f193c07c57449257af1",
+          "type": "user",
+          "name": "Mateo Muller"
+        },
+        "last_edited_by": {
+          "id": "user-55fa1ab8458f1f193c07c57449257af1",
+          "type": "user",
+          "name": "Mateo Muller"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-1af4cf72da622059279163f402088c91",
+            "event_type": "schedule:recurring",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Dependency bump.",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": null,
+              "repos": [
+                "acme-corp/ml-models"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1792508380,
+          "status": "succeeded"
+        },
+        "next_run_at": 1793086553
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "name": "Weekly cost report (data)",
+      "created_by_user_id": "user-e43e4288a2b5b4985cb85aedf5f62c97",
+      "created_at": 1786490658,
+      "updated_at": 1787786658,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+        "name": "Weekly cost report (data)",
+        "enabled": true,
+        "created_at": 1786490658,
+        "updated_at": 1787786658,
+        "created_by": {
+          "id": "user-e43e4288a2b5b4985cb85aedf5f62c97",
+          "type": "user",
+          "name": "Alex Johnson"
+        },
+        "last_edited_by": {
+          "id": "user-e43e4288a2b5b4985cb85aedf5f62c97",
+          "type": "user",
+          "name": "Alex Johnson"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-69ff6cc074bc405cffc19ef6a61f135f",
+            "event_type": "schedule:recurring",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Weekly cost report.",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": null,
+              "repos": [
+                "acme-corp/ml-models"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1792517696,
+          "status": "succeeded"
+        },
+        "next_run_at": 1793078471
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "name": "Slack bug triage (ops)",
+      "created_by_user_id": "user-c342bd2bf295456e19675f06bd767e35",
+      "created_at": 1786395479,
+      "updated_at": 1787000279,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+        "name": "Slack bug triage (ops)",
+        "enabled": true,
+        "created_at": 1786395479,
+        "updated_at": 1787000279,
+        "created_by": {
+          "id": "user-c342bd2bf295456e19675f06bd767e35",
+          "type": "user",
+          "name": "Noah Brown"
+        },
+        "last_edited_by": {
+          "id": "user-c342bd2bf295456e19675f06bd767e35",
+          "type": "user",
+          "name": "Noah Brown"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-c93a7471ce9def4ec7affa24b9ef9fa8",
+            "event_type": "slack:message",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Slack bug triage. @playbook:playbook-ebd14d2c75b2745504cc3ede6fac1673",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": "playbook-ebd14d2c75b2745504cc3ede6fac1673",
+              "repos": [
+                "acme-corp/platform-config"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1792536280,
+          "status": "succeeded"
+        },
+        "next_run_at": null
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-1f4f4a0f507ffc32c78e4415252151f9",
+      "name": "Linear ticket to PR (eng)",
+      "created_by_user_id": "user-eb2263dd87c5421eec24a3c5c754108f",
+      "created_at": 1786627725,
+      "updated_at": 1787491725,
+      "is_enabled": false,
+      "raw": {
+        "automation_id": "auto-1f4f4a0f507ffc32c78e4415252151f9",
+        "name": "Linear ticket to PR (eng)",
+        "enabled": false,
+        "created_at": 1786627725,
+        "updated_at": 1787491725,
+        "created_by": {
+          "id": "user-eb2263dd87c5421eec24a3c5c754108f",
+          "type": "user",
+          "name": "Maria Tanaka"
+        },
+        "last_edited_by": {
+          "id": "user-eb2263dd87c5421eec24a3c5c754108f",
+          "type": "user",
+          "name": "Maria Tanaka"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-cb94cf8d9145aa387722ec2c36b9ca35",
+            "event_type": "linear:issue",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Linear ticket to PR. @playbook:playbook-0e5d8c6a79db78628d7dd772608e2f5c",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": "playbook-0e5d8c6a79db78628d7dd772608e2f5c",
+              "repos": [
+                "acme-corp/mobile-api"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": null,
+        "next_run_at": null
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-a8d3bb7d3e0c5ec5df748fb5d5e6162f",
+      "name": "Release notes draft (data)",
+      "created_by_user_id": "user-dde9f86322bd33886db99102a48b3dbe",
+      "created_at": 1789757530,
+      "updated_at": 1789930330,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-a8d3bb7d3e0c5ec5df748fb5d5e6162f",
+        "name": "Release notes draft (data)",
+        "enabled": true,
+        "created_at": 1789757530,
+        "updated_at": 1789930330,
+        "created_by": {
+          "id": "user-dde9f86322bd33886db99102a48b3dbe",
+          "type": "user",
+          "name": "Chen Brown"
+        },
+        "last_edited_by": {
+          "id": "user-dde9f86322bd33886db99102a48b3dbe",
+          "type": "user",
+          "name": "Chen Brown"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-0f6da7517e9e7b8af8c59ac6133ca9cf",
+            "event_type": "github:push",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Release notes draft.",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": null,
+              "repos": [
+                "acme-corp/data-pipelines"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1791811645,
+          "status": "succeeded"
+        },
+        "next_run_at": null
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-913864740473b982d1a529db0b90b03d",
+      "name": "Alert follow-up (eng)",
+      "created_by_user_id": "user-815ef6d13b8faa1837f8a88b17fc695a",
+      "created_at": 1782222392,
+      "updated_at": 1782827192,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+        "name": "Alert follow-up (eng)",
+        "enabled": true,
+        "created_at": 1782222392,
+        "updated_at": 1782827192,
+        "created_by": {
+          "id": "user-815ef6d13b8faa1837f8a88b17fc695a",
+          "type": "user",
+          "name": "Hannah Smith"
+        },
+        "last_edited_by": {
+          "id": "user-815ef6d13b8faa1837f8a88b17fc695a",
+          "type": "user",
+          "name": "Hannah Smith"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-c1472ff22ad47bba80ce350586780a98",
+            "event_type": "webhook:incoming",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Alert follow-up.",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": null,
+              "repos": [
+                "acme-corp/web-app"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1792501765,
+          "status": "succeeded"
+        },
+        "next_run_at": null
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "name": "Teams research request (data)",
+      "created_by_user_id": "user-55fa1ab8458f1f193c07c57449257af1",
+      "created_at": 1787698983,
+      "updated_at": 1788217383,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+        "name": "Teams research request (data)",
+        "enabled": true,
+        "created_at": 1787698983,
+        "updated_at": 1788217383,
+        "created_by": {
+          "id": "user-55fa1ab8458f1f193c07c57449257af1",
+          "type": "user",
+          "name": "Mateo Muller"
+        },
+        "last_edited_by": {
+          "id": "user-55fa1ab8458f1f193c07c57449257af1",
+          "type": "user",
+          "name": "Mateo Muller"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-8de58a886a93716a22bca1044001570a",
+            "event_type": "teams:message",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Teams research request.",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": null,
+              "repos": [
+                "acme-corp/data-pipelines"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1792450608,
+          "status": "succeeded"
+        },
+        "next_run_at": null
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "name": "Nightly test sweep (data)",
+      "created_by_user_id": "user-e43e4288a2b5b4985cb85aedf5f62c97",
+      "created_at": 1782402588,
+      "updated_at": 1784044188,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+        "name": "Nightly test sweep (data)",
+        "enabled": true,
+        "created_at": 1782402588,
+        "updated_at": 1784044188,
+        "created_by": {
+          "id": "user-e43e4288a2b5b4985cb85aedf5f62c97",
+          "type": "user",
+          "name": "Alex Johnson"
+        },
+        "last_edited_by": {
+          "id": "user-e43e4288a2b5b4985cb85aedf5f62c97",
+          "type": "user",
+          "name": "Alex Johnson"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-e834fb5be879c9a60ae9eacc71c966b3",
+            "event_type": "schedule:recurring",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Nightly test sweep. @playbook:playbook-2f12b150605fb1eb4cc57e0d26332018",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": "playbook-2f12b150605fb1eb4cc57e0d26332018",
+              "repos": [
+                "acme-corp/ml-models"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1791934055,
+          "status": "succeeded"
+        },
+        "next_run_at": 1793020141
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "name": "PR auto-review (data)",
+      "created_by_user_id": "user-8dedf9fb4bb00f20b27c40266703b636",
+      "created_at": 1789065162,
+      "updated_at": 1789065162,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+        "name": "PR auto-review (data)",
+        "enabled": true,
+        "created_at": 1789065162,
+        "updated_at": 1789065162,
+        "created_by": {
+          "id": "user-8dedf9fb4bb00f20b27c40266703b636",
+          "type": "user",
+          "name": "Noah Lopez"
+        },
+        "last_edited_by": {
+          "id": "user-8dedf9fb4bb00f20b27c40266703b636",
+          "type": "user",
+          "name": "Noah Lopez"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-4a36a7c0f0cc4f56d24289ea39597465",
+            "event_type": "github:pull_request",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "PR auto-review. @playbook:playbook-f6d22a7baec76a82148b4376602a4e57",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": "playbook-f6d22a7baec76a82148b4376602a4e57",
+              "repos": [
+                "acme-corp/ml-models"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1792102873,
+          "status": "succeeded"
+        },
+        "next_run_at": null
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-de74e1224aed4cc88d28eef5c7bbbcf8",
+      "name": "Dependency bump (data)",
+      "created_by_user_id": "user-82ec9f2dfbf6e16f9b3080d56fb78271",
+      "created_at": 1786543324,
+      "updated_at": 1787234524,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-de74e1224aed4cc88d28eef5c7bbbcf8",
+        "name": "Dependency bump (data)",
+        "enabled": true,
+        "created_at": 1786543324,
+        "updated_at": 1787234524,
+        "created_by": {
+          "id": "user-82ec9f2dfbf6e16f9b3080d56fb78271",
+          "type": "user",
+          "name": "Grace Johnson"
+        },
+        "last_edited_by": {
+          "id": "user-82ec9f2dfbf6e16f9b3080d56fb78271",
+          "type": "user",
+          "name": "Grace Johnson"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-80e1cc418a9a727fb2a12a5551a0bd7c",
+            "event_type": "schedule:recurring",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Dependency bump.",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": null,
+              "repos": [
+                "acme-corp/data-pipelines"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1792434929,
+          "status": "succeeded"
+        },
+        "next_run_at": 1792859938
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-3a38204b2091a7067eb3a98fde7a69b4",
+      "name": "Weekly cost report (data)",
+      "created_by_user_id": "user-dde9f86322bd33886db99102a48b3dbe",
+      "created_at": 1784741572,
+      "updated_at": 1786383172,
+      "is_enabled": false,
+      "raw": {
+        "automation_id": "auto-3a38204b2091a7067eb3a98fde7a69b4",
+        "name": "Weekly cost report (data)",
+        "enabled": false,
+        "created_at": 1784741572,
+        "updated_at": 1786383172,
+        "created_by": {
+          "id": "user-dde9f86322bd33886db99102a48b3dbe",
+          "type": "user",
+          "name": "Chen Brown"
+        },
+        "last_edited_by": {
+          "id": "user-dde9f86322bd33886db99102a48b3dbe",
+          "type": "user",
+          "name": "Chen Brown"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-1d4c5eb73b906c080cb140eda7ee2f23",
+            "event_type": "schedule:recurring",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Weekly cost report.",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": null,
+              "repos": [
+                "acme-corp/data-pipelines"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": null,
+        "next_run_at": null
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "name": "Slack bug triage (eng)",
+      "created_by_user_id": "user-adf4e62d6651529e8268690ba43825b5",
+      "created_at": 1783710837,
+      "updated_at": 1785179637,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+        "name": "Slack bug triage (eng)",
+        "enabled": true,
+        "created_at": 1783710837,
+        "updated_at": 1785179637,
+        "created_by": {
+          "id": "user-adf4e62d6651529e8268690ba43825b5",
+          "type": "user",
+          "name": "Aisha Smith"
+        },
+        "last_edited_by": {
+          "id": "user-adf4e62d6651529e8268690ba43825b5",
+          "type": "user",
+          "name": "Aisha Smith"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-be2badee7848c332ee1caec8b61d1f43",
+            "event_type": "slack:message",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Slack bug triage. @playbook:playbook-899ca782e3236d1a3c1bdacc18e19331",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": "playbook-899ca782e3236d1a3c1bdacc18e19331",
+              "repos": [
+                "acme-corp/web-app"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1792015800,
+          "status": "succeeded"
+        },
+        "next_run_at": null
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "name": "Linear ticket to PR (eng)",
+      "created_by_user_id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+      "created_at": 1782341118,
+      "updated_at": 1782513918,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+        "name": "Linear ticket to PR (eng)",
+        "enabled": true,
+        "created_at": 1782341118,
+        "updated_at": 1782513918,
+        "created_by": {
+          "id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+          "type": "user",
+          "name": "Zara Cohen"
+        },
+        "last_edited_by": {
+          "id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+          "type": "user",
+          "name": "Zara Cohen"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-55d8a81a81ceb20e281f45ff53bddb05",
+            "event_type": "linear:issue",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Linear ticket to PR.",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": null,
+              "repos": [
+                "acme-corp/mobile-api"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1792529543,
+          "status": "succeeded"
+        },
+        "next_run_at": null
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-84c62e4b0c995e2da7a998ab103f3a46",
+      "name": "Release notes draft (eng)",
+      "created_by_user_id": "user-96a402f23ae8cc938dcdcd03969b6662",
+      "created_at": 1789663225,
+      "updated_at": 1790095225,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-84c62e4b0c995e2da7a998ab103f3a46",
+        "name": "Release notes draft (eng)",
+        "enabled": true,
+        "created_at": 1789663225,
+        "updated_at": 1790095225,
+        "created_by": {
+          "id": "user-96a402f23ae8cc938dcdcd03969b6662",
+          "type": "user",
+          "name": "Wei Muller"
+        },
+        "last_edited_by": {
+          "id": "user-96a402f23ae8cc938dcdcd03969b6662",
+          "type": "user",
+          "name": "Wei Muller"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-dc16cbae654135f889238eb6d690efa9",
+            "event_type": "github:push",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Release notes draft. @playbook:playbook-c1836315330f8be1a689b4247a3a10e1",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": "playbook-c1836315330f8be1a689b4247a3a10e1",
+              "repos": [
+                "acme-corp/payments-service"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1792509649,
+          "status": "succeeded"
+        },
+        "next_run_at": null
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-602cf60413d754d6b30269aa6cfacecc",
+      "name": "Alert follow-up (ops)",
+      "created_by_user_id": "user-b289f2244ac9778d8da8eee40df56ac6",
+      "created_at": 1782149543,
+      "updated_at": 1782408743,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-602cf60413d754d6b30269aa6cfacecc",
+        "name": "Alert follow-up (ops)",
+        "enabled": true,
+        "created_at": 1782149543,
+        "updated_at": 1782408743,
+        "created_by": {
+          "id": "user-b289f2244ac9778d8da8eee40df56ac6",
+          "type": "user",
+          "name": "Ethan Shah"
+        },
+        "last_edited_by": {
+          "id": "user-b289f2244ac9778d8da8eee40df56ac6",
+          "type": "user",
+          "name": "Ethan Shah"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-dea7e1ae7006a2c63286af002a8be289",
+            "event_type": "webhook:incoming",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Alert follow-up. @playbook:playbook-fe0490593985fb6217dc8eff687213f9",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": "playbook-fe0490593985fb6217dc8eff687213f9",
+              "repos": [
+                "acme-corp/infra-terraform"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1792443377,
+          "status": "succeeded"
+        },
+        "next_run_at": null
+      }
+    },
+    {
+      "asset_type": "automation",
+      "asset_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "name": "Teams research request (eng)",
+      "created_by_user_id": "user-a39231a7d777a4774c66e0a8a013ac6e",
+      "created_at": 1783975835,
+      "updated_at": 1785099035,
+      "is_enabled": true,
+      "raw": {
+        "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+        "name": "Teams research request (eng)",
+        "enabled": true,
+        "created_at": 1783975835,
+        "updated_at": 1785099035,
+        "created_by": {
+          "id": "user-a39231a7d777a4774c66e0a8a013ac6e",
+          "type": "user",
+          "name": "Diego Khan"
+        },
+        "last_edited_by": {
+          "id": "user-a39231a7d777a4774c66e0a8a013ac6e",
+          "type": "user",
+          "name": "Diego Khan"
+        },
+        "triggers": [
+          {
+            "trigger_id": "trg-b1f20ebf7d76c495710fc4158f7c0071",
+            "event_type": "teams:message",
+            "conditions": null,
+            "replies": [],
+            "webhook": null
+          }
+        ],
+        "actions": [
+          {
+            "type": "start_session",
+            "prompt": "Teams research request.",
+            "session": {
+              "bypass_approval": false,
+              "notifications": null,
+              "platform": null,
+              "playbook_id": null,
+              "repos": [
+                "acme-corp/mobile-api"
+              ],
+              "tags": []
+            }
+          }
+        ],
+        "concurrency": null,
+        "limits": null,
+        "notifications": null,
+        "metadata": {},
+        "last_invocation": {
+          "fired_at": 1792509410,
+          "status": "succeeded"
+        },
+        "next_run_at": null
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-1b1f2eb16e3255a8cbd5cc86f73936e9",
+      "name": "Repo setup (ops)",
+      "created_by_user_id": null,
+      "created_at": 1785950469,
+      "updated_at": 1788369669,
+      "is_enabled": false,
+      "raw": {
+        "access_type": "org",
+        "body": "Repo setup: ...",
+        "created_at": 1785950469,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": false,
+        "macro": null,
+        "name": "Repo setup (ops)",
+        "note_id": "note-1b1f2eb16e3255a8cbd5cc86f73936e9",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/infra-terraform",
+        "trigger": "When working on repo setup",
+        "updated_at": 1788369669
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-49e64c2289a0b7eb398f569b465cc2cb",
+      "name": "Coding standards (eng)",
+      "created_by_user_id": null,
+      "created_at": 1780935732,
+      "updated_at": 1783614132,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Coding standards: ...",
+        "created_at": 1780935732,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Coding standards (eng)",
+        "note_id": "note-49e64c2289a0b7eb398f569b465cc2cb",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on coding standards",
+        "updated_at": 1783614132
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-e0688849eec71a30dfda35b228b2bf21",
+      "name": "Deploy process (eng)",
+      "created_by_user_id": null,
+      "created_at": 1785451662,
+      "updated_at": 1786834062,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Deploy process: ...",
+        "created_at": 1785451662,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Deploy process (eng)",
+        "note_id": "note-e0688849eec71a30dfda35b228b2bf21",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on deploy process",
+        "updated_at": 1786834062
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-c362a810a2611b8d9620bee66406face",
+      "name": "Data warehouse schema (eng)",
+      "created_by_user_id": null,
+      "created_at": 1785869160,
+      "updated_at": 1786214760,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Data warehouse schema: ...",
+        "created_at": 1785869160,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Data warehouse schema (eng)",
+        "note_id": "note-c362a810a2611b8d9620bee66406face",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on data warehouse schema",
+        "updated_at": 1786214760
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-0b3d0c3617d0981047a2a10bb62edb49",
+      "name": "Test conventions (ops)",
+      "created_by_user_id": null,
+      "created_at": 1782775830,
+      "updated_at": 1785627030,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Test conventions: ...",
+        "created_at": 1782775830,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Test conventions (ops)",
+        "note_id": "note-0b3d0c3617d0981047a2a10bb62edb49",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on test conventions",
+        "updated_at": 1785627030
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-2e0869c1453b45fe636cf4995254aad3",
+      "name": "Secrets handling (data)",
+      "created_by_user_id": null,
+      "created_at": 1788815960,
+      "updated_at": 1788902360,
+      "is_enabled": false,
+      "raw": {
+        "access_type": "org",
+        "body": "Secrets handling: ...",
+        "created_at": 1788815960,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": false,
+        "macro": null,
+        "name": "Secrets handling (data)",
+        "note_id": "note-2e0869c1453b45fe636cf4995254aad3",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on secrets handling",
+        "updated_at": 1788902360
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-b173fcdf3fe1e8f335adde8843e4f668",
+      "name": "Service ownership (eng)",
+      "created_by_user_id": null,
+      "created_at": 1780578386,
+      "updated_at": 1780578386,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Service ownership: ...",
+        "created_at": 1780578386,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Service ownership (eng)",
+        "note_id": "note-b173fcdf3fe1e8f335adde8843e4f668",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/web-app",
+        "trigger": "When working on service ownership",
+        "updated_at": 1780578386
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-140ff5896c624c2c0aeccec7204db9da",
+      "name": "Release checklist (eng)",
+      "created_by_user_id": null,
+      "created_at": 1783620607,
+      "updated_at": 1787076607,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Release checklist: ...",
+        "created_at": 1783620607,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Release checklist (eng)",
+        "note_id": "note-140ff5896c624c2c0aeccec7204db9da",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on release checklist",
+        "updated_at": 1787076607
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-052226b98366663668d576b8a6ce6d7a",
+      "name": "dbt conventions (eng)",
+      "created_by_user_id": null,
+      "created_at": 1784901673,
+      "updated_at": 1784901673,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "dbt conventions: ...",
+        "created_at": 1784901673,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "dbt conventions (eng)",
+        "note_id": "note-052226b98366663668d576b8a6ce6d7a",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on dbt conventions",
+        "updated_at": 1784901673
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-503be7882d445af8fc9476b1a18b5d15",
+      "name": "Kubernetes access (eng)",
+      "created_by_user_id": null,
+      "created_at": 1785967796,
+      "updated_at": 1787090996,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Kubernetes access: ...",
+        "created_at": 1785967796,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Kubernetes access (eng)",
+        "note_id": "note-503be7882d445af8fc9476b1a18b5d15",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/mobile-api",
+        "trigger": "When working on kubernetes access",
+        "updated_at": 1787090996
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-198d13a40cd20e4376dae194439db29d",
+      "name": "Monitoring links (eng)",
+      "created_by_user_id": null,
+      "created_at": 1785353628,
+      "updated_at": 1786908828,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Monitoring links: ...",
+        "created_at": 1785353628,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Monitoring links (eng)",
+        "note_id": "note-198d13a40cd20e4376dae194439db29d",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on monitoring links",
+        "updated_at": 1786908828
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-39112943d10bf4dc0de4faf4d34794cc",
+      "name": "Branch naming (data)",
+      "created_by_user_id": null,
+      "created_at": 1786483075,
+      "updated_at": 1789852675,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Branch naming: ...",
+        "created_at": 1786483075,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Branch naming (data)",
+        "note_id": "note-39112943d10bf4dc0de4faf4d34794cc",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on branch naming",
+        "updated_at": 1789852675
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-08453b2f8a8a4105c0eb887534396729",
+      "name": "PR template (eng)",
+      "created_by_user_id": null,
+      "created_at": 1785338837,
+      "updated_at": 1788708437,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "PR template: ...",
+        "created_at": 1785338837,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "PR template (eng)",
+        "note_id": "note-08453b2f8a8a4105c0eb887534396729",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on pr template",
+        "updated_at": 1788708437
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-d5ee25876c98fd9baf76b6c2dd6d6b41",
+      "name": "Python style (eng)",
+      "created_by_user_id": null,
+      "created_at": 1783963685,
+      "updated_at": 1786296485,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Python style: ...",
+        "created_at": 1783963685,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Python style (eng)",
+        "note_id": "note-d5ee25876c98fd9baf76b6c2dd6d6b41",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on python style",
+        "updated_at": 1786296485
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-7caa281b4e336644c65720ae5bd67d4d",
+      "name": "Airflow DAG patterns (data)",
+      "created_by_user_id": null,
+      "created_at": 1787859066,
+      "updated_at": 1789327866,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Airflow DAG patterns: ...",
+        "created_at": 1787859066,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Airflow DAG patterns (data)",
+        "note_id": "note-7caa281b4e336644c65720ae5bd67d4d",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/data-pipelines",
+        "trigger": "When working on airflow dag patterns",
+        "updated_at": 1789327866
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-f8205aa7996f7e8867cbfc39f54f1b92",
+      "name": "Incident severity levels (eng)",
+      "created_by_user_id": null,
+      "created_at": 1789054992,
+      "updated_at": 1790610192,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Incident severity levels: ...",
+        "created_at": 1789054992,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Incident severity levels (eng)",
+        "note_id": "note-f8205aa7996f7e8867cbfc39f54f1b92",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/payments-service",
+        "trigger": "When working on incident severity levels",
+        "updated_at": 1790610192
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-6f74e55d99a9af6aed05473278bf46fa",
+      "name": "BRD template (eng)",
+      "created_by_user_id": null,
+      "created_at": 1782825406,
+      "updated_at": 1783257406,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "BRD template: ...",
+        "created_at": 1782825406,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "BRD template (eng)",
+        "note_id": "note-6f74e55d99a9af6aed05473278bf46fa",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/mobile-api",
+        "trigger": "When working on brd template",
+        "updated_at": 1783257406
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-f53f091e8a9e0964db6a34eac3a58237",
+      "name": "Research citation style (data)",
+      "created_by_user_id": null,
+      "created_at": 1780498326,
+      "updated_at": 1783867926,
+      "is_enabled": false,
+      "raw": {
+        "access_type": "org",
+        "body": "Research citation style: ...",
+        "created_at": 1780498326,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": false,
+        "macro": null,
+        "name": "Research citation style (data)",
+        "note_id": "note-f53f091e8a9e0964db6a34eac3a58237",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on research citation style",
+        "updated_at": 1783867926
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-a50768979afa826744791214b5def807",
+      "name": "Slide deck branding (data)",
+      "created_by_user_id": null,
+      "created_at": 1785275348,
+      "updated_at": 1787262548,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Slide deck branding: ...",
+        "created_at": 1785275348,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Slide deck branding (data)",
+        "note_id": "note-a50768979afa826744791214b5def807",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on slide deck branding",
+        "updated_at": 1787262548
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-ba23b07a703c1286b71714cd200291bb",
+      "name": "Glossary of business terms (eng)",
+      "created_by_user_id": null,
+      "created_at": 1784903544,
+      "updated_at": 1787581944,
+      "is_enabled": false,
+      "raw": {
+        "access_type": "org",
+        "body": "Glossary of business terms: ...",
+        "created_at": 1784903544,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": false,
+        "macro": null,
+        "name": "Glossary of business terms (eng)",
+        "note_id": "note-ba23b07a703c1286b71714cd200291bb",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/web-app",
+        "trigger": "When working on glossary of business terms",
+        "updated_at": 1787581944
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-f7980131a885a7b410372a5cb893b08a",
+      "name": "Repo setup (data)",
+      "created_by_user_id": null,
+      "created_at": 1785767554,
+      "updated_at": 1788618754,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Repo setup: ...",
+        "created_at": 1785767554,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Repo setup (data)",
+        "note_id": "note-f7980131a885a7b410372a5cb893b08a",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on repo setup",
+        "updated_at": 1788618754
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-3ff69f4195082801e3be7ca05df924fb",
+      "name": "Coding standards (eng)",
+      "created_by_user_id": null,
+      "created_at": 1784832963,
+      "updated_at": 1785264963,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Coding standards: ...",
+        "created_at": 1784832963,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Coding standards (eng)",
+        "note_id": "note-3ff69f4195082801e3be7ca05df924fb",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on coding standards",
+        "updated_at": 1785264963
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-a9dcfe52e7f2418a953fcfd460694b6d",
+      "name": "Deploy process (eng)",
+      "created_by_user_id": null,
+      "created_at": 1780695708,
+      "updated_at": 1782250908,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Deploy process: ...",
+        "created_at": 1780695708,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Deploy process (eng)",
+        "note_id": "note-a9dcfe52e7f2418a953fcfd460694b6d",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/web-app",
+        "trigger": "When working on deploy process",
+        "updated_at": 1782250908
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-b646e2b17800e27a9ace63ccd89c83f6",
+      "name": "Data warehouse schema (ops)",
+      "created_by_user_id": null,
+      "created_at": 1788814808,
+      "updated_at": 1791493208,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Data warehouse schema: ...",
+        "created_at": 1788814808,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Data warehouse schema (ops)",
+        "note_id": "note-b646e2b17800e27a9ace63ccd89c83f6",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/platform-config",
+        "trigger": "When working on data warehouse schema",
+        "updated_at": 1791493208
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-e1f8d1929ba4d5a60178de26ceb557ac",
+      "name": "Test conventions (data)",
+      "created_by_user_id": null,
+      "created_at": 1789505636,
+      "updated_at": 1792011236,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Test conventions: ...",
+        "created_at": 1789505636,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Test conventions (data)",
+        "note_id": "note-e1f8d1929ba4d5a60178de26ceb557ac",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/ml-models",
+        "trigger": "When working on test conventions",
+        "updated_at": 1792011236
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-d5c97d5d0e5779ecbe1a070fed83a4c8",
+      "name": "Secrets handling (data)",
+      "created_by_user_id": null,
+      "created_at": 1787332179,
+      "updated_at": 1789060179,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Secrets handling: ...",
+        "created_at": 1787332179,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Secrets handling (data)",
+        "note_id": "note-d5c97d5d0e5779ecbe1a070fed83a4c8",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on secrets handling",
+        "updated_at": 1789060179
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-d017010817c95aaa21bd55eb915aa3c0",
+      "name": "Service ownership (eng)",
+      "created_by_user_id": null,
+      "created_at": 1788200271,
+      "updated_at": 1788718671,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Service ownership: ...",
+        "created_at": 1788200271,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Service ownership (eng)",
+        "note_id": "note-d017010817c95aaa21bd55eb915aa3c0",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on service ownership",
+        "updated_at": 1788718671
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-2c649adfa998c8e1361241be8b8ce7be",
+      "name": "Release checklist (data)",
+      "created_by_user_id": null,
+      "created_at": 1787688477,
+      "updated_at": 1789675677,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Release checklist: ...",
+        "created_at": 1787688477,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Release checklist (data)",
+        "note_id": "note-2c649adfa998c8e1361241be8b8ce7be",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/ml-models",
+        "trigger": "When working on release checklist",
+        "updated_at": 1789675677
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-35fab5282ad3136fa33817fab9db1388",
+      "name": "dbt conventions (eng)",
+      "created_by_user_id": null,
+      "created_at": 1787772278,
+      "updated_at": 1788031478,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "dbt conventions: ...",
+        "created_at": 1787772278,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "dbt conventions (eng)",
+        "note_id": "note-35fab5282ad3136fa33817fab9db1388",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on dbt conventions",
+        "updated_at": 1788031478
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-a7222ea2261b50487f695b97e581d601",
+      "name": "Kubernetes access (data)",
+      "created_by_user_id": null,
+      "created_at": 1780702020,
+      "updated_at": 1782775620,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Kubernetes access: ...",
+        "created_at": 1780702020,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Kubernetes access (data)",
+        "note_id": "note-a7222ea2261b50487f695b97e581d601",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on kubernetes access",
+        "updated_at": 1782775620
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-8dac210d5eb38ef5b24070ca2b056167",
+      "name": "Monitoring links (data)",
+      "created_by_user_id": null,
+      "created_at": 1787352333,
+      "updated_at": 1788043533,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Monitoring links: ...",
+        "created_at": 1787352333,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Monitoring links (data)",
+        "note_id": "note-8dac210d5eb38ef5b24070ca2b056167",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/data-pipelines",
+        "trigger": "When working on monitoring links",
+        "updated_at": 1788043533
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-8592a38fdb62a1f76964eb1616232e87",
+      "name": "Branch naming (data)",
+      "created_by_user_id": null,
+      "created_at": 1784240965,
+      "updated_at": 1787437765,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Branch naming: ...",
+        "created_at": 1784240965,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Branch naming (data)",
+        "note_id": "note-8592a38fdb62a1f76964eb1616232e87",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on branch naming",
+        "updated_at": 1787437765
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-49d2cac02dc69c90e5dfc7af6403c4bc",
+      "name": "PR template (eng)",
+      "created_by_user_id": null,
+      "created_at": 1781732236,
+      "updated_at": 1783201036,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "PR template: ...",
+        "created_at": 1781732236,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "PR template (eng)",
+        "note_id": "note-49d2cac02dc69c90e5dfc7af6403c4bc",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/web-app",
+        "trigger": "When working on pr template",
+        "updated_at": 1783201036
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-9a6978cf515893757d8f235031c77a44",
+      "name": "Python style (ops)",
+      "created_by_user_id": null,
+      "created_at": 1787004530,
+      "updated_at": 1788991730,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Python style: ...",
+        "created_at": 1787004530,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Python style (ops)",
+        "note_id": "note-9a6978cf515893757d8f235031c77a44",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on python style",
+        "updated_at": 1788991730
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-7c2257a0c75ff3685f7ddbb1480afe9f",
+      "name": "Airflow DAG patterns (eng)",
+      "created_by_user_id": null,
+      "created_at": 1789080662,
+      "updated_at": 1789944662,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Airflow DAG patterns: ...",
+        "created_at": 1789080662,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Airflow DAG patterns (eng)",
+        "note_id": "note-7c2257a0c75ff3685f7ddbb1480afe9f",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on airflow dag patterns",
+        "updated_at": 1789944662
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-daf93e99fc267da64a640fc16843a5c3",
+      "name": "Incident severity levels (ops)",
+      "created_by_user_id": null,
+      "created_at": 1789680366,
+      "updated_at": 1792272366,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Incident severity levels: ...",
+        "created_at": 1789680366,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Incident severity levels (ops)",
+        "note_id": "note-daf93e99fc267da64a640fc16843a5c3",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on incident severity levels",
+        "updated_at": 1792272366
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-a94706630e73752359ecc846697437ea",
+      "name": "BRD template (data)",
+      "created_by_user_id": null,
+      "created_at": 1786382807,
+      "updated_at": 1789579607,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "BRD template: ...",
+        "created_at": 1786382807,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": true,
+        "macro": null,
+        "name": "BRD template (data)",
+        "note_id": "note-a94706630e73752359ecc846697437ea",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/ml-models",
+        "trigger": "When working on brd template",
+        "updated_at": 1789579607
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-dc0db2660e29ed9a0518bd4dc840789b",
+      "name": "Research citation style (eng)",
+      "created_by_user_id": null,
+      "created_at": 1788538275,
+      "updated_at": 1790179875,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Research citation style: ...",
+        "created_at": 1788538275,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Research citation style (eng)",
+        "note_id": "note-dc0db2660e29ed9a0518bd4dc840789b",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on research citation style",
+        "updated_at": 1790179875
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-1c5f3cba150d28eb93683dd65050127e",
+      "name": "Slide deck branding (data)",
+      "created_by_user_id": null,
+      "created_at": 1785513437,
+      "updated_at": 1786204637,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Slide deck branding: ...",
+        "created_at": 1785513437,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Slide deck branding (data)",
+        "note_id": "note-1c5f3cba150d28eb93683dd65050127e",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on slide deck branding",
+        "updated_at": 1786204637
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-4362262de07ee721e71d6ba3486dce57",
+      "name": "Glossary of business terms (data)",
+      "created_by_user_id": null,
+      "created_at": 1787602846,
+      "updated_at": 1788985246,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Glossary of business terms: ...",
+        "created_at": 1787602846,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Glossary of business terms (data)",
+        "note_id": "note-4362262de07ee721e71d6ba3486dce57",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on glossary of business terms",
+        "updated_at": 1788985246
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-a174a7856f2190cb2fb504019d267076",
+      "name": "Repo setup (data)",
+      "created_by_user_id": null,
+      "created_at": 1786565175,
+      "updated_at": 1789070775,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Repo setup: ...",
+        "created_at": 1786565175,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Repo setup (data)",
+        "note_id": "note-a174a7856f2190cb2fb504019d267076",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/ml-models",
+        "trigger": "When working on repo setup",
+        "updated_at": 1789070775
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-7ccc92580979f5d34a703330ffc03136",
+      "name": "Coding standards (ops)",
+      "created_by_user_id": null,
+      "created_at": 1789686886,
+      "updated_at": 1793056486,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Coding standards: ...",
+        "created_at": 1789686886,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Coding standards (ops)",
+        "note_id": "note-7ccc92580979f5d34a703330ffc03136",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on coding standards",
+        "updated_at": 1793056486
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-15d1e2f82bd7d03881492b7a4968fdf2",
+      "name": "Deploy process (ops)",
+      "created_by_user_id": null,
+      "created_at": 1786113600,
+      "updated_at": 1788360000,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Deploy process: ...",
+        "created_at": 1786113600,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Deploy process (ops)",
+        "note_id": "note-15d1e2f82bd7d03881492b7a4968fdf2",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on deploy process",
+        "updated_at": 1788360000
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-c74f054fd2a5d216314b4d3695162359",
+      "name": "Data warehouse schema (eng)",
+      "created_by_user_id": null,
+      "created_at": 1789051823,
+      "updated_at": 1791384623,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Data warehouse schema: ...",
+        "created_at": 1789051823,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Data warehouse schema (eng)",
+        "note_id": "note-c74f054fd2a5d216314b4d3695162359",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/payments-service",
+        "trigger": "When working on data warehouse schema",
+        "updated_at": 1791384623
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-9b5ad674889654b2ce92605915ab7cd2",
+      "name": "Test conventions (ops)",
+      "created_by_user_id": null,
+      "created_at": 1787840133,
+      "updated_at": 1790518533,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Test conventions: ...",
+        "created_at": 1787840133,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Test conventions (ops)",
+        "note_id": "note-9b5ad674889654b2ce92605915ab7cd2",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on test conventions",
+        "updated_at": 1790518533
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-ac367cb90273be68e6c51969011871cf",
+      "name": "Secrets handling (eng)",
+      "created_by_user_id": null,
+      "created_at": 1788382029,
+      "updated_at": 1791060429,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Secrets handling: ...",
+        "created_at": 1788382029,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Secrets handling (eng)",
+        "note_id": "note-ac367cb90273be68e6c51969011871cf",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on secrets handling",
+        "updated_at": 1791060429
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-cb4addc685096c7855660d8ed25697ad",
+      "name": "Service ownership (eng)",
+      "created_by_user_id": null,
+      "created_at": 1781300431,
+      "updated_at": 1784670031,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Service ownership: ...",
+        "created_at": 1781300431,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Service ownership (eng)",
+        "note_id": "note-cb4addc685096c7855660d8ed25697ad",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/payments-service",
+        "trigger": "When working on service ownership",
+        "updated_at": 1784670031
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-31c46c9e70be96304a6333e3247474b3",
+      "name": "Release checklist (eng)",
+      "created_by_user_id": null,
+      "created_at": 1782319755,
+      "updated_at": 1784306955,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Release checklist: ...",
+        "created_at": 1782319755,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Release checklist (eng)",
+        "note_id": "note-31c46c9e70be96304a6333e3247474b3",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on release checklist",
+        "updated_at": 1784306955
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-5c387c2a1243e8381e5bc68b193156f5",
+      "name": "dbt conventions (ops)",
+      "created_by_user_id": null,
+      "created_at": 1784208069,
+      "updated_at": 1786022469,
+      "is_enabled": false,
+      "raw": {
+        "access_type": "org",
+        "body": "dbt conventions: ...",
+        "created_at": 1784208069,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": false,
+        "macro": null,
+        "name": "dbt conventions (ops)",
+        "note_id": "note-5c387c2a1243e8381e5bc68b193156f5",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/infra-terraform",
+        "trigger": "When working on dbt conventions",
+        "updated_at": 1786022469
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-46834cc5757e2b43af516850b77e5f7a",
+      "name": "Kubernetes access (ops)",
+      "created_by_user_id": null,
+      "created_at": 1788817331,
+      "updated_at": 1791236531,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Kubernetes access: ...",
+        "created_at": 1788817331,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Kubernetes access (ops)",
+        "note_id": "note-46834cc5757e2b43af516850b77e5f7a",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on kubernetes access",
+        "updated_at": 1791236531
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-38772265102c01a3ab404598ae11d3c2",
+      "name": "Monitoring links (eng)",
+      "created_by_user_id": null,
+      "created_at": 1783610972,
+      "updated_at": 1784474972,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Monitoring links: ...",
+        "created_at": 1783610972,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Monitoring links (eng)",
+        "note_id": "note-38772265102c01a3ab404598ae11d3c2",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/payments-service",
+        "trigger": "When working on monitoring links",
+        "updated_at": 1784474972
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-77922d9eb998e2d36d1e0d7d140296ee",
+      "name": "Branch naming (ops)",
+      "created_by_user_id": null,
+      "created_at": 1788900371,
+      "updated_at": 1790196371,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Branch naming: ...",
+        "created_at": 1788900371,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Branch naming (ops)",
+        "note_id": "note-77922d9eb998e2d36d1e0d7d140296ee",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on branch naming",
+        "updated_at": 1790196371
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-bf8ff33eee1595cf35a37765bfacc63e",
+      "name": "PR template (ops)",
+      "created_by_user_id": null,
+      "created_at": 1784900629,
+      "updated_at": 1785764629,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "PR template: ...",
+        "created_at": 1784900629,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": true,
+        "macro": null,
+        "name": "PR template (ops)",
+        "note_id": "note-bf8ff33eee1595cf35a37765bfacc63e",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on pr template",
+        "updated_at": 1785764629
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-8c7aa939ff0dd3c2ac4dcd33d51528af",
+      "name": "Python style (ops)",
+      "created_by_user_id": null,
+      "created_at": 1785442985,
+      "updated_at": 1787862185,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Python style: ...",
+        "created_at": 1785442985,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Python style (ops)",
+        "note_id": "note-8c7aa939ff0dd3c2ac4dcd33d51528af",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on python style",
+        "updated_at": 1787862185
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-fd853cf8793228b9ad8ac4bc6c24dcaa",
+      "name": "Airflow DAG patterns (ops)",
+      "created_by_user_id": null,
+      "created_at": 1786048002,
+      "updated_at": 1786393602,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Airflow DAG patterns: ...",
+        "created_at": 1786048002,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Airflow DAG patterns (ops)",
+        "note_id": "note-fd853cf8793228b9ad8ac4bc6c24dcaa",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on airflow dag patterns",
+        "updated_at": 1786393602
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-4c6f9a458192ef8f1fed7603fadc9704",
+      "name": "Incident severity levels (data)",
+      "created_by_user_id": null,
+      "created_at": 1781806725,
+      "updated_at": 1784139525,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Incident severity levels: ...",
+        "created_at": 1781806725,
+        "folder_id": null,
+        "folder_path": "/data",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Incident severity levels (data)",
+        "note_id": "note-4c6f9a458192ef8f1fed7603fadc9704",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on incident severity levels",
+        "updated_at": 1784139525
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-b4effa296b1205aa9bd3f580ad9f835f",
+      "name": "BRD template (ops)",
+      "created_by_user_id": null,
+      "created_at": 1784566599,
+      "updated_at": 1786467399,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "BRD template: ...",
+        "created_at": 1784566599,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": true,
+        "macro": null,
+        "name": "BRD template (ops)",
+        "note_id": "note-b4effa296b1205aa9bd3f580ad9f835f",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on brd template",
+        "updated_at": 1786467399
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-bf415c985a8e8f0523cecf1e296df91f",
+      "name": "Research citation style (eng)",
+      "created_by_user_id": null,
+      "created_at": 1787758382,
+      "updated_at": 1788795182,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Research citation style: ...",
+        "created_at": 1787758382,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Research citation style (eng)",
+        "note_id": "note-bf415c985a8e8f0523cecf1e296df91f",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on research citation style",
+        "updated_at": 1788795182
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-9a11ddf4be1a35c9a12ac11c21677dca",
+      "name": "Slide deck branding (ops)",
+      "created_by_user_id": null,
+      "created_at": 1782171717,
+      "updated_at": 1783208517,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Slide deck branding: ...",
+        "created_at": 1782171717,
+        "folder_id": null,
+        "folder_path": "/ops",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Slide deck branding (ops)",
+        "note_id": "note-9a11ddf4be1a35c9a12ac11c21677dca",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": null,
+        "trigger": "When working on slide deck branding",
+        "updated_at": 1783208517
+      }
+    },
+    {
+      "asset_type": "knowledge_note",
+      "asset_id": "note-b9ede33fbad4f3e03b5235257230b85b",
+      "name": "Glossary of business terms (eng)",
+      "created_by_user_id": null,
+      "created_at": 1782998430,
+      "updated_at": 1783430430,
+      "is_enabled": true,
+      "raw": {
+        "access_type": "org",
+        "body": "Glossary of business terms: ...",
+        "created_at": 1782998430,
+        "folder_id": null,
+        "folder_path": "/eng",
+        "is_enabled": true,
+        "macro": null,
+        "name": "Glossary of business terms (eng)",
+        "note_id": "note-b9ede33fbad4f3e03b5235257230b85b",
+        "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+        "pinned_repo": "acme-corp/mobile-api",
+        "trigger": "When working on glossary of business terms",
+        "updated_at": 1783430430
+      }
+    }
+  ],
+  "end_cursor": null,
+  "has_next_page": false,
+  "total": 102
+}

@@ -1,0 +1,498 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Create `index.html` with full HTML5 boilerplate, inline `<style>` block, and a top-level `<script>` wrapping a single IIFE": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789524995
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789529627
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789674579
+      }
+    ],
+    "2.1 Implement `DataLoader.load()` with the three-priority data acquisition strategy": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525059
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789677736
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789734173
+      }
+    ],
+    "3.1 Implement `Indexer._buildLookupMaps(rawData)`": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525097
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789760231
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792790489943
+      }
+    ],
+    "3.3 Implement `monthKey(unixSecs)` utility and `Indexer._buildMonthlyBuckets(sessions)`": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525127
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789761998
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792790491719
+      }
+    ],
+    "4.1 Implement `Indexer._buildCreatorBonusIndex(rawData)`": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525158
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792790494919
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792790549057
+      }
+    ],
+    "5. Checkpoint — Ensure all indexing tests pass": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525182
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792790568149
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792791482817
+      }
+    ],
+    "6.1 Implement `ScoreEngine._aggregate(userId, monthFilter)`": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525208
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792791488449
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792791532280
+      }
+    ],
+    "6.3 Implement `ScoreEngine._normalise(values)` (min-max) and sub-score computation": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525233
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792791490423
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792791534167
+      }
+    ],
+    "6.6 Implement `ScoreEngine._computeTotalScore()` and `ScoreEngine._assignTiers()`": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525257
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792791535870
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792791559112
+      }
+    ],
+    "6.9 Implement filter exclusion in `ScoreEngine.compute(filterState)`": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525284
+      },
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792791581997
+      },
+      {
+        "executionId": "8fa64a4e-6b44-40f4-a5c7-fdb299c7f672",
+        "chatSessionId": "sess_9dcb45e9-9257-42c0-a6b9-01626beaf1a2",
+        "timestamp": 1792791777871
+      },
+      {
+        "executionId": "8fa64a4e-6b44-40f4-a5c7-fdb299c7f672",
+        "chatSessionId": "sess_9dcb45e9-9257-42c0-a6b9-01626beaf1a2",
+        "timestamp": 1792791788750
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793097540
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793104130
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793142763
+      }
+    ],
+    "7. Checkpoint — Ensure all ScoreEngine tests pass": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525309
+      },
+      {
+        "executionId": "8fa64a4e-6b44-40f4-a5c7-fdb299c7f672",
+        "chatSessionId": "sess_9dcb45e9-9257-42c0-a6b9-01626beaf1a2",
+        "timestamp": 1792791777912
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793097573
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793150860
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793263205
+      }
+    ],
+    "8.1 Implement `FilterState` object and populate the three filter `<select>` elements": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525333
+      },
+      {
+        "executionId": "8fa64a4e-6b44-40f4-a5c7-fdb299c7f672",
+        "chatSessionId": "sess_9dcb45e9-9257-42c0-a6b9-01626beaf1a2",
+        "timestamp": 1792791777936
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793097597
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793569335
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793823463
+      }
+    ],
+    "9.1 Implement `UI._renderStatCards(stats)` and tab switching logic": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525357
+      },
+      {
+        "executionId": "8fa64a4e-6b44-40f4-a5c7-fdb299c7f672",
+        "chatSessionId": "sess_9dcb45e9-9257-42c0-a6b9-01626beaf1a2",
+        "timestamp": 1792791777964
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793097622
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793825275
+      }
+    ],
+    "10.1 Implement `UI.renderLeaderboard(results)` with a sortable table": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525382
+      },
+      {
+        "executionId": "8fa64a4e-6b44-40f4-a5c7-fdb299c7f672",
+        "chatSessionId": "sess_9dcb45e9-9257-42c0-a6b9-01626beaf1a2",
+        "timestamp": 1792791777996
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793097647
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793827124
+      }
+    ],
+    "11.1 Implement `UI.renderUserInsight(userId, results)`": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525408
+      },
+      {
+        "executionId": "8fa64a4e-6b44-40f4-a5c7-fdb299c7f672",
+        "chatSessionId": "sess_9dcb45e9-9257-42c0-a6b9-01626beaf1a2",
+        "timestamp": 1792791778020
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793097672
+      }
+    ],
+    "12.1 Implement `UI.renderCreatorBonus(results)`": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525432
+      },
+      {
+        "executionId": "8fa64a4e-6b44-40f4-a5c7-fdb299c7f672",
+        "chatSessionId": "sess_9dcb45e9-9257-42c0-a6b9-01626beaf1a2",
+        "timestamp": 1792791778044
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793097695
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793828865
+      }
+    ],
+    "13.1 Implement `ChartManager.create(canvasId, config)` with destroy-before-create semantics": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525467
+      },
+      {
+        "executionId": "8fa64a4e-6b44-40f4-a5c7-fdb299c7f672",
+        "chatSessionId": "sess_9dcb45e9-9257-42c0-a6b9-01626beaf1a2",
+        "timestamp": 1792791778069
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793097722
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793830941
+      }
+    ],
+    "13.2 Implement `UI.renderOverview(results)` with three charts": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525490
+      },
+      {
+        "executionId": "8fa64a4e-6b44-40f4-a5c7-fdb299c7f672",
+        "chatSessionId": "sess_9dcb45e9-9257-42c0-a6b9-01626beaf1a2",
+        "timestamp": 1792791778096
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793097747
+      }
+    ],
+    "14.1 Implement the \"Score Trend\" line chart inside `renderUserInsight`": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525516
+      },
+      {
+        "executionId": "8fa64a4e-6b44-40f4-a5c7-fdb299c7f672",
+        "chatSessionId": "sess_9dcb45e9-9257-42c0-a6b9-01626beaf1a2",
+        "timestamp": 1792791778127
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793097772
+      }
+    ],
+    "15. Checkpoint — Ensure full app renders correctly with local data": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525536
+      },
+      {
+        "executionId": "8fa64a4e-6b44-40f4-a5c7-fdb299c7f672",
+        "chatSessionId": "sess_9dcb45e9-9257-42c0-a6b9-01626beaf1a2",
+        "timestamp": 1792791778151
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793097797
+      }
+    ],
+    "16.1 Write `build.js` as a dependency-free Node.js script": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525559
+      },
+      {
+        "executionId": "8fa64a4e-6b44-40f4-a5c7-fdb299c7f672",
+        "chatSessionId": "sess_9dcb45e9-9257-42c0-a6b9-01626beaf1a2",
+        "timestamp": 1792791778187
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793097823
+      }
+    ],
+    "17.1 Implement and verify all error-handling paths": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525584
+      },
+      {
+        "executionId": "8fa64a4e-6b44-40f4-a5c7-fdb299c7f672",
+        "chatSessionId": "sess_9dcb45e9-9257-42c0-a6b9-01626beaf1a2",
+        "timestamp": 1792791778211
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793097846
+      }
+    ],
+    "18. Final checkpoint — full integration verification": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789525609
+      },
+      {
+        "executionId": "8fa64a4e-6b44-40f4-a5c7-fdb299c7f672",
+        "chatSessionId": "sess_9dcb45e9-9257-42c0-a6b9-01626beaf1a2",
+        "timestamp": 1792791778236
+      },
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793097871
+      }
+    ],
+    "1. Scaffold the project: IIFE shell, HTML skeleton, and inline CSS": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789674602
+      }
+    ],
+    "2. Implement DataLoader": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792789734215
+      }
+    ],
+    "3. Implement Indexer — LookupMaps and MonthlyBuckets": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792790491749
+      }
+    ],
+    "4. Implement Indexer — CreatorBonus index": [
+      {
+        "executionId": "035aff7f-e88a-468e-bf49-fa86ad0f7f6d",
+        "chatSessionId": "sess_a25d23bb-8495-4929-a5b9-b22bf8b652e8",
+        "timestamp": 1792790549085
+      }
+    ],
+    "6. Implement ScoreEngine": [
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793142797
+      }
+    ],
+    "8. Implement FilterState and filter controls UI": [
+      {
+        "executionId": "cec95c18-1bbf-4918-9891-664cf06e42dd",
+        "chatSessionId": "sess_1f1ff389-ab05-482a-829d-b8c52a29a6e1",
+        "timestamp": 1792793823498
+      }
+    ]
+  }
+}

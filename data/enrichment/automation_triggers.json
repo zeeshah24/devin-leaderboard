@@ -1,0 +1,3668 @@
+{
+  "items": [
+    {
+      "session_id": "devin-6208dcf7045476cf9f5d6d4a831456f8",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786742137,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-944d7af5d60400dffde395a011c0882a",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786665099,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-b33be2f5013212524bd6f42eabb4dbab",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787243415,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-bd3a4ffa31675b2e01c4753f04c3f2fb",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1785852189,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3e3cc0d513171e5fe1c15b016ba24b00",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787587299,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-8b30226c90068c6325d22f90b0add79f",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788217751,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c3e430286fb3346f1f5e040f28e23b9d",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787008495,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-82f9ae427fc043d91a971236de336c0b",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786634128,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-13504c999617dda6c9797b904e2a2225",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787092147,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d9e8d803a0a0a5de96476b0b6281d134",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787931464,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-8792c24287d97b81999eba9a9c8ca133",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786557636,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-456e89268e739c08c5b066acc5fc0566",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786549567,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e1bd1a1fed635e09d42f4f863d393634",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788220234,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-7e0f8abae61d579a40ac3de3878dcf5c",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787177445,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-62ef5a37a3489ef558d020c0b510a159",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787765138,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-714818f7d1d26a8d0236aa9ae67072e4",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788187696,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f714c4e10e4814beec5bce187c7b0ac7",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787780707,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6180d1ed926aabeb471815ba11bd48ac",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786460723,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-392d65c96ad6c9557e4e6ffad9b86651",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786462184,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-210817bac796bdee0bb2b195dd9244df",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787320856,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-079c06c99a28619a0ceaf06a545fa09f",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787087669,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6659d3eddff9e4971ebb7f133898c1b8",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790774105,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5a4cb370b4ced46ebb17a5443b3db72c",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790784916,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a8943ca455300eb5afd8679deb3b0585",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788446862,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-27574d61ebf4cce3b0ad384aa04498a5",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788909803,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a0da6a130f196a500c9ed11768d38118",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790289014,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-7b8db15b9286f2f1450cbaf26b94e5ca",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789774571,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-13ffc77c4d2b78c21e6d11207046fcc5",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790016180,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-98b3fa195420b1332a9a2331722e1cbb",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790378528,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-8724059f1284d5f92dbc68db807d213a",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790353834,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5714d7dca394282cf79f9d651dd2618a",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789404009,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e9f93b089cf89382178c6ca43f61c4c9",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790011920,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a120ab7df76d7c44788eab5cbb1350b9",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788547656,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6ba2565052694fee609faa7ec48f63b0",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788371183,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-06f13dae50badae702f2045a458ecef7",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789071787,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-62267cd5516a642792a21ac08f1fb4d6",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789996519,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d49c4a89bc776a85bafc3e5364d2a7f4",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789590088,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-b87573424b36b83be7517b8020844850",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788305696,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-37424afe3572eaa806d1e80797473324",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789593271,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-447d33697ab81b22c9adb765737b1021",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789577175,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-80401d5f68e50d9d8a927189516d37e0",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789767015,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-7bf46f87ba0b4be8b2d72cadf9d596dc",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1792422642,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c669d8b35b929ed062a44bd0cd5493a1",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791840725,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-862e9ad56460cdc3ef0b39402fe0bab4",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1792442379,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-757d8f27c9eb1b9e7bcdf99e7807971a",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791330029,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-206848ab7eaecff10f517ac3a3d12bb2",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1792086650,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-bdf086740c0e3b639c3e573eb64e4f3d",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791231889,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3d66e8fd29f06e7f31ac27a66f3ed6ce",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791489161,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-495cc42131cebee1c461110ebdd28cf6",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790958944,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-320a9342ffda02b7382d0fd1b2009fac",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791822449,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5e1ac068106e70223cde9fc67f2c7ba9",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1792021179,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-ca41b5f8195a131522cb754d1064672a",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1792161967,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6c4fbbdcddfae4ca5b2f80596c35a4ef",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790877304,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-afecd27f4c3ed9d1bb771ea4062a11ca",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791224529,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-0d314af3c80218fb32fe03491780c03d",
+      "automation_id": "auto-2e8f2f7f20a62edffea95b7352b3a0d1",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791302787,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-622580544d9faa83d7dca1ed92641c4e",
+      "automation_id": "auto-5cda038513eb43581ab9f6621bc02912",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-ce777f00ecf27e7685197ff4006ed6e3",
+      "fired_at": 1787077015,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f088adeb4c068140343e909af3408df4",
+      "automation_id": "auto-5cda038513eb43581ab9f6621bc02912",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-e43e4288a2b5b4985cb85aedf5f62c97",
+      "fired_at": 1787778787,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e891e063974a7583b31e9ccf8da3969e",
+      "automation_id": "auto-5cda038513eb43581ab9f6621bc02912",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-986f90258f15ba58fce6850487f8424d",
+      "fired_at": 1787678948,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f7a5e68a042e5e5a0305d0be6501b157",
+      "automation_id": "auto-5cda038513eb43581ab9f6621bc02912",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-7bf47042bd1531c83764fbda3108d448",
+      "fired_at": 1787070312,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-02de69916071c894a21d74224b062472",
+      "automation_id": "auto-5cda038513eb43581ab9f6621bc02912",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-3f4df561f319c12507f194f9c1156d6d",
+      "fired_at": 1788996801,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-038b0c36b049ff0c41796d3f98ced16f",
+      "automation_id": "auto-5cda038513eb43581ab9f6621bc02912",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-cee624d09dac6e8345241ea6a6846099",
+      "fired_at": 1788902432,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-8294d41139ac9064f4d340a4a07a4354",
+      "automation_id": "auto-5cda038513eb43581ab9f6621bc02912",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-a8aa71582b70e525bc67f831cbc84759",
+      "fired_at": 1788361383,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-71e21d3448ff4f623d490f98f1242c73",
+      "automation_id": "auto-5cda038513eb43581ab9f6621bc02912",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-658b252360141de9f54ad0a2e87466d7",
+      "fired_at": 1788959702,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f6c79c3ae165aeca93e16d63ec2f50de",
+      "automation_id": "auto-5cda038513eb43581ab9f6621bc02912",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-10714d5136c59dacb4d7e28e271e3ee2",
+      "fired_at": 1791989618,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9c2bce8ba2f1a28117adce414f42cd4b",
+      "automation_id": "auto-5cda038513eb43581ab9f6621bc02912",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-eb2263dd87c5421eec24a3c5c754108f",
+      "fired_at": 1791304126,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-59dcb0d3780db1432e9e627a995d8fc0",
+      "automation_id": "auto-5cda038513eb43581ab9f6621bc02912",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-4f77a665ac3c56403c20592fc04a96c4",
+      "fired_at": 1791841906,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3ec34024e7d573448f6aa42625f4d3bc",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787076525,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5a32472f47d0e8d532d4145f73ac3d2a",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787157372,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-dcaf5011f467093cd8ef0f14f25c070d",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786483970,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3dc6f4e093be361fa151f14bc6077a34",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786717069,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-04c1dc89bda66683575fe84fcd568430",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787866643,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d7318d5bc4aef4378611168bb912e9e1",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786140993,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-dcc16d6dadc8dae10d405ab5434492bf",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787785848,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-7ed1ae4eb9086eae165ea6c34f8ed80d",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787002893,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-104db0403f9e88cb6fde5f2582bae1da",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786059715,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-8d8ba2d37ee6543510a7c96f237534d9",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786115605,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-89c90f43f54d617533d1bd8965f29a4a",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1785772577,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9cfdb012190604e9c2f1215eb832632e",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787063913,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-76a6bbe0509588d61146330e09b28e77",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786547893,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-170a8652c4dc345fd04ea3b052e3a96b",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787778981,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c850df052e8b22470bc3243083cb3ceb",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789592919,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-56dcac3ab6f104c06c580330bec97afe",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789482534,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a9725584bd2ac78bd73015bae17c2182",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790008523,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-827fbd24f74042f07bd98eaf1114e775",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790014531,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-18663f7326dab19200bf0417d1dfc0f2",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790350095,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6634b14fe73e80e29afd932202a44d23",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790187986,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d0bf1047767b59d81bea65269f47d06c",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788278160,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-8ad77a1a85af8af7b575eb6dba0c9f7b",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789490986,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-8dc1f34451811f98202072f1f46a8363",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789596286,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-8026bade91cf6978515ca635778ed429",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790183242,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-44d4f945b297a971c30e8fd391f2f4be",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788812335,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3830a25463f2b5748bacbc1fbbfa7a52",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789581695,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-7f39777b3e9cd3bfb8ffa3caae6a3093",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790291010,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9f87ee093c862d8a6a09ff6679b032df",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788367648,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f481ab339061735c22bdc5ffa8a1a68b",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791820737,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-688531df6b37129b5c62b7dc9cb3eedc",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1792069191,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-623088b1ffbbaac8ea3d9a351d03b82e",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1792105684,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-b1bdcbad5f99ecbdd23b525e44423d06",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1792019797,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-16c47938b321a1e9189ba725e9c29a32",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791561764,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-31fef2a98a34465d68a49df36c9b12f4",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791897703,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-85e057245ba361c2002a8253b73b7364",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1792508341,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f39091c706dbcbe0e3e038fe246e0610",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1792165067,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-19e9e90f591f5d34b77df77f1f62acc3",
+      "automation_id": "auto-0e9b65bba4d47431fa38f5a09ee08a70",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1792425652,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-8427c880d41f51e49cbb239d1bcf1c2e",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787842060,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-0f45171e3442dc5f45d06c9744bcaba5",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787231583,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d9256351d2630f9be1d5c31a3f3fc0a7",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787070984,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c23b6fff5817132df9af69b27004e797",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787686838,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5056fe4f0b1964dadf451719ebcd94ed",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787861292,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a0cd5fd6e3e7281e02dd969f4ce137fd",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787331198,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c673a2012eb547504a46d88edd57d0bb",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787770267,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-29bf429598d3259ab59f0ab9af5c0fcc",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787254565,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-cde083ce56b365ff2ad53348198e2f97",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789738333,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d175a1a7d9b6ed9b68f217ce5ae5f3ef",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789678192,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-ae31cbae8bca4c5538b2252a2b4edc02",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790020595,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f0df3695ebc5ecaf8f56b64199939c4a",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788464769,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-686a1117fdf07191b000f5c40c293e6b",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788887858,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-46c99ea210e26b5d6141b9df4c6fab9b",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789424256,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-014b246a5cc95fe25d0f9f3b62f57029",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789655401,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c35b1690e309fea57626e160db2454cb",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788304099,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1a7276ecd70eb656c611a18f341d3f96",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790202202,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d8d321aa3636f5f21589769367c5a050",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789657401,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6b45b87843b3d22171679fa078f8817f",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789418178,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6605b3507b930f96154eb8cd2ec46f43",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790276146,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-be6ae9991e7ba27ffe212c430b66995d",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788356980,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-62fdca0a82526804a30532c264b2378f",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790984060,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-156feb466d55f2cf31946ecf9e1dc215",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791228981,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d6b98e61dc2acfc0a7600005df255750",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1792510130,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-ab9858fd1d0f8c0e49613d38533b4335",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791585609,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f639ab062abf241f321a4d3d7af5ab2d",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791927953,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-888664f68bcdfa89ee75ac50c1d2f192",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790863390,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-2cce00014f4f4aa3a5520378f125ec2b",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1792517676,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-b69f189441e48f0b29ec1e0b23262736",
+      "automation_id": "auto-4e954929e58b2d2d4d4c3b8004251c71",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791499905,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-cff087859355c553e7df3b36a72d216f",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-c342bd2bf295456e19675f06bd767e35",
+      "fired_at": 1786568910,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-7a38f75845b31d8c25cfb9892fc6e73d",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-5738811d70c2903f7a8d03aa782a65e0",
+      "fired_at": 1787319034,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1b30dbbb59cea71e0d72801f1a034ea9",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-6c52c49f9b49bd26df57c59a8715a103",
+      "fired_at": 1786725415,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-09d2cb7f878df1c15bf496f04cbcfa51",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-680bac63b856d0353dc9829015eabb27",
+      "fired_at": 1787951985,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e1c7b1a00c16ee78b1d339f5fdc371b4",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-a1235a8c93b7a88612f70c977de31a51",
+      "fired_at": 1787058053,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-0e55d84f29b0cd9f988b0a6fe403b183",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-434308bc89fa6a688fb5d27bbeb79919",
+      "fired_at": 1786459014,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9c83c74feebafb57469880a87590596a",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-d39e198b44007d5ae88da71926242b40",
+      "fired_at": 1787167828,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d56df176d6b3a06d9d290449fe25b6eb",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-c342bd2bf295456e19675f06bd767e35",
+      "fired_at": 1786397286,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-68205818267c63e67e1b21b8863529e0",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-1fd5a423706c5c5649e2623debd34616",
+      "fired_at": 1787160315,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e110db4188eb36c6788fe9deb6614c31",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-434308bc89fa6a688fb5d27bbeb79919",
+      "fired_at": 1788219375,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3e5ac4154165bf6344a1486c5b75659a",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-4b5305e517d2582e046a0df5cafda613",
+      "fired_at": 1786627796,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9a7e33c2cbd8fd1e2b3401f05e23b6a1",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-dc33e1f94c1f55ab715629eee893be3d",
+      "fired_at": 1787772500,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-b6f20711692f8ec35b2c6d5efeecfd52",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-c3b290d08edddfcd1e52d7703f897142",
+      "fired_at": 1787781690,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1912371f32cab7f37595ae669b70c43d",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-4d71c366b41b31438b10550cd5704f32",
+      "fired_at": 1787150061,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-bfd22eab9badb2fd9c25909b2443779e",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-cee624d09dac6e8345241ea6a6846099",
+      "fired_at": 1786979260,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-fa99d4630929ba53f18b631d30a1f2b6",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-fd5166e6451b4cf36123fdf77656af72",
+      "fired_at": 1787163196,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6bc6f5e3b0e62b69f7252a1a5d1de162",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-680bac63b856d0353dc9829015eabb27",
+      "fired_at": 1786751554,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-2b52ed07e8bc6bf4e774d01d6f40e732",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-a9d3c2e6505cc6869f871ce75487fd4f",
+      "fired_at": 1787685408,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d0e92eaacfb87add4c507543ffea390a",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-c3b290d08edddfcd1e52d7703f897142",
+      "fired_at": 1789746906,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1991d0a1fe82e461ff4d3738f1ea9f57",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-0cdb1ca476ecbdd68498e113b227462c",
+      "fired_at": 1788446852,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-8c25f6c8f83a2b8035002546367186d3",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-1fd5a423706c5c5649e2623debd34616",
+      "fired_at": 1788786463,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f90ac2018d532e88ff37c5a45c94d276",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-d39e198b44007d5ae88da71926242b40",
+      "fired_at": 1788366139,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6eccfcc65ae854dcc38fc4508c7ca68b",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-cee624d09dac6e8345241ea6a6846099",
+      "fired_at": 1790267711,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-cdc39d8dfb3335f4436b976dc4a6c28a",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-a1235a8c93b7a88612f70c977de31a51",
+      "fired_at": 1788463433,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-55cc432f51b2f245a0ab95c810cca362",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-b289f2244ac9778d8da8eee40df56ac6",
+      "fired_at": 1788902727,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-37ed5a98fadcf670ca1a920ab21e870b",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-778eedb3693dffbc6c6fa6115ab33edf",
+      "fired_at": 1788478687,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-2d4ac68d40d2a8dc27200d54be9d76ec",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-1d53434bb88139b9ae270da702f06b90",
+      "fired_at": 1788285302,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f4b69c804b4616d543d0c5cd5ecef647",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-680bac63b856d0353dc9829015eabb27",
+      "fired_at": 1788284089,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c92bda68e0b18b290ff492370ad652b1",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-c3b290d08edddfcd1e52d7703f897142",
+      "fired_at": 1790090998,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1cce0dc0c654a67b283fcefdcba2de2b",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-c3b290d08edddfcd1e52d7703f897142",
+      "fired_at": 1788464080,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9e14253d91d19271a76586c2dafd1697",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-e15ca6664797b2c9572072464223623b",
+      "fired_at": 1788449341,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9d4331ed6353a32de277e1b4ab816c8a",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-4b5305e517d2582e046a0df5cafda613",
+      "fired_at": 1790724081,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-64b6a95e3e4953fe2e69ff9701324db7",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-5738811d70c2903f7a8d03aa782a65e0",
+      "fired_at": 1790784711,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-758984dc3b520d98cf6dabf63c960407",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-b07aa066735435ea68949b8d00af5b3a",
+      "fired_at": 1789049418,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9d21286c577e84d02b17a985692f6cdd",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-7bf47042bd1531c83764fbda3108d448",
+      "fired_at": 1790601823,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-b3dcda56c2b48da0e90f66052b51afcc",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-986f90258f15ba58fce6850487f8424d",
+      "fired_at": 1788530575,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-bf1216d3f685b193970966f752c8331e",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-561e16d16105716bab0e664e9c3eb2d5",
+      "fired_at": 1790279385,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f12290ae0b3afe354f7695497172e546",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-4b5305e517d2582e046a0df5cafda613",
+      "fired_at": 1789134307,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-8da2ea262e54d28259f2b5988ccf6440",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-e43e4288a2b5b4985cb85aedf5f62c97",
+      "fired_at": 1790101406,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9a00c37f5860d04de25b78aaf37e0bdd",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-5738811d70c2903f7a8d03aa782a65e0",
+      "fired_at": 1788553597,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-cd1e46fcbe794b8b11ed5d75a46e1223",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-d261a7ab3aa2e4f90e51f30dc6a7ee39",
+      "fired_at": 1789563955,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-65b10c481364450cdd304c1423f964d8",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-4b5305e517d2582e046a0df5cafda613",
+      "fired_at": 1790784275,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-72aa704efa3f81bf1e90e1f1a3f2025f",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-1a84a51aa9d3d7c7ee87905e4ca415ea",
+      "fired_at": 1789594287,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-110a5765a014cc959dd92bb53915b9f8",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-3fa7f1041bf90e27dc96925eccf3a171",
+      "fired_at": 1791214268,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-95abb68c85098d54990df3f79c831902",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-a1235a8c93b7a88612f70c977de31a51",
+      "fired_at": 1791238020,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a95656790e48fa7dfa774d7a290cb756",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-c3b290d08edddfcd1e52d7703f897142",
+      "fired_at": 1791839055,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-efff8e7d7c030c5caad27fdf3e7de11e",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-a1235a8c93b7a88612f70c977de31a51",
+      "fired_at": 1792425208,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-98a90c839b9cc0b8a905d91957ddab10",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-4b5305e517d2582e046a0df5cafda613",
+      "fired_at": 1791205517,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1783959b83deef4d5599d4bf5538889a",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-a003cd28ca8f3653c9af18f843b9da13",
+      "fired_at": 1792190019,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-10948274ce127759de72c15019984e6b",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-680bac63b856d0353dc9829015eabb27",
+      "fired_at": 1792181978,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-715781fdb5c17ff08aaf7f799aa8f165",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-5738811d70c2903f7a8d03aa782a65e0",
+      "fired_at": 1791575357,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-0d7a2eb5b64ed90446e5e7314f9c094e",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-dc33e1f94c1f55ab715629eee893be3d",
+      "fired_at": 1791554007,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d561b98acfa1aa95416474e8f52df40b",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-3ed8c56cda09dfa052828d8044b591f7",
+      "fired_at": 1791221083,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-4c65bb71ebacbe77ccd1b68b19e1f397",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-5738811d70c2903f7a8d03aa782a65e0",
+      "fired_at": 1792445529,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-2d9b39f2d37a25a0df6e01f383864713",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-b8a6171f1ee34dc43b048a8b405bfdc9",
+      "fired_at": 1791839884,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a4d03959564e5c18ea90516c5de55485",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-c342bd2bf295456e19675f06bd767e35",
+      "fired_at": 1792098272,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3efabc42dfc8b98500a5906e51ba0da6",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-dc33e1f94c1f55ab715629eee893be3d",
+      "fired_at": 1791484449,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d7035ebe51b933ec6d9c9728a805ff9b",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-508ebad7b7c93acfe059a0ee9132b63e",
+      "fired_at": 1791916592,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6638281aace9949ef7b1951d850bf4ee",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-1fd5a423706c5c5649e2623debd34616",
+      "fired_at": 1791904226,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-ab6ce2d986d6ac8013af75049cfff10f",
+      "automation_id": "auto-e5dd614ca70bba9c3d5e69df2fc2147c",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-a8f7ef5a060edf5b391184973a43b2ba",
+      "fired_at": 1792536272,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-533ed125b1711eb279ffa8e52f5e003b",
+      "automation_id": "auto-a8d3bb7d3e0c5ec5df748fb5d5e6162f",
+      "event_type": "github:push",
+      "triggered_by_user_id": "user-10714d5136c59dacb4d7e28e271e3ee2",
+      "fired_at": 1790275484,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-950c43cc32eca9ce90cc454467974aba",
+      "automation_id": "auto-a8d3bb7d3e0c5ec5df748fb5d5e6162f",
+      "event_type": "github:push",
+      "triggered_by_user_id": "user-11a726095eddbbbfa95976636daa2e68",
+      "fired_at": 1791811591,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-577f4c91b5da7e3e6dfbffec5608604b",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-a39231a7d777a4774c66e0a8a013ac6e",
+      "fired_at": 1787158537,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-850fc9c14d619758c2642f2e09a4ea84",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-1ff49b7889463e85759cde66bacfb3d0",
+      "fired_at": 1787664980,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-bac142d6ab476e07a35d4fe691670511",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-ab7f089acd5f4822696608aaee49f329",
+      "fired_at": 1787323260,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3cf1d54417a0692588cf6deefae596f7",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-eededb07e623a6895d59cd2a4eea04e7",
+      "fired_at": 1787842186,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e7bef8b60c3380b46a8ef46a7cd7659c",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-839fbc501223b5135496f63cdc1110c1",
+      "fired_at": 1787269845,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-0551a2cc86418b62753ef7b4ce287fac",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-50fd9d3f85d5169590b2b633956b8c0c",
+      "fired_at": 1787087811,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d334dc5e1a5613ac4675d2218161a724",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-1a2a73ed562b0f79c37459eef50bea63",
+      "fired_at": 1785777980,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-40efe1df4368a8782ee8770b38bd60cd",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-4d71c366b41b31438b10550cd5704f32",
+      "fired_at": 1787076876,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-218bf3797f6ac1d22573baa2e65beb9f",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-4d71c366b41b31438b10550cd5704f32",
+      "fired_at": 1787614665,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9d4435220ef08ce9accf548d5a4a9b62",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-7900f7f993829b43922fe15ae1e3db63",
+      "fired_at": 1787097493,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-4594534bc6e86f68f5677a612c97e0ec",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-3ed8c56cda09dfa052828d8044b591f7",
+      "fired_at": 1787089845,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-ee4666d290b0a83fb9dd7975048b1f14",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-1fd5a423706c5c5649e2623debd34616",
+      "fired_at": 1787009020,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-fd2cc41b6b3e8c0b556547dbbaf06429",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-134c6c92ec5b227cdfde4fbf3ff350bf",
+      "fired_at": 1787605660,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-fc98e31157ef466ed6d917e6a21d411b",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-4d71c366b41b31438b10550cd5704f32",
+      "fired_at": 1787664000,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-96df9557af99eda2ff442d799761cee3",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+      "fired_at": 1785886023,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-97f6b71c109b8a4347f727c6bdc5ddf1",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+      "fired_at": 1787695777,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-20844acfef903653de1c5838b4d7904a",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-eededb07e623a6895d59cd2a4eea04e7",
+      "fired_at": 1786467283,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-176a268c48f5e4d86e737d1054177638",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-dbccc47709e9db0adf46529061ee411a",
+      "fired_at": 1786567760,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-564d35aaecdd688c924327c5014cef77",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-dbccc47709e9db0adf46529061ee411a",
+      "fired_at": 1786734158,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-0702756396518a769daaf1139256c8a0",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-a8f7ef5a060edf5b391184973a43b2ba",
+      "fired_at": 1787348918,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-17e11cd452900f51ef1e2e10dd49211a",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-508ebad7b7c93acfe059a0ee9132b63e",
+      "fired_at": 1785880306,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-4d837e3926787b7c9161278d4ed12ac4",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-839fbc501223b5135496f63cdc1110c1",
+      "fired_at": 1788191747,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-abd0b0a4b53423b3916927e09f69fa02",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-19db3ad0ddd1dfb23b982ef8daf61a26",
+      "fired_at": 1787335751,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-2c32132a83bdf86d0aede1ddff51c235",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-a97065e18e46d534c88a618efed4057d",
+      "fired_at": 1786398611,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-fd4e91b013288a1627fa25b37c4b858d",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-93cd59bf5c941cf0dc98d2c1e2acf72f",
+      "fired_at": 1786577601,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6fcefe70410537d1b1eed023874963a6",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-b8db0672f42d47cc00d4af5974273ca3",
+      "fired_at": 1786633506,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a4d9a89aaace23bbf57ef1ade842b308",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-e3e9de99f10c718b1eb0e38a675dd5af",
+      "fired_at": 1790608176,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6cb6c196c853317451cb4481011f8fd2",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-89a2688b12c136e019985f15ff002d4d",
+      "fired_at": 1790083405,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-7a099d5994ad4454c727a3aa25e5e275",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-a39231a7d777a4774c66e0a8a013ac6e",
+      "fired_at": 1790202544,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a1367b25e74b67b9805b36881b5c492e",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-a9d3c2e6505cc6869f871ce75487fd4f",
+      "fired_at": 1790269052,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-32ed7828aef3b4dd414266ac730b9f6c",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-4eb93effce88cb2dd4e80839fc3e058b",
+      "fired_at": 1790790635,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-dea859e89afdae0fce8af06dfd69a67c",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-815ef6d13b8faa1837f8a88b17fc695a",
+      "fired_at": 1789762685,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f601a6ac2e78d3827fe3e728d438f583",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-3ed8c56cda09dfa052828d8044b591f7",
+      "fired_at": 1789425276,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-7e12af5aed1d92178e233da4ea824221",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+      "fired_at": 1788961518,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-bdf03e820ff0e2a0f9bc7ec758034397",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-7900f7f993829b43922fe15ae1e3db63",
+      "fired_at": 1788887466,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-542d9838e5057071932f8d8413188508",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-e3e9de99f10c718b1eb0e38a675dd5af",
+      "fired_at": 1790177313,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9717fe7041a1fb1c8081baabc96fd09a",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-a97065e18e46d534c88a618efed4057d",
+      "fired_at": 1788384437,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a3212014b4de1b164c6c9beb08ef5676",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-0f02bad0e7067ef466aa9385dd59ba71",
+      "fired_at": 1790379353,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-fbd8b73847b1a8cd05dcae4752c62a08",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-96a402f23ae8cc938dcdcd03969b6662",
+      "fired_at": 1788892458,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-68cf54ade7e90f0fc4b464477de0bc66",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-67f48ad54d0b0d1a91b0e1d99d9262af",
+      "fired_at": 1790773363,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-74aea024d2a9569f499582c1f0122e1c",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-295d6fbf430f801dfad409e2a319dcb4",
+      "fired_at": 1788969342,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e90c0e325f1930b17b9f35c9616d3315",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-1a84a51aa9d3d7c7ee87905e4ca415ea",
+      "fired_at": 1790016204,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3b3afa7860bf54b55ee37610001510a7",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-508ebad7b7c93acfe059a0ee9132b63e",
+      "fired_at": 1788891638,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-93c2164523085c0235ba24e17cdf2daf",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-eb2263dd87c5421eec24a3c5c754108f",
+      "fired_at": 1789063226,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-65f7b42a91375bc00cd9c544f96a4026",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-4f77a665ac3c56403c20592fc04a96c4",
+      "fired_at": 1788798766,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-8170c5b768371e8a1eb95291beaea152",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-9ad620ab48212ddb45b89cd927cb6f2a",
+      "fired_at": 1790178177,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-b0886dbe6e5314b4eaf13ee0d436fd25",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-50fd9d3f85d5169590b2b633956b8c0c",
+      "fired_at": 1788388845,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-67f0ed77e0f760fc91405c35fd8d196b",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-efc89849b3aa7efe4458a885ab9099a4",
+      "fired_at": 1790365200,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3d41b6bac48bdd9dbb971fe3c72d4569",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-4eb93effce88cb2dd4e80839fc3e058b",
+      "fired_at": 1789142397,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-dad26d35315ac250f0d98257644d0602",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-19db3ad0ddd1dfb23b982ef8daf61a26",
+      "fired_at": 1790775250,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-b261676fc67e428eb1e055e4b4726cae",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-778eedb3693dffbc6c6fa6115ab33edf",
+      "fired_at": 1789153423,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6097e74d399af7cc709809103aa7942c",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-a39231a7d777a4774c66e0a8a013ac6e",
+      "fired_at": 1792076437,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-7ce541ffe80f5f404de5f902852b66d4",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-3fa7f1041bf90e27dc96925eccf3a171",
+      "fired_at": 1792194552,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c1fc1d742c0507a733f3aa1e9a46b136",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-82ec9f2dfbf6e16f9b3080d56fb78271",
+      "fired_at": 1791560985,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a9a69260b7b4b43dc5571cf1b75adcc3",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-fbc9f87af668a61794a1875d2db69edb",
+      "fired_at": 1792165144,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-59006f3a80eb388f284b9133aca8438b",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-efc89849b3aa7efe4458a885ab9099a4",
+      "fired_at": 1792429320,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6fe61e4592c6d19954fee0c3e0d2ef2d",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-508ebad7b7c93acfe059a0ee9132b63e",
+      "fired_at": 1792102140,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-ab6cd75104c9c6de2b27a7ee34190c02",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-adf4e62d6651529e8268690ba43825b5",
+      "fired_at": 1790859624,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-63467bab44be8f6a3a14959231c9f8b5",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-89a2688b12c136e019985f15ff002d4d",
+      "fired_at": 1792014101,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9a7226b3f7130d71ec338dd6ff42b289",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-82010c62f5f59b220e8fa8e0284d82e5",
+      "fired_at": 1792021709,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-efb53ded430b4a1fc0b0e26cec7775b5",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-17a0df490d01280fd89a40c0e87d1c78",
+      "fired_at": 1791589229,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d28cdfa6315a717a36d9a61c097661ba",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-50fd9d3f85d5169590b2b633956b8c0c",
+      "fired_at": 1790959652,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1232118e42bc0f9903f0f18fa80a3b6b",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-815ef6d13b8faa1837f8a88b17fc695a",
+      "fired_at": 1790957189,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-aeaab199a18cd02138a2acd879977103",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-eededb07e623a6895d59cd2a4eea04e7",
+      "fired_at": 1790984887,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3ec9e2b0f9b2347d7991cc29305224fd",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-1a2a73ed562b0f79c37459eef50bea63",
+      "fired_at": 1791991299,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-61e48066b7eea9dc5c9388443580f860",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-a97065e18e46d534c88a618efed4057d",
+      "fired_at": 1791928296,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3450b2cc4231eac667eb6201ddc68532",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-efc89849b3aa7efe4458a885ab9099a4",
+      "fired_at": 1791814399,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-2b78b30505d0e0f02bf196a9b239bf72",
+      "automation_id": "auto-913864740473b982d1a529db0b90b03d",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-c3b290d08edddfcd1e52d7703f897142",
+      "fired_at": 1792501732,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3c574e18e3ced2ee2491f54e8cb2fa61",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-b31022f0770c779837cc863bf2a03459",
+      "fired_at": 1787961222,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3192eed32d2e6fde362b99446d5c6e1d",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-11a726095eddbbbfa95976636daa2e68",
+      "fired_at": 1788207304,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5d0e5344a841c580b00feba0b741ed24",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-4d3485c5c5c14eb4b27b3d901a16342c",
+      "fired_at": 1789756552,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f75a151986ff346e78e71663393b0b24",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-c40c5d9146fde062a33dc7afd701410d",
+      "fired_at": 1790803609,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-4a4c425a3a11a95677da9f182cdbd2ef",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-1a84a51aa9d3d7c7ee87905e4ca415ea",
+      "fired_at": 1788274031,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-06e0392b8369fd9e8ec2221cd656db1b",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-c40c5d9146fde062a33dc7afd701410d",
+      "fired_at": 1788791580,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a843fba173d081f0d314cb8614d0a98b",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-12a4def0c4bbb7a9d98868dd9c7c7377",
+      "fired_at": 1790091919,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a0e9f6f28b7c7be1e0b2afc00b54a089",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-10714d5136c59dacb4d7e28e271e3ee2",
+      "fired_at": 1789510260,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-89d0a505788a71cb9137c9f23da47a09",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-b31022f0770c779837cc863bf2a03459",
+      "fired_at": 1790629121,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3d17173780c477604562f4ff3aee8f98",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-4b5305e517d2582e046a0df5cafda613",
+      "fired_at": 1788890178,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c1361a4dac556cf549d3b92b0b2414b5",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-a9d3c2e6505cc6869f871ce75487fd4f",
+      "fired_at": 1788799664,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-78c5cece2fc7ea8f513a5902653b707a",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-658b252360141de9f54ad0a2e87466d7",
+      "fired_at": 1789162872,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-175dc68c35f61987f535e1d3ad53ba64",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-77a6e17cd72b61082a405f12b963f37f",
+      "fired_at": 1789150622,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-73316b125a30edb870c224aa3070ba23",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-a8aa71582b70e525bc67f831cbc84759",
+      "fired_at": 1791829563,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-931cd3cb5525e07c37ac1e45ec19951f",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-63d62a39c0e3befd4c71e0fe5a0cdd7c",
+      "fired_at": 1792080301,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-8350e9aa26a693f5db93d5d246dcd47a",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-12a4def0c4bbb7a9d98868dd9c7c7377",
+      "fired_at": 1792450572,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-62c67c13c21c885aea0dde314958ef13",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-dde9f86322bd33886db99102a48b3dbe",
+      "fired_at": 1791905566,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d0ff85a3012c88493de294dde79075c4",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-658b252360141de9f54ad0a2e87466d7",
+      "fired_at": 1791413137,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-832082f9d51a8ec34ecbcf9fae8120e7",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-11a726095eddbbbfa95976636daa2e68",
+      "fired_at": 1790888318,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-0e3a51fadfa3b37a2c772ccb377b866f",
+      "automation_id": "auto-cdebdd3c528e0ae8e03d1b30adcde95f",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-610e6a64e1301617c2dff33556666f9f",
+      "fired_at": 1791589406,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c8aa415682c83298951c50ddb3ad675c",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786136505,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-df29b5dc4f70ce885d74d54570bbf8af",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786457312,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f95819c1160f4ed92e9bc698b275ec3d",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1785960792,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f8a2b91351d9d02c7c4b89ba04e4fd49",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786491351,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1bcad274f39b8ce7eb8de2479a494fea",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787785789,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5c6f10e78f4b422553934f4adb5c759d",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787061233,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5a4387e528511f0d11f40f3f29f7c381",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788478638,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-388c7b02160f906b0dfc96afa584b77f",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788788189,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-909fc6144e9cf1199c0657e57aacd83e",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789495623,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-ea52b4dc8467d72749a7f1b1d71b46de",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790108550,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a12afd2c3016557982534653fd66c33e",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788558805,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-b5f13bf66cd0ce5a238501126e9aeaf0",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790807026,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d9c224b0ac580761a6e68db8d9d9bd7d",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791551878,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-838b0134215f10ee6c91501cf420f4cf",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791570728,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9262c33c5658a6dab4969d6ca8eaf8f2",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791934014,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-b3a22f23c28132ca6a110ca6a108d904",
+      "automation_id": "auto-949e24ad02d22ee763b1a52e907001b6",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790974386,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-bcd591396e22df3b89f63bc2389c4b86",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-29ec8e49d1bdb8c0c71d5e601d5206ab",
+      "fired_at": 1789773648,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e90baca0dd53ed8a61e98721d5ce9e43",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-d261a7ab3aa2e4f90e51f30dc6a7ee39",
+      "fired_at": 1790633579,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5a739c88f032433b6adb63a883a4f293",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-7bf47042bd1531c83764fbda3108d448",
+      "fired_at": 1790379340,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c8daf09d891024a8ced5520a2be9b9db",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-4f77a665ac3c56403c20592fc04a96c4",
+      "fired_at": 1790013445,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-73e3e9454b8feeebad7554bfb54c7776",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-e3e9de99f10c718b1eb0e38a675dd5af",
+      "fired_at": 1789148228,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1a4b7d4425bb97c330992d4a088387e7",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-c40c5d9146fde062a33dc7afd701410d",
+      "fired_at": 1790359760,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6fc66605ee5724aa44fe6e14b2365540",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-658b252360141de9f54ad0a2e87466d7",
+      "fired_at": 1790377952,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a6e0b79180091a5915b45a25e5174323",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-4d3485c5c5c14eb4b27b3d901a16342c",
+      "fired_at": 1789577304,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-236b21cb8599e534fd1822ee6c8cceac",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-12a4def0c4bbb7a9d98868dd9c7c7377",
+      "fired_at": 1789427070,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-27bfd9b12bd4af0fb491740858f0407f",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-25c73c443e75c3b4664fa6637e8f8095",
+      "fired_at": 1791306408,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-421b4e8f8106efc8ddc995fe9265375a",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-a9d3c2e6505cc6869f871ce75487fd4f",
+      "fired_at": 1791996674,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-7682635dbb8ff5f2f8e95e154d23a0b7",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-82ec9f2dfbf6e16f9b3080d56fb78271",
+      "fired_at": 1791901836,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5afd6545b03c66b99b79a1e840c2951c",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-dde9f86322bd33886db99102a48b3dbe",
+      "fired_at": 1791299790,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-06d88e2f4a84dd86e94211bdc1648110",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-e43e4288a2b5b4985cb85aedf5f62c97",
+      "fired_at": 1791393638,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f39e7118a853401903dbcf2610e27ffc",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-29ec8e49d1bdb8c0c71d5e601d5206ab",
+      "fired_at": 1790958131,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-25bb369606aad083ba8ba5eeca477730",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-77a6e17cd72b61082a405f12b963f37f",
+      "fired_at": 1791378026,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-7fdee49577fcc7083bcc823c5b94e3fc",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-77097749527eecfaa79ac9aa9b4e2c24",
+      "fired_at": 1792102861,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-4bb8c7e2d5a95160fef06d21dcc588b3",
+      "automation_id": "auto-7fab9b071e307f1019d56f424c589a8e",
+      "event_type": "github:pull_request",
+      "triggered_by_user_id": "user-ce777f00ecf27e7685197ff4006ed6e3",
+      "fired_at": 1791329254,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-70aa103c6e36f82a652713fc7d99062b",
+      "automation_id": "auto-de74e1224aed4cc88d28eef5c7bbbcf8",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1786732995,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e12e75403088fbf557d6e7a4ede05194",
+      "automation_id": "auto-de74e1224aed4cc88d28eef5c7bbbcf8",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1787944345,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c81dbc2d2cbf4b9df19ba2cf77b8fcc0",
+      "automation_id": "auto-de74e1224aed4cc88d28eef5c7bbbcf8",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1788976043,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5efd3e301d55e8607b7e547906ee9b2b",
+      "automation_id": "auto-de74e1224aed4cc88d28eef5c7bbbcf8",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1789669884,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-307f7f9d0808dd1f1974604f2bb7dcde",
+      "automation_id": "auto-de74e1224aed4cc88d28eef5c7bbbcf8",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1790198123,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-331e5173934ea68c4ed7548ca58ef051",
+      "automation_id": "auto-de74e1224aed4cc88d28eef5c7bbbcf8",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1792434871,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-93fe5ad74e4c1884b0ca45a4c774ea29",
+      "automation_id": "auto-de74e1224aed4cc88d28eef5c7bbbcf8",
+      "event_type": "schedule:recurring",
+      "triggered_by_user_id": null,
+      "fired_at": 1791220096,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-26bde1f80d25db70eb8a14771d1be685",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-815ef6d13b8faa1837f8a88b17fc695a",
+      "fired_at": 1787769555,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-76046b65ceb9b2d79ec32768a8390174",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-bf7b539b0f9aea4b8acd4e10bc594585",
+      "fired_at": 1786114412,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3ecc9e7470b2816ecfd054c3ffef5032",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-e3e9de99f10c718b1eb0e38a675dd5af",
+      "fired_at": 1787590319,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-0e0bd67cb941539f5d8eecfbec3269f7",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-778eedb3693dffbc6c6fa6115ab33edf",
+      "fired_at": 1785794992,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5013f060fe0aec635db0583157a2a01f",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-bf7b539b0f9aea4b8acd4e10bc594585",
+      "fired_at": 1787750154,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1787bcdb70f27237fbd28b752ad9b300",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+      "fired_at": 1786144857,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-ab23cf4249c23f6d4bde711e1f4d02ab",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-434308bc89fa6a688fb5d27bbeb79919",
+      "fired_at": 1788816697,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3f2f5e63c12085a5da0401c9f63e5566",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-0cdb1ca476ecbdd68498e113b227462c",
+      "fired_at": 1790119138,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-65eef2fdc6a7c206ccf7d4ddb1359046",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-efc89849b3aa7efe4458a885ab9099a4",
+      "fired_at": 1790806562,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c5387878e8d73bde691f7de33d4845b3",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-1a2a73ed562b0f79c37459eef50bea63",
+      "fired_at": 1788972169,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d1a1812387aca40000819306356b6ba8",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-b8a6171f1ee34dc43b048a8b405bfdc9",
+      "fired_at": 1788987600,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5d1e6b6de8409bf054a0807751417d5c",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+      "fired_at": 1790797509,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-0e661f03159780d4916ef72a4edd23a9",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-1d53434bb88139b9ae270da702f06b90",
+      "fired_at": 1790890219,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-20c47a53d770f78906adcab48528eda1",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-96a402f23ae8cc938dcdcd03969b6662",
+      "fired_at": 1791384814,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-dffdc6c1189ed132714d242f6c56dc90",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-839fbc501223b5135496f63cdc1110c1",
+      "fired_at": 1792015786,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c5a172e79476e2b1b7c229e071554127",
+      "automation_id": "auto-743de03ae05c1fb92e0ef4aae65e0ac3",
+      "event_type": "slack:message",
+      "triggered_by_user_id": "user-508ebad7b7c93acfe059a0ee9132b63e",
+      "fired_at": 1791816944,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-704094465a4d0b5a94ccb0fc2591af57",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-50fd9d3f85d5169590b2b633956b8c0c",
+      "fired_at": 1786466699,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9ce1639eab863b49eefeaf3103d1c95a",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-b8db0672f42d47cc00d4af5974273ca3",
+      "fired_at": 1787685835,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-eafe700e952b3ddca6d16f37063927d0",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+      "fired_at": 1787234969,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-07a1d38fdcf23a8acfbcfdb921c0a563",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-17a0df490d01280fd89a40c0e87d1c78",
+      "fired_at": 1786636865,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-317ba3e18a3f39ac1e962008eeec27b2",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-434308bc89fa6a688fb5d27bbeb79919",
+      "fired_at": 1787959022,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f0aab6e345a7e3929a0c1c42fcfde4cd",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-b8db0672f42d47cc00d4af5974273ca3",
+      "fired_at": 1786371869,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-40cfc63955ca6bd88881fa5f65b622ef",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-ab7f089acd5f4822696608aaee49f329",
+      "fired_at": 1786742451,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-b7dfda5832a72c4e61033e9ddfdeb5cb",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-434308bc89fa6a688fb5d27bbeb79919",
+      "fired_at": 1787942015,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6e375fe8621f7f1df15a1194467c38c4",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-96a402f23ae8cc938dcdcd03969b6662",
+      "fired_at": 1787064948,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-da60474828f242db773e79ff9dab1185",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-3ed8c56cda09dfa052828d8044b591f7",
+      "fired_at": 1786385417,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a9e74ece20e01053d4cac0b957d559ac",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-b8db0672f42d47cc00d4af5974273ca3",
+      "fired_at": 1787693931,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-dbb46b9e1f3330ca58fa29c23e3683f1",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-adf4e62d6651529e8268690ba43825b5",
+      "fired_at": 1786030748,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3602ae832ed32da67364d51ecc73033d",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-d261a7ab3aa2e4f90e51f30dc6a7ee39",
+      "fired_at": 1787678251,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-108481fe6b5f579ae6a472cebf4ed8f8",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-778eedb3693dffbc6c6fa6115ab33edf",
+      "fired_at": 1785789289,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-78735206df5ff23a479fc90c766d35ff",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-1a84a51aa9d3d7c7ee87905e4ca415ea",
+      "fired_at": 1785881542,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-823b1b83d6e3ec543d35eda4219ca79c",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-1a2a73ed562b0f79c37459eef50bea63",
+      "fired_at": 1787264469,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6074855b390db63d5f968b7c49acf397",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-19db3ad0ddd1dfb23b982ef8daf61a26",
+      "fired_at": 1789579125,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a16f8ffb579527b2d8cb3b46fb9bdd30",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-3fa7f1041bf90e27dc96925eccf3a171",
+      "fired_at": 1788450373,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9f2246ae8aa2f8650841950bd59764f2",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-fd5166e6451b4cf36123fdf77656af72",
+      "fired_at": 1789741120,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5f1b62c6936db0e093915fd03a3c6182",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-adf4e62d6651529e8268690ba43825b5",
+      "fired_at": 1788475050,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-fe4896f3839096c026b47e52e104e0e8",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-6c52c49f9b49bd26df57c59a8715a103",
+      "fired_at": 1789486172,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d8bf30e6bab0c0f592050bc98f3cf243",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-89a2688b12c136e019985f15ff002d4d",
+      "fired_at": 1788820511,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-879b01b0309adaa0a832ac9b65209069",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-6c52c49f9b49bd26df57c59a8715a103",
+      "fired_at": 1788995177,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e1c49d0e47fb65c6f166d7e6ef36d196",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-0f02bad0e7067ef466aa9385dd59ba71",
+      "fired_at": 1789687379,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-0649366ee71d558f50161b58f6d12227",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-1a2a73ed562b0f79c37459eef50bea63",
+      "fired_at": 1790721859,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-482ba9601d2528edb85f3c45123ade45",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-62801c4510435a1098ae43346c12ace8",
+      "fired_at": 1790258833,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-b9868041fc20df9f2c7843e90d3d9834",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+      "fired_at": 1788986180,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d7ec2f9071957db9a53ccd656b18c373",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-bf7b539b0f9aea4b8acd4e10bc594585",
+      "fired_at": 1788381811,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-738160d2919524a4ca0824f0967953f5",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-e3e9de99f10c718b1eb0e38a675dd5af",
+      "fired_at": 1790623437,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-89e255847cae3c8dae5fddbc8efdfe9f",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-93cd59bf5c941cf0dc98d2c1e2acf72f",
+      "fired_at": 1788797770,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c23d987bd25f84c653fb4f36c72d4784",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-fbc9f87af668a61794a1875d2db69edb",
+      "fired_at": 1790365220,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-00af35da21ab6092b486f2bc330f7573",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-dbccc47709e9db0adf46529061ee411a",
+      "fired_at": 1792529504,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e259edb24bed2102666d86671edce548",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-a97065e18e46d534c88a618efed4057d",
+      "fired_at": 1790981903,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3c8ec9fa36531ff92d51437bdd7df2ba",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-cf8ebc5accc56569f9e8a3692999b735",
+      "fired_at": 1790969782,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-48d709d664c4ab92c5619763f7272f25",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-ab7f089acd5f4822696608aaee49f329",
+      "fired_at": 1792191356,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e118710e6807950cd17fc96189cc1f63",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-8f5486b7c7b5b2bc5a8aaeca1a50aec3",
+      "fired_at": 1790974250,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9258c7d890150baacd6cc742e5171e44",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-1ff49b7889463e85759cde66bacfb3d0",
+      "fired_at": 1792004916,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e52ab13f1768a6fea856c2e423480166",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-93cd59bf5c941cf0dc98d2c1e2acf72f",
+      "fired_at": 1791487269,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-89e385738d54d592e56fa38eeebaa17a",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-561e16d16105716bab0e664e9c3eb2d5",
+      "fired_at": 1791392398,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-86a867a76a98da02306570a33bafafde",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-82010c62f5f59b220e8fa8e0284d82e5",
+      "fired_at": 1790984583,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1405c1219270fd197767167dc2e00dd6",
+      "automation_id": "auto-143dbd6ccdbb6c1f5a8d785ef7eba7e9",
+      "event_type": "linear:issue",
+      "triggered_by_user_id": "user-10714d5136c59dacb4d7e28e271e3ee2",
+      "fired_at": 1790873866,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-764b63d9a48c6675ca1894accbdb6367",
+      "automation_id": "auto-84c62e4b0c995e2da7a998ab103f3a46",
+      "event_type": "github:push",
+      "triggered_by_user_id": "user-702753a15f987c71a65e688eabf3ad39",
+      "fired_at": 1790786327,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-67c8b40a00116b3f8555eac2e269ae42",
+      "automation_id": "auto-84c62e4b0c995e2da7a998ab103f3a46",
+      "event_type": "github:push",
+      "triggered_by_user_id": "user-1a84a51aa9d3d7c7ee87905e4ca415ea",
+      "fired_at": 1790190112,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-692e5bd7e6fe130a1bdd31544799bcbd",
+      "automation_id": "auto-84c62e4b0c995e2da7a998ab103f3a46",
+      "event_type": "github:push",
+      "triggered_by_user_id": "user-62801c4510435a1098ae43346c12ace8",
+      "fired_at": 1790602061,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-da7afa03514fd7cd3ed99d2ca1eaf8c0",
+      "automation_id": "auto-84c62e4b0c995e2da7a998ab103f3a46",
+      "event_type": "github:push",
+      "triggered_by_user_id": "user-885f6e66c2b6d2c5fa5d310011b7e948",
+      "fired_at": 1790782371,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-720e3d4054d9a61b33db3e47b78659b7",
+      "automation_id": "auto-84c62e4b0c995e2da7a998ab103f3a46",
+      "event_type": "github:push",
+      "triggered_by_user_id": "user-63d62a39c0e3befd4c71e0fe5a0cdd7c",
+      "fired_at": 1792509621,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1ffe0c2cf78b65fd8079f43e4d57f74c",
+      "automation_id": "auto-84c62e4b0c995e2da7a998ab103f3a46",
+      "event_type": "github:push",
+      "triggered_by_user_id": "user-1a2a73ed562b0f79c37459eef50bea63",
+      "fired_at": 1791329342,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-48da88fb4aa16f3ef22da5a77bbfe8fa",
+      "automation_id": "auto-84c62e4b0c995e2da7a998ab103f3a46",
+      "event_type": "github:push",
+      "triggered_by_user_id": "user-134c6c92ec5b227cdfde4fbf3ff350bf",
+      "fired_at": 1791330658,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3999ccbe9d2fd7bbdfdfde15ff0452c3",
+      "automation_id": "auto-84c62e4b0c995e2da7a998ab103f3a46",
+      "event_type": "github:push",
+      "triggered_by_user_id": "user-0f02bad0e7067ef466aa9385dd59ba71",
+      "fired_at": 1792438851,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d0c62d5850163fb2c9b1c5c87498487e",
+      "automation_id": "auto-84c62e4b0c995e2da7a998ab103f3a46",
+      "event_type": "github:push",
+      "triggered_by_user_id": "user-1a2a73ed562b0f79c37459eef50bea63",
+      "fired_at": 1791841563,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-7e8280afec51c6f88cf1604e902d35e4",
+      "automation_id": "auto-84c62e4b0c995e2da7a998ab103f3a46",
+      "event_type": "github:push",
+      "triggered_by_user_id": "user-9ad620ab48212ddb45b89cd927cb6f2a",
+      "fired_at": 1791931154,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1dd26840116853ccb84aa85216060bf9",
+      "automation_id": "auto-602cf60413d754d6b30269aa6cfacecc",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-dc33e1f94c1f55ab715629eee893be3d",
+      "fired_at": 1787922641,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5d40e932ed0a3d9e1e9b6f5215ae06b5",
+      "automation_id": "auto-602cf60413d754d6b30269aa6cfacecc",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-5738811d70c2903f7a8d03aa782a65e0",
+      "fired_at": 1788208592,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-93ac6ef9471f278c7a2529c0cf097d1f",
+      "automation_id": "auto-602cf60413d754d6b30269aa6cfacecc",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-4b5305e517d2582e046a0df5cafda613",
+      "fired_at": 1787003902,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-219c1d38f9e4ab2a5442bc04d1656cae",
+      "automation_id": "auto-602cf60413d754d6b30269aa6cfacecc",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-6cedd15d58007c0287ea7ff58db06746",
+      "fired_at": 1790263292,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a4f949407149548dd17a9c3519699a56",
+      "automation_id": "auto-602cf60413d754d6b30269aa6cfacecc",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-cee624d09dac6e8345241ea6a6846099",
+      "fired_at": 1789049984,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-5d4161441d12620ea114e18cf8bb9fdc",
+      "automation_id": "auto-602cf60413d754d6b30269aa6cfacecc",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-cee624d09dac6e8345241ea6a6846099",
+      "fired_at": 1790285706,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d00217b2c5958ec61b1ecf2b7f7fbada",
+      "automation_id": "auto-602cf60413d754d6b30269aa6cfacecc",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-cee624d09dac6e8345241ea6a6846099",
+      "fired_at": 1792443351,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-93a1dfccaa8d187ef2e86fc297082d9f",
+      "automation_id": "auto-602cf60413d754d6b30269aa6cfacecc",
+      "event_type": "webhook:incoming",
+      "triggered_by_user_id": "user-6cedd15d58007c0287ea7ff58db06746",
+      "fired_at": 1790967639,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1885a2b7ffaf8a8e5e05b893fa59387c",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-93cd59bf5c941cf0dc98d2c1e2acf72f",
+      "fired_at": 1785864677,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-811b2d9046d8b2c1f198c480e5c513de",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-815ef6d13b8faa1837f8a88b17fc695a",
+      "fired_at": 1787066285,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d89044ef887732dd9b74037402fc8511",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+      "fired_at": 1787173776,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-dad79d10c9c6f558bed0a84faf596fa4",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-62801c4510435a1098ae43346c12ace8",
+      "fired_at": 1786031515,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e7a58501db2e836691216f8a463423ff",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-adf4e62d6651529e8268690ba43825b5",
+      "fired_at": 1787863412,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-9eb86d69af51c6c4a3ec94211685c144",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-93cd59bf5c941cf0dc98d2c1e2acf72f",
+      "fired_at": 1786989261,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-23a6638cdc0ad8ad4bfb545bf298cb85",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-89a2688b12c136e019985f15ff002d4d",
+      "fired_at": 1785781600,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-800c2cee23ce7a40ad02cc61bdd6c4aa",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-561e16d16105716bab0e664e9c3eb2d5",
+      "fired_at": 1786124949,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-ae064bfd7102ae7d55824c1318d6c8d7",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-01a9e71fde8a774bcf36d58b47378190",
+      "fired_at": 1786144706,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-fa5fa49329f041263ce8f8fe3c8f7c96",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-1a2a73ed562b0f79c37459eef50bea63",
+      "fired_at": 1786738691,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-dd80a0ab1be58ff64b0beb9326c3e142",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-62801c4510435a1098ae43346c12ace8",
+      "fired_at": 1785788135,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-4fa1980944b93fe1d14f61b2bb033654",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-885f6e66c2b6d2c5fa5d310011b7e948",
+      "fired_at": 1787077029,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-d5c721abefb3de425a587db082f434c7",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-11a726095eddbbbfa95976636daa2e68",
+      "fired_at": 1785768127,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c3194dd139e0d3854d18180c9d12c684",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-6cedd15d58007c0287ea7ff58db06746",
+      "fired_at": 1785959715,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-03404c0c947779ec94932fc058be2626",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-19db3ad0ddd1dfb23b982ef8daf61a26",
+      "fired_at": 1787070864,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-4da9bb1cdc689cf4d8651b392a638444",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-1d53434bb88139b9ae270da702f06b90",
+      "fired_at": 1787855323,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-fdcbe9353311cc231078decd266cd7dd",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-efc89849b3aa7efe4458a885ab9099a4",
+      "fired_at": 1787588891,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-50abed454823696750d3e7d93a4f7e61",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-a8f7ef5a060edf5b391184973a43b2ba",
+      "fired_at": 1786047992,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-82aa7c0b6abe7d37c1ba9a2a198de06a",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-adf4e62d6651529e8268690ba43825b5",
+      "fired_at": 1787241978,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-2757f6ac54a4c6a73ba3536a9bafb81b",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-d261a7ab3aa2e4f90e51f30dc6a7ee39",
+      "fired_at": 1786110208,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-11c16e0bbde680edf9f0cee61b2fd297",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-508ebad7b7c93acfe059a0ee9132b63e",
+      "fired_at": 1786382272,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3bcdfe433981c7f0bcdba010d5fde56f",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-8f5486b7c7b5b2bc5a8aaeca1a50aec3",
+      "fired_at": 1787677502,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-56d95f244a14de3ffab1135be8fed446",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-fd5166e6451b4cf36123fdf77656af72",
+      "fired_at": 1787086943,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e25e933ce18d06a426a45e9a23e3d316",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-885f6e66c2b6d2c5fa5d310011b7e948",
+      "fired_at": 1789060691,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-50d321d6f377801c70b217ac55977719",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-93cd59bf5c941cf0dc98d2c1e2acf72f",
+      "fired_at": 1790266755,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-71ee21f8bb4b2feb65c8139756ef8aac",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-96a402f23ae8cc938dcdcd03969b6662",
+      "fired_at": 1788391393,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-17f1da8adde335de727434b658862879",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-1a2a73ed562b0f79c37459eef50bea63",
+      "fired_at": 1790019916,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-0511d512baf62c83395c25f7b6d1a121",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-1ff49b7889463e85759cde66bacfb3d0",
+      "fired_at": 1788907288,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-ce463efc1fa31a4ec5c47b5b80222f62",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+      "fired_at": 1790102400,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f84190604b2326cdce6963b595a8a459",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-82010c62f5f59b220e8fa8e0284d82e5",
+      "fired_at": 1790801881,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-b8004f98a72bec8c8273be36db6e5470",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-cf8ebc5accc56569f9e8a3692999b735",
+      "fired_at": 1789396417,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-66eec27eb4f48dd79922cf8841459a23",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-93cd59bf5c941cf0dc98d2c1e2acf72f",
+      "fired_at": 1788537648,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-83aa6a63cf964737e8fb630843d23558",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-50fd9d3f85d5169590b2b633956b8c0c",
+      "fired_at": 1788806127,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-8f9dfbbdf48959da35af2feae630e14a",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-62801c4510435a1098ae43346c12ace8",
+      "fired_at": 1788557566,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-306066f46f0a8337a84d9dff917850e8",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-17a0df490d01280fd89a40c0e87d1c78",
+      "fired_at": 1790369120,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-ae5dd1f9b520d36f28fe25507c443592",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-508ebad7b7c93acfe059a0ee9132b63e",
+      "fired_at": 1789599060,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-7a70d73fa1d8c7bf59fc7cc56b7062d0",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-b31022f0770c779837cc863bf2a03459",
+      "fired_at": 1789744680,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-2d785188ebc5c2db0280c53bb2425437",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+      "fired_at": 1790783310,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-6b81bd11d6f04100000587454e469fd7",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-815ef6d13b8faa1837f8a88b17fc695a",
+      "fired_at": 1790264067,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-db5e8aca0f953c6aedabe8b844f6684b",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-adf4e62d6651529e8268690ba43825b5",
+      "fired_at": 1788442231,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-cb8abb44a143b696ecfb54b580ce344d",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-4eb93effce88cb2dd4e80839fc3e058b",
+      "fired_at": 1789391790,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3c4c22a6f3d7ab04fdd8c3058fabb212",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-434308bc89fa6a688fb5d27bbeb79919",
+      "fired_at": 1789601217,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-59635d2b2c8ab4165887f01d3165613c",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-839fbc501223b5135496f63cdc1110c1",
+      "fired_at": 1790630624,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-49ceef9e708c3df443857e36a29f9887",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+      "fired_at": 1788962143,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-bc790e847f84edddd2fe201f3e1870e3",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-11a726095eddbbbfa95976636daa2e68",
+      "fired_at": 1789765835,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-ebc269c6deb04e7095515cbff7c52327",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-1ff49b7889463e85759cde66bacfb3d0",
+      "fired_at": 1791292799,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-aac08e9558efe1afdf2d838eb3ef5969",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-434308bc89fa6a688fb5d27bbeb79919",
+      "fired_at": 1791412515,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-c9635a8f964399d512c6ad0de51328b5",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-839fbc501223b5135496f63cdc1110c1",
+      "fired_at": 1792105099,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-f613cd0f9b826acdabc279b36d27b15c",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-3ed8c56cda09dfa052828d8044b591f7",
+      "fired_at": 1792509378,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-7781623a264a9113f703356a01d20fd9",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-1a2a73ed562b0f79c37459eef50bea63",
+      "fired_at": 1791215864,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-4bf08feec5f8513b3b516440264f47e6",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-19db3ad0ddd1dfb23b982ef8daf61a26",
+      "fired_at": 1791995917,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-7c8342e95a1f5eb44f001784bedc9dbe",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-3f4df561f319c12507f194f9c1156d6d",
+      "fired_at": 1791555710,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-3953f231f62e2314e12e6b0c7126f0a0",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-6c52c49f9b49bd26df57c59a8715a103",
+      "fired_at": 1792107736,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-915408cb845d1cafb07360775f9bf1f2",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-c51155ffe7a37e8163b4c08b6b8e869f",
+      "fired_at": 1791847251,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-a8033cbb58e3048bbaa2119c91137202",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-62801c4510435a1098ae43346c12ace8",
+      "fired_at": 1792090972,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-e6a206ce36d1c09de40018c0c2d2a9dd",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-702753a15f987c71a65e688eabf3ad39",
+      "fired_at": 1791227900,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1cfef8101025455982c154d909602549",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-50fd9d3f85d5169590b2b633956b8c0c",
+      "fired_at": 1792439342,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-1497d77e413808314ae6a04c391deb7b",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-750cab754ccc9bc2a53f8a28abf3e3fc",
+      "fired_at": 1790891099,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-ac847102f46838f4581c2ae62d39e6f6",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-1ff49b7889463e85759cde66bacfb3d0",
+      "fired_at": 1791318453,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    },
+    {
+      "session_id": "devin-2b9e6ed414d4311f40f2b1afcfc26f5e",
+      "automation_id": "auto-a23ebe36f20ba0c92a869922f4927b35",
+      "event_type": "teams:message",
+      "triggered_by_user_id": "user-815ef6d13b8faa1837f8a88b17fc695a",
+      "fired_at": 1791823643,
+      "source": "trigger event payload (GitHub/Slack/Linear actor)"
+    }
+  ]
+}
