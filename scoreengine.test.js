@@ -9,6 +9,7 @@
 'use strict';
 
 const assert = require('assert');
+const scoringConfig = require('./scoring.js');
 
 // ─── Extracted logic from index.html ─────────────────────────────────────────
 // These functions mirror the implementations in the IIFE exactly.
@@ -18,11 +19,19 @@ function monthKey(unixSecs) {
   return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}`;
 }
 
+function sessionSizeBucket(acus) {
+  if (acus <= 20) return 'XS';
+  if (acus <= 50) return 'S';
+  if (acus <= 100) return 'M';
+  if (acus <= 200) return 'L';
+  return 'XL';
+}
+
 function normalise(values) {
   const min = Math.min(...values);
   const max = Math.max(...values);
   if (max === min) return values.map(() => 0);
-  return values.map(v => ((v - min) / (max - min)) * 100);
+  return values.map(v => ((v - min) / (max - min)) * scoringConfig.scoreMax);
 }
 
 function computeSubScores(agg) {
@@ -30,27 +39,27 @@ function computeSubScores(agg) {
     rawOutput:     agg.outputCount,
     rawPlaybook:   agg.playbookCount,
     rawFrequency:  agg.sessionCount,
-    rawImpact:     agg.totalACUs + agg.totalDurationHours,
+    rawSessionSize: agg.totalACUs,
     rawEfficiency: agg.outputCount > 0 ? agg.totalACUs / agg.outputCount : 0,
   };
 }
 
 function computeTotalScore(normScores, creatorBonus) {
-  return (normScores.normOutput    * 0.50)
-       + (normScores.normPlaybook  * 0.20)
-       + (normScores.normFrequency * 0.20)
-       + (normScores.normImpact    * 0.05)
-       + (normScores.normEfficiency * 0.05)
-       + creatorBonus;
+  const weights = scoringConfig.weights;
+  const weightedScore = (normScores.normOutput      * weights.output)
+                      + (normScores.normPlaybook    * weights.playbook)
+                      + (normScores.normFrequency   * weights.frequency)
+                      + (normScores.normSessionSize * weights.sessionSize)
+                      + (normScores.normEfficiency  * weights.efficiency);
+  const cappedCreatorBonus = Math.min(scoringConfig.creatorBonusCap, Math.max(0, creatorBonus));
+  return Math.min(scoringConfig.scoreMax, Math.max(0, weightedScore + cappedCreatorBonus));
 }
 
-function assignTiers(sorted) {
-  const n = sorted.length;
-  if (n === 0) return;
-  const t1 = Math.ceil(n * 0.10);
-  const t2 = Math.ceil((n - t1) * (0.20 / 0.90));
-  sorted.forEach((item, i) => {
-    item.tier = i < t1 ? 1 : i < t1 + t2 ? 2 : 3;
+function assignTiers(items) {
+  items.forEach(item => {
+    const tier = scoringConfig.tiers.find(candidate => item.totalScore > candidate.minExclusive);
+    item.tier = tier.name;
+    item.tierKey = tier.key;
   });
 }
 
@@ -171,6 +180,20 @@ suite('monthKey utility', () => {
   });
 });
 
+suite('Enterprise session size buckets', () => {
+  test('uses exclusive lower and inclusive upper thresholds', () => {
+    assert.strictEqual(sessionSizeBucket(0), 'XS');
+    assert.strictEqual(sessionSizeBucket(20), 'XS');
+    assert.strictEqual(sessionSizeBucket(20.01), 'S');
+    assert.strictEqual(sessionSizeBucket(50), 'S');
+    assert.strictEqual(sessionSizeBucket(50.01), 'M');
+    assert.strictEqual(sessionSizeBucket(100), 'M');
+    assert.strictEqual(sessionSizeBucket(100.01), 'L');
+    assert.strictEqual(sessionSizeBucket(200), 'L');
+    assert.strictEqual(sessionSizeBucket(200.01), 'XL');
+  });
+});
+
 suite('ScoreEngine._normalise (min-max)', () => {
   test('simple range 0–100 → [0, 100]', () => {
     const result = normalise([0, 50, 100]);
@@ -217,6 +240,20 @@ suite('ScoreEngine._normalise (min-max)', () => {
   });
 });
 
+suite('Scoring configuration', () => {
+  test('configured weights total 100 percent', () => {
+    const totalWeight = Object.values(scoringConfig.weights).reduce((sum, weight) => sum + weight, 0);
+    assertClose(totalWeight, 1);
+  });
+
+  test('sets the five configured score tiers in descending order', () => {
+    assert.deepStrictEqual(scoringConfig.tiers.map(tier => tier.name), [
+      'Power', 'Proficient', 'Standard', 'Basic', 'Limited',
+    ]);
+    assert.deepStrictEqual(scoringConfig.tiers.slice(0, 4).map(tier => tier.minExclusive), [51, 40, 30, 20]);
+  });
+});
+
 suite('ScoreEngine._computeSubScores', () => {
   test('rawOutput = outputCount', () => {
     const agg = { outputCount: 7, playbookCount: 3, sessionCount: 10,
@@ -236,10 +273,10 @@ suite('ScoreEngine._computeSubScores', () => {
     assert.strictEqual(computeSubScores(agg).rawFrequency, 15);
   });
 
-  test('rawImpact = totalACUs + totalDurationHours', () => {
+  test('rawSessionSize = total ACUs consumed', () => {
     const agg = { outputCount: 1, playbookCount: 0, sessionCount: 5,
                   totalACUs: 12.5, totalDurationHours: 7.5 };
-    assertClose(computeSubScores(agg).rawImpact, 20);
+    assertClose(computeSubScores(agg).rawSessionSize, 12.5);
   });
 
   test('rawEfficiency = totalACUs / outputCount when outputCount > 0', () => {
@@ -258,51 +295,64 @@ suite('ScoreEngine._computeSubScores', () => {
 suite('ScoreEngine._computeTotalScore', () => {
   test('correct weighted formula with no creator bonus', () => {
     const normScores = { normOutput: 100, normPlaybook: 100,
-                         normFrequency: 100, normImpact: 100, normEfficiency: 100 };
+                         normFrequency: 100, normSessionSize: 100, normEfficiency: 100 };
     // 100*0.50 + 100*0.20 + 100*0.20 + 100*0.05 + 100*0.05 = 100
     assertClose(computeTotalScore(normScores, 0), 100);
   });
 
   test('weights sum to 1.0 (all norms = 1 gives total = 1 + bonus)', () => {
     const normScores = { normOutput: 1, normPlaybook: 1,
-                         normFrequency: 1, normImpact: 1, normEfficiency: 1 };
+                         normFrequency: 1, normSessionSize: 1, normEfficiency: 1 };
     assertClose(computeTotalScore(normScores, 0), 1.0);
   });
 
-  test('creator bonus is added directly (not normalised)', () => {
+  test('creator bonus is capped at five points', () => {
     const normScores = { normOutput: 0, normPlaybook: 0,
-                         normFrequency: 0, normImpact: 0, normEfficiency: 0 };
+                         normFrequency: 0, normSessionSize: 0, normEfficiency: 0 };
     assertClose(computeTotalScore(normScores, 5), 5);
+    assertClose(computeTotalScore(normScores, 25), 5);
+  });
+
+  test('total score is capped at 100 percent', () => {
+    const normScores = { normOutput: 100, normPlaybook: 100,
+                         normFrequency: 100, normSessionSize: 100, normEfficiency: 100 };
+    assertClose(computeTotalScore(normScores, 25), 100);
+  });
+
+  test('total score never falls below zero', () => {
+    const normScores = { normOutput: 0, normPlaybook: 0,
+                         normFrequency: 0, normSessionSize: 0, normEfficiency: 0 };
+    assertClose(computeTotalScore(normScores, -5), 0);
   });
 
   test('NormOutput has 0.50 weight', () => {
-    const base = { normOutput: 0, normPlaybook: 0, normFrequency: 0, normImpact: 0, normEfficiency: 0 };
+    const base = { normOutput: 0, normPlaybook: 0, normFrequency: 0, normSessionSize: 0, normEfficiency: 0 };
     assertClose(computeTotalScore({ ...base, normOutput: 100 }, 0), 50);
   });
 
   test('NormPlaybook has 0.20 weight', () => {
-    const base = { normOutput: 0, normPlaybook: 0, normFrequency: 0, normImpact: 0, normEfficiency: 0 };
+    const base = { normOutput: 0, normPlaybook: 0, normFrequency: 0, normSessionSize: 0, normEfficiency: 0 };
     assertClose(computeTotalScore({ ...base, normPlaybook: 100 }, 0), 20);
   });
 
   test('NormFrequency has 0.20 weight', () => {
-    const base = { normOutput: 0, normPlaybook: 0, normFrequency: 0, normImpact: 0, normEfficiency: 0 };
+    const base = { normOutput: 0, normPlaybook: 0, normFrequency: 0, normSessionSize: 0, normEfficiency: 0 };
     assertClose(computeTotalScore({ ...base, normFrequency: 100 }, 0), 20);
   });
 
-  test('NormImpact has 0.05 weight', () => {
-    const base = { normOutput: 0, normPlaybook: 0, normFrequency: 0, normImpact: 0, normEfficiency: 0 };
-    assertClose(computeTotalScore({ ...base, normImpact: 100 }, 0), 5);
+  test('NormSessionSize has 0.05 weight', () => {
+    const base = { normOutput: 0, normPlaybook: 0, normFrequency: 0, normSessionSize: 0, normEfficiency: 0 };
+    assertClose(computeTotalScore({ ...base, normSessionSize: 100 }, 0), 5);
   });
 
   test('NormEfficiency has 0.05 weight', () => {
-    const base = { normOutput: 0, normPlaybook: 0, normFrequency: 0, normImpact: 0, normEfficiency: 0 };
+    const base = { normOutput: 0, normPlaybook: 0, normFrequency: 0, normSessionSize: 0, normEfficiency: 0 };
     assertClose(computeTotalScore({ ...base, normEfficiency: 100 }, 0), 5);
   });
 
   test('typical mixed values', () => {
     const normScores = { normOutput: 80, normPlaybook: 60, normFrequency: 70,
-                         normImpact: 40, normEfficiency: 50 };
+                         normSessionSize: 40, normEfficiency: 50 };
     // 80*0.50 + 60*0.20 + 70*0.20 + 40*0.05 + 50*0.05 + 3
     // = 40 + 12 + 14 + 2 + 2.5 + 3 = 73.5
     assertClose(computeTotalScore(normScores, 3), 73.5);
@@ -310,74 +360,22 @@ suite('ScoreEngine._computeTotalScore', () => {
 });
 
 suite('ScoreEngine._assignTiers', () => {
-  test('0 users — no crash', () => {
-    const arr = [];
+  test('assigns all five tiers using the exact configured score cutoffs', () => {
+    const arr = [52, 51, 40, 30, 20, 0].map(totalScore => ({ totalScore }));
     assignTiers(arr);
-    assert.strictEqual(arr.length, 0);
+    assert.deepStrictEqual(arr.map(item => item.tier), [
+      'Power', 'Proficient', 'Standard', 'Basic', 'Limited', 'Limited',
+    ]);
   });
 
-  test('1 user — is Tier 1 (ceil(1*0.10)=1)', () => {
-    const arr = [{ score: 10 }];
+  test('score tier boundaries are strict lower cutoffs', () => {
+    const arr = [51.01, 51, 40.01, 40, 30.01, 30, 20.01, 20]
+      .map(totalScore => ({ totalScore }));
     assignTiers(arr);
-    assert.strictEqual(arr[0].tier, 1);
-  });
-
-  test('10 users — top 1 is Tier 1, next 2 are Tier 2, rest Tier 3', () => {
-    // n=10: t1=ceil(10*0.10)=1, t2=ceil(9*(0.20/0.90))=ceil(2)=2
-    const arr = Array.from({ length: 10 }, (_, i) => ({ score: 10 - i }));
-    assignTiers(arr);
-    assert.strictEqual(arr[0].tier, 1);
-    assert.strictEqual(arr[1].tier, 2);
-    assert.strictEqual(arr[2].tier, 2);
-    for (let i = 3; i < 10; i++) assert.strictEqual(arr[i].tier, 3);
-  });
-
-  test('total tier counts sum to N', () => {
-    for (const n of [1, 5, 10, 20, 50, 100, 7, 13]) {
-      const arr = Array.from({ length: n }, (_, i) => ({ score: n - i }));
-      assignTiers(arr);
-      const t1 = arr.filter(x => x.tier === 1).length;
-      const t2 = arr.filter(x => x.tier === 2).length;
-      const t3 = arr.filter(x => x.tier === 3).length;
-      assert.strictEqual(t1 + t2 + t3, n, `Sum failed for n=${n}`);
-    }
-  });
-
-  test('Tier 1 count = ceil(N * 0.10)', () => {
-    for (const n of [1, 5, 10, 20, 50, 100]) {
-      const arr = Array.from({ length: n }, (_, i) => ({ score: n - i }));
-      assignTiers(arr);
-      const t1 = arr.filter(x => x.tier === 1).length;
-      assert.strictEqual(t1, Math.ceil(n * 0.10), `Tier1 count wrong for n=${n}`);
-    }
-  });
-
-  test('Tier 2 count = ceil((N - t1) * (0.20 / 0.90))', () => {
-    for (const n of [1, 5, 10, 20, 50, 100]) {
-      const arr = Array.from({ length: n }, (_, i) => ({ score: n - i }));
-      assignTiers(arr);
-      const t1 = Math.ceil(n * 0.10);
-      const expectedT2 = Math.ceil((n - t1) * (0.20 / 0.90));
-      const actualT2 = arr.filter(x => x.tier === 2).length;
-      assert.strictEqual(actualT2, expectedT2, `Tier2 count wrong for n=${n}`);
-    }
-  });
-
-  test('2 users — tier assignment', () => {
-    // n=2: t1=ceil(0.2)=1, t2=ceil(1*(0.20/0.90))=ceil(0.222)=1
-    const arr = [{ score: 10 }, { score: 5 }];
-    assignTiers(arr);
-    assert.strictEqual(arr[0].tier, 1);
-    assert.strictEqual(arr[1].tier, 2);
-  });
-
-  test('3 users — tier assignment', () => {
-    // n=3: t1=ceil(0.3)=1, t2=ceil(2*(0.20/0.90))=ceil(0.444)=1
-    const arr = [{ score: 30 }, { score: 20 }, { score: 10 }];
-    assignTiers(arr);
-    assert.strictEqual(arr[0].tier, 1);
-    assert.strictEqual(arr[1].tier, 2);
-    assert.strictEqual(arr[2].tier, 3);
+    assert.deepStrictEqual(arr.map(item => item.tier), [
+      'Power', 'Proficient', 'Proficient', 'Standard',
+      'Standard', 'Basic', 'Basic', 'Limited',
+    ]);
   });
 });
 

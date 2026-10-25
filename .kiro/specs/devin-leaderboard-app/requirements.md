@@ -2,11 +2,11 @@
 
 ## Introduction
 
-The Devin Leaderboard App is a single self-contained `index.html` web application that loads Devin API session data and enrichment files, computes a weighted usage score for each user in the organisation, and presents an interactive leaderboard. Users can filter by month, department, and job function; explore ranked scores and tier assignments; inspect per-user session details; and view creator-bonus breakdowns — all without a build step or server-side dependency.
+The Devin Usage Leaderboard is a single self-contained `index.html` web application that loads Devin API session data and enrichment files, computes a weighted usage score for each user in the organisation, and presents an interactive leaderboard. Users can filter by month, department, and job function; explore ranked scores and tier assignments; inspect per-user session details; and view creator-bonus breakdowns — all without a build step or server-side dependency.
 
 ## Glossary
 
-- **App**: The single `index.html` web application described in this document.
+- **App**: The browser application with source files in `index.html` and `scoring.js`, and a generated distributable in `index.dist.html`.
 - **Session**: One record from `devin_api/sessions.json`, identified by `session_id`, associated with a `user_id`.
 - **Asset**: One record from `devin_api/assets.json`; may be a playbook, automation, or knowledge note.
 - **User**: A member of the organisation as defined in `enrichment/org_directory.json`.
@@ -17,12 +17,12 @@ The Devin Leaderboard App is a single self-contained `index.html` web applicatio
 - **OutputScore**: The count of OutputSessions for a user in the FilterWindow.
 - **PlaybookScore**: The count of sessions with a non-null `playbook_id` for a user in the FilterWindow.
 - **FrequencyScore**: The total count of sessions for a user in the FilterWindow.
-- **ImpactScore**: The sum of `acus_consumed` plus the sum of session durations in hours (`(updated_at - created_at) / 3600`) for a user in the FilterWindow.
+- **SessionSizeScore**: The sum of `acus_consumed` for a user in the FilterWindow.
 - **EfficiencyScore**: `total_acus_consumed / outputSessionCount` for a user in the FilterWindow; 0 when `outputSessionCount` is 0; inverted before normalisation so that a lower ACU-per-output produces a higher normalised score.
 - **NormScore**: A min-max normalised value in the range 0–100 computed across all users in the FilterWindow.
-- **TotalScore**: The weighted sum `(NormOutputScore × 0.50) + (NormPlaybookScore × 0.20) + (NormFrequencyScore × 0.20) + (NormImpactScore × 0.05) + (NormEfficiencyScore × 0.05) + CreatorBonus`.
+- **TotalScore**: The weighted sum `(NormOutputScore × 0.50) + (NormPlaybookScore × 0.20) + (NormFrequencyScore × 0.20) + (NormSessionSizeScore × 0.05) + (NormEfficiencyScore × 0.05) + min(CreatorBonus, 5)`, clamped to the 0–100 range and displayed as a percentage.
 - **CreatorBonus**: An integer equal to the count of distinct assets (playbooks, automations, or knowledge notes) created by a user and used by others within the FilterWindow; knowledge notes count only when `classification == "useful"`.
-- **Tier**: A performance band assigned by percentile rank: Tier 1 = top 10 % of users by TotalScore, Tier 2 = next 20 %, Tier 3 = bottom 70 %.
+- **Tier**: A score band assigned per user per month: Power (>51), Proficient (>40), Standard (>30), Basic (>20), or Limited (≤20).
 - **MonthlyBucket**: A pre-computed record of per-user raw component tallies (outputCount, playbookCount, sessionCount, totalACUs, totalDuration, childCount) for a single calendar month.
 - **LookupMap**: A JavaScript `Map` built at load time keyed by a join field (e.g. `user_id`, `session_id`, `note_id`) for O(1) access.
 - **DataLoader**: The App subsystem responsible for fetching JSON files and falling back to file-upload when a fetch fails.
@@ -40,7 +40,7 @@ The Devin Leaderboard App is a single self-contained `index.html` web applicatio
 
 #### Acceptance Criteria
 
-1. WHEN the App initialises, THE DataLoader SHALL attempt to fetch the following seven files via `fetch()` using relative paths: `devin_api/sessions.json`, `devin_api/assets.json`, `enrichment/org_directory.json`, `enrichment/document_reviews.json`, `enrichment/knowledge_note_owners.json`, `enrichment/knowledge_note_usage.json`, and `enrichment/automation_triggers.json`.
+1. WHEN the App initialises, THE DataLoader SHALL attempt to fetch the following seven files via `fetch()` using relative paths: `data/devin_api/sessions.json`, `data/devin_api/assets.json`, `data/enrichment/org_directory.json`, `data/enrichment/document_reviews.json`, `data/enrichment/knowledge_note_owners.json`, `data/enrichment/knowledge_note_usage.json`, and `data/enrichment/automation_triggers.json`.
 2. IF a `fetch()` call fails or returns a non-OK HTTP status, THEN THE DataLoader SHALL display a file-upload prompt for the specific failed file and accept a user-selected JSON file as a substitute.
 3. WHEN all seven files are successfully loaded (via fetch or upload), THE DataLoader SHALL pass the parsed JSON data to the ScoreEngine for indexing.
 4. THE DataLoader SHALL parse each file as JSON and SHALL surface a user-visible error message if parsing fails.
@@ -68,11 +68,11 @@ The Devin Leaderboard App is a single self-contained `index.html` web applicatio
 #### Acceptance Criteria
 
 1. WHEN a filter value changes, THE ScoreEngine SHALL aggregate scores by summing MonthlyBuckets that fall within the selected month range without re-scanning the raw sessions array.
-2. THE ScoreEngine SHALL compute OutputScore, PlaybookScore, FrequencyScore, ImpactScore, and EfficiencyScore from aggregated MonthlyBucket totals for each user.
-3. THE ScoreEngine SHALL apply min-max normalisation across all users in the FilterWindow to produce NormOutputScore, NormPlaybookScore, NormFrequencyScore, NormImpactScore, and NormEfficiencyScore each in the range 0–100; WHEN all users share the same raw value, THE ScoreEngine SHALL assign a NormScore of 0 to all users.
+2. THE ScoreEngine SHALL compute OutputScore, PlaybookScore, FrequencyScore, SessionSizeScore, and EfficiencyScore from aggregated MonthlyBucket totals for each user.
+3. THE ScoreEngine SHALL apply min-max normalisation across all users in the FilterWindow to produce NormOutputScore, NormPlaybookScore, NormFrequencyScore, NormSessionSizeScore, and NormEfficiencyScore each in the range 0–100; WHEN all users share the same raw value, THE ScoreEngine SHALL assign a NormScore of 0 to all users.
 4. THE ScoreEngine SHALL invert the raw EfficiencyScore before normalisation so that a lower ACU-per-output yields a higher NormEfficiencyScore.
-5. THE ScoreEngine SHALL compute TotalScore as `(NormOutputScore × 0.50) + (NormPlaybookScore × 0.20) + (NormFrequencyScore × 0.20) + (NormImpactScore × 0.05) + (NormEfficiencyScore × 0.05) + CreatorBonus`.
-6. THE ScoreEngine SHALL assign tiers: users ranked in the top 10 % by TotalScore receive Tier 1; users ranked in the next 20 % receive Tier 2; the remaining 70 % receive Tier 3.
+5. THE ScoreEngine SHALL compute TotalScore as `(NormOutputScore × 0.50) + (NormPlaybookScore × 0.20) + (NormFrequencyScore × 0.20) + (NormSessionSizeScore × 0.05) + (NormEfficiencyScore × 0.05) + min(CreatorBonus, 5)`, capped at 100.
+6. THE ScoreEngine SHALL assign each user a tier from their TotalScore: Power if >51, Proficient if >40, Standard if >30, Basic if >20, and Limited otherwise.
 7. WHEN the Department filter is active, THE ScoreEngine SHALL exclude users not belonging to the selected department before aggregation and normalisation.
 8. WHEN the Job-Function filter is active, THE ScoreEngine SHALL exclude users whose `job_function` does not match the selected value before aggregation and normalisation.
 
@@ -98,12 +98,11 @@ The Devin Leaderboard App is a single self-contained `index.html` web applicatio
 
 #### Acceptance Criteria
 
-1. THE UI SHALL render four stat cards at the top of the Overview tab, the Leaderboard tab, the Creator Bonus tab, and the User Session Insight view.
-2. THE UI SHALL label the four cards: "Total Sessions", "Power Users", "Limited Users", and "Sessions with Org Context".
+1. THE UI SHALL render three summary stat cards at the top of the Overview, Leaderboard, and Creator Bonus tabs, and four user metrics in the User Session Insight view.
+2. THE UI SHALL label the overview, leaderboard, and creator bonus cards: "Total Sessions", "Power Users", and "Limited Users".
 3. WHEN the FilterWindow changes, THE UI SHALL update "Total Sessions" to the count of sessions in the FilterWindow.
-4. WHEN the FilterWindow changes, THE UI SHALL update "Power Users" to the count of users assigned Tier 1 in the FilterWindow.
-5. WHEN the FilterWindow changes, THE UI SHALL update "Limited Users" to the count of users assigned Tier 3 in the FilterWindow.
-6. WHEN the FilterWindow changes, THE UI SHALL update "Sessions with Org Context" to the count of sessions in the FilterWindow whose `user_id` resolves to a user record in `org_directory.json`.
+4. WHEN the FilterWindow changes, THE UI SHALL update "Power Users" to the count of users assigned the Power tier in the FilterWindow.
+5. WHEN the FilterWindow changes, THE UI SHALL update "Limited Users" to the count of users assigned the Limited tier in the FilterWindow.
 
 ---
 
@@ -114,7 +113,7 @@ The Devin Leaderboard App is a single self-contained `index.html` web applicatio
 #### Acceptance Criteria
 
 1. THE UI SHALL render a horizontal bar chart titled "Top-10 Scorers" displaying the 10 users with the highest TotalScore in the FilterWindow, with user names on the Y-axis and TotalScore values on the X-axis.
-2. THE UI SHALL render a donut chart titled "Session Size Distribution" with four slices corresponding to ACU buckets: 0–1, 1–2, 2–5, and 5+; each slice value equals the count of sessions in the FilterWindow whose `acus_consumed` falls in that bucket.
+2. THE UI SHALL render a donut chart titled "Session Size Distribution" with five slices corresponding to enterprise ACU sizes: XS (≤20), S (>20–50), M (>50–100), L (>100–200), and XL (>200); each slice value equals the count of sessions in the FilterWindow whose `acus_consumed` falls in that bucket.
 3. THE UI SHALL render a donut chart titled "Sessions by Department" with one slice per department; each slice value equals the count of sessions in the FilterWindow belonging to users in that department.
 4. WHEN a filter changes, THE UI SHALL destroy the existing Chart.js instance for each chart and SHALL create a new Chart.js instance with the updated data.
 5. THE UI SHALL load Chart.js from the CDN URL `https://cdn.jsdelivr.net/npm/chart.js`.
@@ -127,7 +126,7 @@ The Devin Leaderboard App is a single self-contained `index.html` web applicatio
 
 #### Acceptance Criteria
 
-1. THE UI SHALL render a table on the Leaderboard tab with the following columns in order: Rank, Name, Department, Job Function, Tier, Total Score, Output Score, Playbook Score, Frequency Score, Impact Score, Efficiency Score, Creator Bonus.
+1. THE UI SHALL render a table on the Leaderboard tab with the following columns in order: Rank, Name, Department, Job Function, Tier, Total Score, Output Score, Playbook Score, Frequency Score, Session Size Score, Efficiency Score, Creator Bonus.
 2. THE UI SHALL display TotalScore and all sub-scores rounded to two decimal places.
 3. THE UI SHALL default the Leaderboard table sort to Rank ascending.
 4. WHEN the user clicks a column header, THE UI SHALL sort the table by that column; clicking the same header again SHALL reverse the sort direction.
@@ -149,6 +148,8 @@ The Devin Leaderboard App is a single self-contained `index.html` web applicatio
 6. IF the selected user has no pull requests in the FilterWindow, THEN THE UI SHALL display the message "No PR output in this window." in the PR Output section.
 7. IF the selected user has no devin-source attachments in the FilterWindow, THEN THE UI SHALL display the message "No document output in this window." in the Doc Output section.
 8. THE UI SHALL display the stat cards at the top of the User Session Insight view using the same FilterWindow values as the other tabs.
+9. THE UI SHALL display user-specific metrics for session count, PR-created session count, document-created session count, and average monthly TotalScore.
+10. THE UI SHALL paginate the selected user's session, PR Output, and Doc Output lists with 10 items per page and previous/next controls for each list.
 
 ---
 
@@ -183,12 +184,12 @@ The Devin Leaderboard App is a single self-contained `index.html` web applicatio
 
 ### Requirement 11 — Application Structure and Delivery
 
-**User Story:** As an app operator, I want the entire application delivered as a single `index.html` file with no build step, so that it can be opened directly in any modern browser.
+**User Story:** As an app operator, I want a self-contained HTML distributable that can be hosted as a static file or opened directly in a modern browser.
 
 #### Acceptance Criteria
 
-1. THE App SHALL be delivered as a single `index.html` file containing all HTML, CSS, and JavaScript inline.
+1. THE distributable SHALL be `index.dist.html`, generated by `node build.js`, and SHALL contain the application HTML, CSS, JavaScript, and data inline.
 2. THE App SHALL load Chart.js exclusively from the CDN URL `https://cdn.jsdelivr.net/npm/chart.js` and SHALL NOT bundle or inline the Chart.js source.
-3. THE App SHALL require no server-side processing; all data loading, joining, scoring, and rendering SHALL occur in the browser.
+3. THE App SHALL require no server-side processing; all data loading, joining, scoring, and rendering SHALL occur in the browser. The distributable MAY be hosted by any static file host.
 4. THE App SHALL render correctly in the latest stable versions of Chrome, Firefox, and Safari without polyfills.
 5. THE UI SHALL present three top-level tabs labelled "Overview", "Leaderboard", and "Creator Bonus"; WHEN a tab is selected, THE UI SHALL display only the content for that tab.
