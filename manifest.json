@@ -1,0 +1,56 @@
+{
+  "org_id": "org-bdd640fb06671ad11c80317fa3b1799d",
+  "fetched_at": 1792569600,
+  "seed": 42,
+  "base_url": "https://api.devin.ai",
+  "window": {
+    "time_after": 1785571200,
+    "time_before": 1792569600
+  },
+  "files": {
+    "devin_api/sessions.json": {
+      "source": "GET /v3/organizations/{org_id}/sessions (+ GET .../sessions/{devin_id}/attachments nested as `attachments`)",
+      "params": {
+        "time_after": 1785571200,
+        "time_before": 1792569600,
+        "note": "all pages merged, newest first. acus_consumed is per session; for billed totals use GET /v3/organizations/{org_id}/consumption/daily/users/{user_id}"
+      }
+    },
+    "devin_api/assets.json": {
+      "source": "GET /v3/organizations/{org_id}/playbooks + /automations + /knowledge/notes, normalised",
+      "params": {
+        "note": "`raw` is the original API item. Knowledge notes have created_by_user_id=null because the notes API has no creator; take it from enrichment/knowledge_note_owners.json"
+      }
+    },
+    "enrichment/org_directory.json": {
+      "source": "HR system / IdP export (user_id, name, email also in GET /v3beta1/organizations/{org_id}/members/users)",
+      "params": {
+        "join_key": "user_id or email"
+      }
+    },
+    "enrichment/knowledge_note_owners.json": {
+      "source": "Not in Devin API: note creator registry",
+      "params": {
+        "join_key": "note_id"
+      }
+    },
+    "enrichment/knowledge_note_usage.json": {
+      "source": "Not in Devin API: Session Insights > Knowledge Usage, or own tracking",
+      "params": {
+        "join_key": "session_id, note_id"
+      }
+    },
+    "enrichment/automation_triggers.json": {
+      "source": "Not in Devin API: actor from the trigger event (GitHub/Slack/Linear)",
+      "params": {
+        "join_key": "session_id, automation_id"
+      }
+    },
+    "enrichment/document_reviews.json": {
+      "source": "Not in Devin API: document store review status",
+      "params": {
+        "join_key": "attachment_id"
+      }
+    }
+  }
+}

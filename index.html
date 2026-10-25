@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Devin Leaderboard</title>
+  <title>Devin Usage Leaderboard</title>
   <style>
     /* ── Reset & Base ── */
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -39,6 +39,8 @@
       gap: 10px;
       flex-wrap: wrap;
       align-items: center;
+      flex: 1;
+      justify-content: flex-end;
     }
     #filters select {
       padding: 6px 10px;
@@ -139,6 +141,11 @@
       letter-spacing: 0.05em;
       font-weight: 600;
     }
+    .stat-card .stat-description {
+      color: #5e6c84;
+      font-size: 12px;
+      line-height: 1.4;
+    }
     .stat-card .stat-value {
       font-size: 28px;
       font-weight: 700;
@@ -155,15 +162,23 @@
       text-transform: uppercase;
       letter-spacing: 0.05em;
     }
-    .tier-1 {
+    .tier-power {
       background: #ffd700;
       color: #5a4000;
     }
-    .tier-2 {
+    .tier-proficient {
       background: #c0c0c0;
       color: #3d3d3d;
     }
-    .tier-3 {
+    .tier-standard {
+      background: #4c9aff;
+      color: #092957;
+    }
+    .tier-basic {
+      background: #b0b3b8;
+      color: #fff;
+    }
+    .tier-limited {
       background: #b0b3b8;
       color: #fff;
     }
@@ -174,6 +189,7 @@
       border-radius: 8px;
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
       overflow: auto;
+      max-width: 100%;
     }
     table {
       width: 100%;
@@ -209,17 +225,53 @@
       transition: background 0.1s;
     }
     tbody tr:last-child { border-bottom: none; }
-    tbody tr:hover { background: #f4f5f7; cursor: pointer; }
+    tbody tr:hover { background: #f4f5f7; }
     tbody td {
       padding: 10px 14px;
       color: #172b4d;
       white-space: nowrap;
+    }
+    .user-insight-link {
+      border: 0;
+      padding: 0;
+      background: none;
+      color: #0052cc;
+      font: inherit;
+      text-align: left;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+    .user-insight-link:hover { color: #0747a6; }
+    .user-insight-link:focus-visible {
+      outline: 2px solid #0052cc;
+      outline-offset: 2px;
     }
     .empty-state {
       padding: 40px;
       text-align: center;
       color: #5e6c84;
       font-style: italic;
+    }
+    .insight-pagination {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 12px;
+      padding: 12px 14px;
+      border-top: 1px solid #dfe1e6;
+      color: #5e6c84;
+    }
+    .insight-pagination button {
+      padding: 6px 12px;
+      border: 1px solid #dfe1e6;
+      border-radius: 4px;
+      background: #fff;
+      color: #0052cc;
+      cursor: pointer;
+    }
+    .insight-pagination button:disabled {
+      color: #8993a4;
+      cursor: not-allowed;
     }
 
     /* ── Chart Containers ── */
@@ -235,6 +287,7 @@
       box-shadow: 0 1px 3px rgba(0,0,0,0.1);
       padding: 20px;
       position: relative;
+      height: 360px;
       min-height: 300px;
       display: flex;
       flex-direction: column;
@@ -247,6 +300,8 @@
     }
     .chart-container canvas {
       flex: 1;
+      min-height: 0;
+      width: 100% !important;
     }
 
     /* ── Error Banner ── */
@@ -336,12 +391,60 @@
     ::-webkit-scrollbar-track { background: #f4f5f7; }
     ::-webkit-scrollbar-thumb { background: #c1c7d0; border-radius: 3px; }
     ::-webkit-scrollbar-thumb:hover { background: #5e6c84; }
+
+    @media (max-width: 768px) {
+      header {
+        align-items: flex-start;
+        padding: 12px 16px;
+      }
+      #filters { justify-content: flex-start; }
+      #tabs {
+        overflow-x: auto;
+        padding: 0 12px;
+      }
+      #tabs button {
+        flex: 0 0 auto;
+        padding: 12px 16px;
+      }
+      main { padding: 16px; }
+      .charts-grid { grid-template-columns: minmax(0, 1fr); }
+    }
+    @media (max-width: 480px) {
+      header h1 {
+        width: 100%;
+        font-size: 18px;
+      }
+      #filters { width: 100%; }
+      #filters select { flex: 1 1 100%; }
+      #tabs button { padding: 11px 12px; font-size: 13px; }
+      main { padding: 12px; }
+      .stat-cards {
+        grid-template-columns: repeat(auto-fit, minmax(135px, 1fr));
+        gap: 10px;
+        margin-bottom: 16px;
+      }
+      .stat-card { padding: 14px; }
+      .stat-card .stat-value { font-size: 24px; }
+      .chart-container {
+        height: 280px;
+        min-height: 240px;
+        padding: 14px;
+      }
+      .insight-header { flex-wrap: wrap; gap: 10px; }
+      .insight-header h2 { font-size: 16px; }
+      .insight-pagination {
+        justify-content: space-between;
+        gap: 8px;
+        padding: 10px;
+      }
+      .insight-pagination button { padding: 6px 8px; }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>Devin Leaderboard</h1>
+    <h1>Devin Usage Leaderboard</h1>
     <div id="filters">
       <select id="filter-month" aria-label="Filter by month">
         <option value="All">All Months</option>
@@ -359,6 +462,7 @@
     <button data-tab="overview"      role="tab" aria-selected="true"  aria-controls="tab-overview">Overview</button>
     <button data-tab="leaderboard"   role="tab" aria-selected="false" aria-controls="tab-leaderboard">Leaderboard</button>
     <button data-tab="creator-bonus" role="tab" aria-selected="false" aria-controls="tab-creator-bonus">Creator Bonus</button>
+    <button id="tab-btn-session-insight" data-tab="user-insight" role="tab" aria-selected="false" aria-controls="user-insight" hidden>Insights</button>
   </nav>
 
   <main>
@@ -404,7 +508,7 @@
     </div>
 
     <!-- User Session Insight (hidden until row click) -->
-    <div id="user-insight" hidden aria-live="polite">
+    <div id="user-insight" role="tabpanel" aria-labelledby="tab-btn-session-insight" hidden aria-live="polite">
       <div class="insight-header">
         <button class="btn-back" id="btn-back-insight" aria-label="Back to leaderboard">← Back</button>
         <h2 id="insight-user-name">User Insight</h2>
@@ -416,18 +520,21 @@
       </div>
       <div class="insight-section">
         <h3>Sessions</h3>
+        <p id="insight-session-count" aria-live="polite"></p>
         <div class="table-wrap" id="insight-sessions-table-wrap">
           <div class="empty-state">No sessions in this window.</div>
         </div>
       </div>
       <div class="insight-section">
         <h3>PR Output</h3>
+        <p id="insight-pr-count" aria-live="polite"></p>
         <div class="table-wrap" id="insight-pr-table-wrap">
           <div class="empty-state">No PR output in this window.</div>
         </div>
       </div>
       <div class="insight-section">
         <h3>Doc Output</h3>
+        <p id="insight-doc-count" aria-live="polite"></p>
         <div class="table-wrap" id="insight-doc-table-wrap">
           <div class="empty-state">No document output in this window.</div>
         </div>
@@ -437,6 +544,7 @@
 
   <!-- Chart.js from CDN (Requirement 6.5 / 11.2) -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="scoring.js"></script>
 
   <script>
     (function () {
@@ -568,6 +676,14 @@
         return `${d.getUTCFullYear()}-${String(d.getUTCMonth() + 1).padStart(2, '0')}`;
       }
 
+      function sessionSizeBucket(acus) {
+        if (acus <= 20) return 'XS';
+        if (acus <= 50) return 'S';
+        if (acus <= 100) return 'M';
+        if (acus <= 200) return 'L';
+        return 'XL';
+      }
+
       // ── Indexer ───────────────────────────────────────────────────────────
       const Indexer = {
         // LookupMaps
@@ -577,6 +693,7 @@
         noteOwnerById: new Map(),
         assetById:     new Map(),
         assetByAutoId: new Map(),
+        departmentById: new Map(),
 
         // MonthlyBucket map: Map<userId, Map<YYYY-MM, Bucket>>
         monthlyBuckets: new Map(),
@@ -604,6 +721,9 @@
           const users         = Array.isArray(rawData.orgDirectory)
             ? rawData.orgDirectory
             : (rawData.orgDirectory?.users ?? []);
+          const departments = Array.isArray(rawData.orgDirectory?.departments)
+            ? rawData.orgDirectory.departments
+            : [];
 
           const reviews       = Array.isArray(rawData.documentReviews)
             ? rawData.documentReviews
@@ -615,6 +735,12 @@
 
           // userById: user_id → user record
           this.userById = new Map();
+          this.departmentById = new Map();
+          for (const department of departments) {
+            if (department.department_id != null && department.name != null) {
+              this.departmentById.set(department.department_id, department.name);
+            }
+          }
           for (const user of users) {
             if (user.user_id != null) {
               this.userById.set(user.user_id, user);
@@ -658,6 +784,12 @@
               }
             }
           }
+        },
+
+        departmentName(user) {
+          return user.department_name
+            ?? this.departmentById.get(user.department_id)
+            ?? '—';
         },
 
         _buildMonthlyBuckets(sessions) {
@@ -820,7 +952,7 @@
           const normOutput     = this._normalise(withRaw.map(x => x.raw.rawOutput));
           const normPlaybook   = this._normalise(withRaw.map(x => x.raw.rawPlaybook));
           const normFrequency  = this._normalise(withRaw.map(x => x.raw.rawFrequency));
-          const normImpact     = this._normalise(withRaw.map(x => x.raw.rawImpact));
+          const normSessionSize = this._normalise(withRaw.map(x => x.raw.rawSessionSize));
 
           // EfficiencyScore is inverted before normalisation (Requirement 3.4):
           // lower ACU-per-output → higher normalised score.
@@ -835,39 +967,40 @@
             const totalCreatorBonus = creatorBonusEntry.playbookBonus
                                     + creatorBonusEntry.automationBonus
                                     + creatorBonusEntry.knowledgeNoteBonus;
+            const cappedCreatorBonus = Math.min(SCORING_CONFIG.creatorBonusCap, totalCreatorBonus);
 
             const normScores = {
               normOutput:     normOutput[i],
               normPlaybook:   normPlaybook[i],
               normFrequency:  normFrequency[i],
-              normImpact:     normImpact[i],
+              normSessionSize: normSessionSize[i],
               normEfficiency: normEfficiency[i],
             };
 
-            const totalScore = this._computeTotalScore(normScores, totalCreatorBonus);
+            const totalScore = this._computeTotalScore(normScores, cappedCreatorBonus);
 
             return {
               user_id:        x.user.user_id,
               name:           x.user.name        ?? '(unknown)',
-              department:     x.user.department_name ?? '—',
+              department:     Indexer.departmentName(x.user),
               jobFunction:    x.user.job_function ?? '—',
               // raw sub-scores
               rawOutput:      x.raw.rawOutput,
               rawPlaybook:    x.raw.rawPlaybook,
               rawFrequency:   x.raw.rawFrequency,
-              rawImpact:      x.raw.rawImpact,
+              rawSessionSize: x.raw.rawSessionSize,
               rawEfficiency:  x.raw.rawEfficiency,
               // normalised sub-scores
               normOutput:     normScores.normOutput,
               normPlaybook:   normScores.normPlaybook,
               normFrequency:  normScores.normFrequency,
-              normImpact:     normScores.normImpact,
+              normSessionSize: normScores.normSessionSize,
               normEfficiency: normScores.normEfficiency,
               // creator bonus breakdown
               playbookBonus:      creatorBonusEntry.playbookBonus,
               automationBonus:    creatorBonusEntry.automationBonus,
               knowledgeNoteBonus: creatorBonusEntry.knowledgeNoteBonus,
-              creatorBonus:       totalCreatorBonus,
+              creatorBonus:       cappedCreatorBonus,
               // total
               totalScore,
               // agg kept for downstream use (User Session Insight)
@@ -889,7 +1022,7 @@
           const allUsers = [...Indexer.userById.values()];
           return allUsers.filter(user => {
             if (filterState.department !== 'All' &&
-                user.department_name !== filterState.department) {
+                Indexer.departmentName(user) !== filterState.department) {
               return false;
             }
             if (filterState.jobFunction !== 'All' &&
@@ -949,7 +1082,7 @@
           const min = Math.min(...values);
           const max = Math.max(...values);
           if (max === min) return values.map(() => 0);
-          return values.map(v => ((v - min) / (max - min)) * 100);
+          return values.map(v => ((v - min) / (max - min)) * SCORING_CONFIG.scoreMax);
         },
 
         _computeSubScores(agg) {
@@ -957,27 +1090,27 @@
             rawOutput:     agg.outputCount,
             rawPlaybook:   agg.playbookCount,
             rawFrequency:  agg.sessionCount,
-            rawImpact:     agg.totalACUs + agg.totalDurationHours,
+            rawSessionSize: agg.totalACUs,
             rawEfficiency: agg.outputCount > 0 ? agg.totalACUs / agg.outputCount : 0,
           };
         },
 
         _computeTotalScore(normScores, creatorBonus) {
-          return (normScores.normOutput    * 0.50)
-               + (normScores.normPlaybook  * 0.20)
-               + (normScores.normFrequency * 0.20)
-               + (normScores.normImpact    * 0.05)
-               + (normScores.normEfficiency * 0.05)
-               + creatorBonus;
+          const weights = SCORING_CONFIG.weights;
+          const weightedScore = (normScores.normOutput       * weights.output)
+                              + (normScores.normPlaybook     * weights.playbook)
+                              + (normScores.normFrequency    * weights.frequency)
+                              + (normScores.normSessionSize  * weights.sessionSize)
+                              + (normScores.normEfficiency   * weights.efficiency);
+          const cappedCreatorBonus = Math.min(SCORING_CONFIG.creatorBonusCap, Math.max(0, creatorBonus));
+          return Math.min(SCORING_CONFIG.scoreMax, Math.max(0, weightedScore + cappedCreatorBonus));
         },
 
         _assignTiers(sorted) {
-          const n = sorted.length;
-          if (n === 0) return;
-          const t1 = Math.ceil(n * 0.10);
-          const t2 = Math.ceil((n - t1) * (0.20 / 0.90));
-          sorted.forEach((item, i) => {
-            item.tier = i < t1 ? 1 : i < t1 + t2 ? 2 : 3;
+          sorted.forEach(item => {
+            const tier = SCORING_CONFIG.tiers.find(candidate => item.totalScore > candidate.minExclusive);
+            item.tier = tier.name;
+            item.tierKey = tier.key;
           });
         },
       };
@@ -1028,8 +1161,9 @@
         _populateDeptFilter() {
           const deptSet = new Set();
           for (const user of Indexer.userById.values()) {
-            if (user.department_name != null && user.department_name !== '') {
-              deptSet.add(user.department_name);
+            const department = Indexer.departmentName(user);
+            if (department !== '—' && department !== '') {
+              deptSet.add(department);
             }
           }
 
@@ -1074,17 +1208,37 @@
             this._instances[canvasId].destroy();
             delete this._instances[canvasId];
           }
+          const canvas = document.getElementById(canvasId);
+          if (canvas) {
+            const container = canvas.closest('.chart-container');
+            const emptyState = container?.querySelector('.chart-empty-state');
+            if (emptyState) emptyState.remove();
+            canvas.style.display = '';
+          }
           if (!window.Chart) {
-            const canvas = document.getElementById(canvasId);
             if (canvas) {
               const container = canvas.closest('.chart-container');
               if (container) container.textContent = 'Chart.js failed to load.';
             }
             return;
           }
-          const canvas = document.getElementById(canvasId);
           if (!canvas) return;
           this._instances[canvasId] = new window.Chart(canvas, config);
+        },
+
+        empty(canvasId, message) {
+          this.destroy(canvasId);
+          const canvas = document.getElementById(canvasId);
+          const container = canvas?.closest('.chart-container');
+          if (!canvas || !container) return;
+          canvas.style.display = 'none';
+          let emptyState = container.querySelector('.chart-empty-state');
+          if (!emptyState) {
+            emptyState = document.createElement('div');
+            emptyState.className = 'empty-state chart-empty-state';
+            container.appendChild(emptyState);
+          }
+          emptyState.textContent = message;
         },
 
         destroy(canvasId) {
@@ -1099,6 +1253,12 @@
       const UI = {
         activeTab: 'overview',
         insightUserId: null,
+        leaderboardPage: 1,
+        leaderboardPageSize: 25,
+        insightSessionPage: 1,
+        insightPrPage: 1,
+        insightDocPage: 1,
+        insightPageSize: 10,
 
         // Leaderboard sort state
         _lbSortCol: 'rank',
@@ -1121,30 +1281,21 @@
         },
 
         _switchTab(tabName) {
-          // Hide user insight if visible
-          const insight = document.getElementById('user-insight');
-          insight.hidden = true;
-          insight.classList.remove('active');
-
-          // Toggle pane visibility
-          ['overview', 'leaderboard', 'creator-bonus'].forEach(name => {
-            const pane = document.getElementById(`tab-${name}`);
-            const btn  = document.querySelector(`#tabs button[data-tab="${name}"]`);
-            if (name === tabName) {
-              pane.classList.add('active');
-              if (btn) {
-                btn.classList.add('active');
-                btn.setAttribute('aria-selected', 'true');
-              }
-            } else {
-              pane.classList.remove('active');
-              if (btn) {
-                btn.classList.remove('active');
-                btn.setAttribute('aria-selected', 'false');
-              }
+          if (tabName === 'user-insight' && !this.insightUserId) return;
+          ['overview', 'leaderboard', 'creator-bonus', 'user-insight'].forEach(name => {
+            const paneId = name === 'user-insight' ? 'user-insight' : `tab-${name}`;
+            const pane = document.getElementById(paneId);
+            const btn = document.querySelector(`#tabs button[data-tab="${name}"]`);
+            const isActive = name === tabName;
+            if (pane) {
+              pane.classList.toggle('active', isActive);
+              pane.hidden = !isActive;
+            }
+            if (btn) {
+              btn.classList.toggle('active', isActive);
+              btn.setAttribute('aria-selected', String(isActive));
             }
           });
-
           this.activeTab = tabName;
         },
 
@@ -1171,6 +1322,10 @@
 
           // Recompute scores across only the filtered user population (Requirements 3.7, 3.8)
           const results = ScoreEngine.compute(FilterState);
+          this.leaderboardPage = 1;
+          this.insightSessionPage = 1;
+          this.insightPrPage = 1;
+          this.insightDocPage = 1;
 
           // Re-render all visible views with updated results
           this._render(results);
@@ -1191,7 +1346,97 @@
         renderOverview(results) {
           const stats = this._computeStats(results);
           this._renderStatCards(stats, 'overview-stat-cards');
-          // Charts — implemented in task 13.2
+
+          if (results.length === 0) {
+            ['chart-top10', 'chart-session-size', 'chart-dept'].forEach(id => {
+              ChartManager.empty(id, 'No data available for this filter.');
+            });
+            return;
+          }
+
+          const topUsers = [...results].sort((a, b) => b.totalScore - a.totalScore).slice(0, 10);
+          ChartManager.create('chart-top10', {
+            type: 'bar',
+            data: {
+              labels: topUsers.map(r => this._shortenLabel(r.name, 18)),
+              datasets: [{
+                label: 'Total Score',
+                data: topUsers.map(r => Number(r.totalScore.toFixed(2))),
+                backgroundColor: '#0052cc',
+                borderRadius: 4,
+              }],
+            },
+            options: {
+              indexAxis: 'y',
+              responsive: true,
+              maintainAspectRatio: false,
+              animation: false,
+              plugins: { legend: { display: false } },
+              scales: {
+                x: {
+                  beginAtZero: true,
+                  max: 100,
+                  ticks: { callback: value => `${value}%` },
+                },
+                y: { ticks: { autoSkip: false } },
+              },
+            },
+          });
+
+          const sizeBuckets = { XS: 0, S: 0, M: 0, L: 0, XL: 0 };
+          const relevantUserIds = new Set(results.map(r => r.user_id));
+          const sessionFilter = (session) => {
+            if (relevantUserIds.size === 0) return false;
+            if (!relevantUserIds.has(session.user_id)) return false;
+            if (FilterState.month !== 'All' && monthKey(session.created_at) !== FilterState.month) return false;
+            return true;
+          };
+
+          for (const session of Indexer.sessionById.values()) {
+            if (!sessionFilter(session)) continue;
+            const acu = Number(session.acus_consumed ?? 0);
+            sizeBuckets[sessionSizeBucket(acu)] += 1;
+          }
+
+          ChartManager.create('chart-session-size', {
+            type: 'doughnut',
+            data: {
+              labels: ['XS (≤20 ACUs)', 'S (>20–50)', 'M (>50–100)', 'L (>100–200)', 'XL (>200)'],
+              datasets: [{
+                data: [sizeBuckets.XS, sizeBuckets.S, sizeBuckets.M, sizeBuckets.L, sizeBuckets.XL],
+                backgroundColor: ['#0052cc', '#1d7af2', '#4c9aff', '#7fbcff', '#cfe3ff'],
+              }],
+            },
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+              animation: false,
+              plugins: { legend: { position: 'bottom' } },
+            },
+          });
+
+          const deptCounts = {};
+          for (const row of results) {
+            const dept = row.department || 'Unspecified';
+            deptCounts[dept] = (deptCounts[dept] || 0) + (row.agg?.sessionCount || 0);
+          }
+
+          ChartManager.create('chart-dept', {
+            type: 'doughnut',
+            data: {
+              labels: Object.keys(deptCounts),
+              datasets: [{
+                data: Object.values(deptCounts),
+                backgroundColor: ['#0052cc', '#1d7af2', '#4c9aff', '#7fbcff', '#cfe3ff', '#c0d7ff'],
+              }],
+            },
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+              animation: false,
+              plugins: { legend: { position: 'bottom' } },
+            },
+          });
         },
 
         renderLeaderboard(results) {
@@ -1208,14 +1453,15 @@
           const colAccessors = {
             rank:           r => r.rank,
             name:           r => r.name,
+            sessionCount:   r => r.agg?.sessionCount ?? 0,
             department:     r => r.department,
             jobFunction:    r => r.jobFunction,
-            tier:           r => r.tier,
+            tier:           r => SCORING_CONFIG.tiers.findIndex(tier => tier.name === r.tier),
             totalScore:     r => r.totalScore,
             normOutput:     r => r.normOutput,
             normPlaybook:   r => r.normPlaybook,
             normFrequency:  r => r.normFrequency,
-            normImpact:     r => r.normImpact,
+            normSessionSize: r => r.normSessionSize,
             normEfficiency: r => r.normEfficiency,
             creatorBonus:   r => r.creatorBonus,
           };
@@ -1235,14 +1481,15 @@
           const columns = [
             { key: 'rank',          label: 'Rank' },
             { key: 'name',          label: 'Name' },
+            { key: 'sessionCount',   label: 'No. of Sessions' },
             { key: 'department',    label: 'Department' },
             { key: 'jobFunction',   label: 'Job Function' },
             { key: 'tier',          label: 'Tier' },
-            { key: 'totalScore',    label: 'Total Score' },
+            { key: 'totalScore',    label: 'Total Score (%)' },
             { key: 'normOutput',    label: 'Output Score' },
             { key: 'normPlaybook',  label: 'Playbook Score' },
             { key: 'normFrequency', label: 'Frequency Score' },
-            { key: 'normImpact',    label: 'Impact Score' },
+            { key: 'normSessionSize', label: 'Session Size Score' },
             { key: 'normEfficiency', label: 'Efficiency Score' },
             { key: 'creatorBonus',  label: 'Creator Bonus' },
           ];
@@ -1254,22 +1501,26 @@
             return `<th data-col="${c.key}"${sortClass} scope="col">${c.label}<span class="sort-indicator"></span></th>`;
           }).join('');
 
+          const totalPages = Math.max(1, Math.ceil(sorted.length / this.leaderboardPageSize));
+          this.leaderboardPage = Math.min(this.leaderboardPage, totalPages);
+          const pageStart = (this.leaderboardPage - 1) * this.leaderboardPageSize;
+          const pageRows = sorted.slice(pageStart, pageStart + this.leaderboardPageSize);
           const rowsHtml = sorted.length === 0
             ? `<tr><td colspan="${columns.length}" class="empty-state">No data available.</td></tr>`
-            : sorted.map(r => {
-                const tierLabel = r.tier === 1 ? 'Gold' : r.tier === 2 ? 'Silver' : 'Bronze';
+            : pageRows.map(r => {
                 return [
-                  `<tr data-user-id="${this._esc(String(r.user_id))}">`,
+                  `<tr>`,
                   `<td>${r.rank}</td>`,
-                  `<td>${this._esc(r.name)}</td>`,
+                  `<td><button class="user-insight-link" type="button" data-user-id="${this._esc(String(r.user_id))}">${this._esc(r.name)}</button></td>`,
+                  `<td>${r.agg?.sessionCount ?? 0}</td>`,
                   `<td>${this._esc(r.department)}</td>`,
                   `<td>${this._esc(r.jobFunction)}</td>`,
-                  `<td><span class="tier-badge tier-${r.tier}">${tierLabel}</span></td>`,
-                  `<td>${r.totalScore.toFixed(2)}</td>`,
+                  `<td><span class="tier-badge tier-${r.tierKey}">${this._esc(r.tier)}</span></td>`,
+                  `<td>${r.totalScore.toFixed(2)}%</td>`,
                   `<td>${r.normOutput.toFixed(2)}</td>`,
                   `<td>${r.normPlaybook.toFixed(2)}</td>`,
                   `<td>${r.normFrequency.toFixed(2)}</td>`,
-                  `<td>${r.normImpact.toFixed(2)}</td>`,
+                  `<td>${r.normSessionSize.toFixed(2)}</td>`,
                   `<td>${r.normEfficiency.toFixed(2)}</td>`,
                   `<td>${r.creatorBonus.toFixed(2)}</td>`,
                   `</tr>`,
@@ -1282,6 +1533,15 @@
             `<thead><tr>${headerCells}</tr></thead>`,
             `<tbody>${rowsHtml}</tbody>`,
             `</table>`,
+            sorted.length > 0 ? `
+              <div class="insight-pagination leaderboard-pagination" aria-label="Leaderboard pagination">
+                <span aria-live="polite">Page ${this.leaderboardPage} of ${totalPages} (${sorted.length} users)</span>
+                <div>
+                  <button type="button" data-page="previous" ${this.leaderboardPage === 1 ? 'disabled' : ''}>Previous</button>
+                  <button type="button" data-page="next" ${this.leaderboardPage === totalPages ? 'disabled' : ''}>Next</button>
+                </div>
+              </div>
+            ` : '',
           ].join('');
 
           // ── Attach column-header click listeners (sort) ───────────────────
@@ -1294,15 +1554,28 @@
                 this._lbSortCol = clickedCol;
                 this._lbSortDir = 'asc';
               }
+              this.leaderboardPage = 1;
               this._renderLeaderboardTable(results);
             });
           });
 
-          // ── Attach row click listeners (User Session Insight) ─────────────
-          wrap.querySelectorAll('tbody tr[data-user-id]').forEach(tr => {
-            tr.addEventListener('click', () => {
-              this.insightUserId = tr.dataset.userId;
-              this.renderUserInsight(tr.dataset.userId, results);
+          wrap.querySelectorAll('.user-insight-link').forEach(link => {
+            link.addEventListener('click', () => {
+              this.insightUserId = link.dataset.userId;
+              this.insightSessionPage = 1;
+              this.insightPrPage = 1;
+              this.insightDocPage = 1;
+              const insightTab = document.getElementById('tab-btn-session-insight');
+              insightTab.hidden = false;
+              this.renderUserInsight(link.dataset.userId, results);
+              this._switchTab('user-insight');
+            });
+          });
+
+          wrap.querySelectorAll('.leaderboard-pagination button[data-page]').forEach(button => {
+            button.addEventListener('click', () => {
+              this.leaderboardPage += button.dataset.page === 'next' ? 1 : -1;
+              this._renderLeaderboardTable(results);
             });
           });
         },
@@ -1417,10 +1690,282 @@
           render();
         },
 
+        _shortenLabel(label, maxLen = 18) {
+          const text = String(label ?? '');
+          if (text.length <= maxLen) return text;
+          return `${text.slice(0, maxLen - 1)}…`;
+        },
+
+        _collectMonthKeys() {
+          const monthSet = new Set();
+          for (const buckets of Indexer.monthlyBuckets.values()) {
+            for (const mk of buckets.keys()) {
+              monthSet.add(mk);
+            }
+          }
+          return [...monthSet].sort();
+        },
+
         renderUserInsight(_userId, results) {
-          const stats = this._computeStats(results);
-          this._renderStatCards(stats, 'insight-stat-cards');
-          // Insight view — implemented in task 11.1
+          const userId = String(_userId);
+          const user = results.find(r => String(r.user_id) === userId)
+            || Indexer.userById.get(userId)
+            || { user_id: userId, name: 'Unknown User' };
+
+          const heading = document.getElementById('insight-user-name');
+          if (heading) heading.textContent = `${user.name || 'Unknown User'} – Insight`;
+          this.insightUserId = userId;
+
+          const monthKeys = this._collectMonthKeys().slice(-3);
+          const trendData = monthKeys.map(mk => {
+            const monthResults = ScoreEngine.compute({
+              month: mk,
+              department: FilterState.department,
+              jobFunction: FilterState.jobFunction,
+            });
+            const row = monthResults.find(r => String(r.user_id) === userId);
+            return { label: mk, value: row ? Number(row.totalScore) : 0 };
+          });
+          const averageScore = trendData.length > 0
+            ? trendData.reduce((sum, point) => sum + point.value, 0) / trendData.length
+            : 0;
+
+          ChartManager.create('chart-score-trend', {
+            type: 'line',
+            data: {
+              labels: trendData.map(d => d.label),
+              datasets: [{
+                label: 'Total Score',
+                data: trendData.map(d => Number(d.value.toFixed(2))),
+                borderColor: '#0052cc',
+                backgroundColor: 'rgba(0, 82, 204, 0.2)',
+                borderWidth: 2,
+                pointRadius: 3,
+                tension: 0.15,
+                fill: false,
+              }],
+            },
+            options: {
+              responsive: true,
+              maintainAspectRatio: false,
+              animation: false,
+              plugins: {
+                legend: { display: false },
+                tooltip: { callbacks: { label: context => `${context.parsed.y.toFixed(2)}%` } },
+              },
+              scales: {
+                y: {
+                  beginAtZero: false,
+                  max: 100,
+                  ticks: { callback: value => `${value}%` },
+                },
+              },
+            },
+          });
+
+          const sessions = [...Indexer.sessionById.values()]
+            .filter(session => String(session.user_id) === userId)
+            .filter(session => FilterState.month === 'All' || monthKey(session.created_at) === FilterState.month)
+            .sort((a, b) => (b.created_at ?? 0) - (a.created_at ?? 0));
+
+          const prSessionCount = sessions.filter(session =>
+            Array.isArray(session.pull_requests) && session.pull_requests.length > 0
+          ).length;
+          const docSessionCount = sessions.filter(session =>
+            Array.isArray(session.attachments) && session.attachments.some(attachment => attachment?.source === 'devin')
+          ).length;
+          const insightMetrics = {
+            totalSessions: sessions.length,
+            prSessions: prSessionCount,
+            docSessions: docSessionCount,
+            averageScore,
+          };
+          this._renderInsightMetrics(insightMetrics);
+          const prCount = document.getElementById('insight-pr-count');
+          if (prCount) {
+            const prTotal = sessions.reduce((count, session) => count + (session.pull_requests?.length ?? 0), 0);
+            prCount.textContent = `${prSessionCount} ${prSessionCount === 1 ? 'session' : 'sessions'} with PRs · ${prTotal} ${prTotal === 1 ? 'PR' : 'PRs'} total`;
+          }
+          const docCount = document.getElementById('insight-doc-count');
+          if (docCount) {
+            const docTotal = sessions.reduce((count, session) =>
+              count + (session.attachments || []).filter(attachment => attachment?.source === 'devin').length, 0);
+            docCount.textContent = `${docSessionCount} ${docSessionCount === 1 ? 'session' : 'sessions'} with documents · ${docTotal} ${docTotal === 1 ? 'document' : 'documents'} total`;
+          }
+
+          const sessionsTableWrap = document.getElementById('insight-sessions-table-wrap');
+          const pageCount = Math.max(1, Math.ceil(sessions.length / this.insightPageSize));
+          this.insightSessionPage = Math.min(this.insightSessionPage, pageCount);
+          const pageStart = (this.insightSessionPage - 1) * this.insightPageSize;
+          const pageSessions = sessions.slice(pageStart, pageStart + this.insightPageSize);
+          const sessionCountLabel = document.getElementById('insight-session-count');
+          if (sessionCountLabel) {
+            sessionCountLabel.textContent = sessions.length
+              ? `Showing ${pageStart + 1}–${Math.min(pageStart + this.insightPageSize, sessions.length)} of ${sessions.length} sessions`
+              : '0 sessions';
+          }
+
+          if (sessionsTableWrap) {
+            if (sessions.length === 0) {
+              sessionsTableWrap.innerHTML = '<div class="empty-state">No sessions in this window.</div>';
+            } else {
+              sessionsTableWrap.innerHTML = `
+                <table aria-label="User sessions">
+                  <thead>
+                    <tr>
+                      <th>Session ID</th>
+                      <th>Date</th>
+                      <th>Status</th>
+                      <th>Category</th>
+                      <th>Session Size (ACUs)</th>
+                      <th>Output Type</th>
+                      <th>PRs</th>
+                      <th>Docs</th>
+                      <th>Duration (hrs)</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    ${pageSessions.map(session => {
+                      const date = new Date((session.created_at || 0) * 1000).toISOString().slice(0, 10);
+                      const prCount = Array.isArray(session.pull_requests) ? session.pull_requests.length : 0;
+                      const docCount = Array.isArray(session.attachments)
+                        ? session.attachments.filter(a => a && a.source === 'devin').length
+                        : 0;
+                      const outputType = prCount && docCount ? 'PR+Doc' : prCount ? 'PR' : docCount ? 'Doc' : '—';
+                      const durationHours = ((session.updated_at ?? session.created_at ?? 0) - (session.created_at ?? 0)) / 3600;
+                      return `
+                        <tr>
+                          <td>${this._esc(String(session.session_id || '').slice(0, 8))}</td>
+                          <td>${this._esc(date)}</td>
+                          <td>${this._esc(session.status || '—')}</td>
+                          <td>${this._esc(session.category || '—')}</td>
+                          <td>${Number(session.acus_consumed ?? 0).toFixed(2)}</td>
+                          <td>${this._esc(outputType)}</td>
+                          <td>${prCount}</td>
+                          <td>${docCount}</td>
+                          <td>${durationHours.toFixed(2)}</td>
+                        </tr>
+                      `;
+                    }).join('')}
+                  </tbody>
+                </table>
+                <div class="insight-pagination" aria-label="Session list pagination">
+                  <button type="button" data-page="${this.insightSessionPage - 1}" ${this.insightSessionPage === 1 ? 'disabled' : ''}>Previous</button>
+                  <span>Page ${this.insightSessionPage} of ${pageCount}</span>
+                  <button type="button" data-page="${this.insightSessionPage + 1}" ${this.insightSessionPage === pageCount ? 'disabled' : ''}>Next</button>
+                </div>
+              `;
+              sessionsTableWrap.querySelectorAll('button[data-page]').forEach(button => {
+                button.addEventListener('click', () => {
+                  const nextPage = Number(button.dataset.page);
+                  if (nextPage < 1 || nextPage > pageCount) return;
+                  this.insightSessionPage = nextPage;
+                  this.renderUserInsight(userId, results);
+                });
+              });
+            }
+          }
+
+          const prRows = sessions
+            .filter(session => Array.isArray(session.pull_requests) && session.pull_requests.length > 0)
+            .flatMap(session => (session.pull_requests || []).map(pr => ({
+              sessionDate: new Date((session.created_at || 0) * 1000).toISOString().slice(0, 10),
+              url: pr.url || pr.html_url || '—',
+              state: pr.pr_state || pr.state || '—',
+            })));
+          this._renderPaginatedInsightTable({
+            wrapId: 'insight-pr-table-wrap',
+            rows: prRows,
+            pageKey: 'insightPrPage',
+            emptyMessage: 'No PR output in this window.',
+            tableLabel: 'PR output',
+            headers: ['Session Date', 'PR URL', 'PR State'],
+            renderRow: row => `
+              <tr>
+                <td>${this._esc(row.sessionDate)}</td>
+                <td><a href="${this._esc(row.url)}" target="_blank" rel="noreferrer">${this._esc(row.url)}</a></td>
+                <td>${this._esc(row.state)}</td>
+              </tr>
+            `,
+          }, userId, results);
+
+          const docRows = sessions.flatMap(session => {
+            const docs = Array.isArray(session.attachments)
+              ? session.attachments.filter(a => a && a.source === 'devin')
+              : [];
+            return docs.map(doc => ({
+              sessionDate: new Date((session.created_at || 0) * 1000).toISOString().slice(0, 10),
+              name: doc.name || 'Untitled document',
+              reviewStatus: Indexer.reviewByAttId.get(doc.attachment_id)?.review_status || '—',
+            }));
+          });
+          this._renderPaginatedInsightTable({
+            wrapId: 'insight-doc-table-wrap',
+            rows: docRows,
+            pageKey: 'insightDocPage',
+            emptyMessage: 'No document output in this window.',
+            tableLabel: 'Document output',
+            headers: ['Session Date', 'Attachment Name', 'Review Status'],
+            renderRow: row => `
+              <tr>
+                <td>${this._esc(row.sessionDate)}</td>
+                <td>${this._esc(row.name)}</td>
+                <td>${this._esc(row.reviewStatus)}</td>
+              </tr>
+            `,
+          }, userId, results);
+        },
+
+        _renderPaginatedInsightTable(config, userId, results) {
+          const wrap = document.getElementById(config.wrapId);
+          if (!wrap) return;
+          if (config.rows.length === 0) {
+            wrap.innerHTML = `<div class="empty-state">${config.emptyMessage}</div>`;
+            return;
+          }
+
+          const pageCount = Math.ceil(config.rows.length / this.insightPageSize);
+          this[config.pageKey] = Math.min(this[config.pageKey], pageCount);
+          const page = this[config.pageKey];
+          const start = (page - 1) * this.insightPageSize;
+          const pageRows = config.rows.slice(start, start + this.insightPageSize);
+          const rangeLabel = `Showing ${start + 1}–${Math.min(start + this.insightPageSize, config.rows.length)} of ${config.rows.length}`;
+          wrap.innerHTML = `
+            <table aria-label="${this._esc(config.tableLabel)}">
+              <thead><tr>${config.headers.map(header => `<th>${this._esc(header)}</th>`).join('')}</tr></thead>
+              <tbody>${pageRows.map(config.renderRow).join('')}</tbody>
+            </table>
+            <div class="insight-pagination" aria-label="${this._esc(config.tableLabel)} pagination">
+              <button type="button" data-page="${page - 1}" ${page === 1 ? 'disabled' : ''}>Previous</button>
+              <span>${rangeLabel} · Page ${page} of ${pageCount}</span>
+              <button type="button" data-page="${page + 1}" ${page === pageCount ? 'disabled' : ''}>Next</button>
+            </div>
+          `;
+          wrap.querySelectorAll('button[data-page]').forEach(button => {
+            button.addEventListener('click', () => {
+              const nextPage = Number(button.dataset.page);
+              if (nextPage < 1 || nextPage > pageCount) return;
+              this[config.pageKey] = nextPage;
+              this.renderUserInsight(userId, results);
+            });
+          });
+        },
+
+        _renderInsightMetrics(metrics) {
+          const container = document.getElementById('insight-stat-cards');
+          if (!container) return;
+          const cards = [
+            { label: 'Sessions', value: metrics.totalSessions },
+            { label: 'PR Sessions', value: metrics.prSessions },
+            { label: 'Doc Sessions', value: metrics.docSessions },
+            { label: 'Average Score', value: `${metrics.averageScore.toFixed(2)}%` },
+          ];
+          container.innerHTML = cards.map(({ label, value }) => `
+            <div class="stat-card">
+              <span class="stat-label">${label}</span>
+              <span class="stat-value">${value}</span>
+            </div>
+          `).join('');
         },
 
         // ── _computeStats ─────────────────────────────────────────────────
@@ -1431,55 +1976,42 @@
         //                        FilterWindow, accumulated from MonthlyBuckets.
         //                        Uses the same month / dept / jobFunction
         //                        filters that ScoreEngine.compute() used.
-        // powerUsers           — count of Tier 1 entries in results.
-        // limitedUsers         — count of Tier 3 entries in results.
-        // sessionsWithOrgContext — sessions whose user_id resolves in
-        //                         Indexer.userById (i.e. has an org record).
+        // powerUsers           — count of Power tier entries in results.
+        // limitedUsers         — count of Limited tier entries in results.
         //
         // Requirements 5.2–5.6
         _computeStats(results) {
+          const resultUserIds = new Set((results || []).map(r => String(r.user_id)));
           let totalSessions = 0;
-          let sessionsWithOrgContext = 0;
-
-          // Aggregate session counts from MonthlyBuckets for every user
-          // that passed the department / job-function filters (i.e. is
-          // represented in results).  This matches the FilterWindow
-          // exactly without re-scanning the raw sessions array.
-          const resultUserIds = new Set(results.map(r => r.user_id));
 
           for (const [userId, userBuckets] of Indexer.monthlyBuckets) {
+            const hasOrgRecord = Indexer.userById.has(userId);
+            if (hasOrgRecord && !resultUserIds.has(String(userId))) continue;
+            if (!hasOrgRecord &&
+                (FilterState.department !== 'All' || FilterState.jobFunction !== 'All')) continue;
             const monthFilter = FilterState.month;
-            const keys = monthFilter === 'All'
-              ? [...userBuckets.keys()]
-              : [monthFilter];
+            const keys = monthFilter === 'All' ? [...userBuckets.keys()] : [monthFilter];
 
             for (const mk of keys) {
               const bucket = userBuckets.get(mk);
               if (!bucket) continue;
-
               totalSessions += bucket.sessionCount;
-
-              // Sessions with org context: user_id resolves in userById.
-              if (Indexer.userById.has(userId)) {
-                sessionsWithOrgContext += bucket.sessionCount;
-              }
             }
           }
 
           return {
             totalSessions,
-            powerUsers:           results.filter(r => r.tier === 1).length,
-            limitedUsers:         results.filter(r => r.tier === 3).length,
-            sessionsWithOrgContext,
+            powerUsers:           (results || []).filter(r => r.tier === 'Power').length,
+            limitedUsers:         (results || []).filter(r => r.tier === 'Limited').length,
           };
         },
 
         // ── _renderStatCards ──────────────────────────────────────────────
-        // Builds the four stat-card HTML block and injects it into the
+        // Builds the stat-card HTML block and injects it into the
         // container identified by containerId.
         //
         // stats shape:
-        //   { totalSessions, powerUsers, limitedUsers, sessionsWithOrgContext }
+        //   { totalSessions, powerUsers, limitedUsers }
         //
         // Requirements 5.1, 5.2, 5.3, 5.4, 5.5, 5.6
         _renderStatCards(stats, containerId) {
@@ -1487,24 +2019,23 @@
           if (!container) return;
 
           const cards = [
-            { label: 'Total Sessions',           value: stats.totalSessions },
+            { label: 'Total Sessions',           value: stats.totalSessions, description: 'All sessions included in this view.' },
             { label: 'Power Users',              value: stats.powerUsers },
             { label: 'Limited Users',            value: stats.limitedUsers },
-            { label: 'Sessions with Org Context', value: stats.sessionsWithOrgContext },
           ];
 
-          container.innerHTML = cards.map(({ label, value }) => `
+          container.innerHTML = cards.map(({ label, value, description }) => `
             <div class="stat-card">
               <span class="stat-label">${label}</span>
               <span class="stat-value">${value}</span>
+              ${description ? `<span class="stat-description">${description}</span>` : ''}
             </div>
           `).join('');
         },
 
         _closeInsight() {
-          const insight = document.getElementById('user-insight');
-          insight.hidden = true;
-          insight.classList.remove('active');
+          const insightTab = document.getElementById('tab-btn-session-insight');
+          if (insightTab) insightTab.hidden = true;
           this.insightUserId = null;
           this._switchTab('leaderboard');
         },

@@ -1,8 +1,8 @@
-# Implementation Plan: Devin Leaderboard App
+# Implementation Plan: Devin Usage Leaderboard
 
 ## Overview
 
-Build a single `index.html` web application (vanilla JS, inline CSS, Chart.js from CDN) with six logical subsystems inside one IIFE: DataLoader, Indexer, ScoreEngine, FilterState, ChartManager, and UI. A companion `build.js` Node.js script embeds all seven JSON files as `window.__DATA__` to produce `index.dist.html`.
+Build the browser application from `index.html` and `scoring.js` (vanilla JS, inline CSS, Chart.js from CDN) with six logical subsystems inside one IIFE: DataLoader, Indexer, ScoreEngine, FilterState, ChartManager, and UI. A companion `build.js` Node.js script embeds `scoring.js` and all seven JSON files as `window.__DATA__` to produce the self-contained `index.dist.html` distributable.
 
 Tasks follow the order: scaffolding → data loading → indexing → scoring → UI components → charts → tests → build script.
 
@@ -10,12 +10,12 @@ Tasks follow the order: scaffolding → data loading → indexing → scoring �
 
 - [x] 1. Scaffold the project: IIFE shell, HTML skeleton, and inline CSS
   - [x] 1.1 Create `index.html` with full HTML5 boilerplate, inline `<style>` block, and a top-level `<script>` wrapping a single IIFE
-    - Include `<header>` with `<h1>Devin Leaderboard</h1>` and `<div id="filters">` containing three `<select>` elements (`filter-month`, `filter-dept`, `filter-jobfn`)
+    - Include `<header>` with `<h1>Devin Usage Leaderboard</h1>` and `<div id="filters">` containing three `<select>` elements (`filter-month`, `filter-dept`, `filter-jobfn`)
     - Include `<nav id="tabs">` with three `<button data-tab="…">` buttons: Overview, Leaderboard, Creator Bonus
     - Include `<main>` with four `<div>` panes: `tab-overview`, `tab-leaderboard`, `tab-creator-bonus`, and `user-insight` (hidden)
     - Add the Chart.js CDN `<script src="https://cdn.jsdelivr.net/npm/chart.js">` tag
     - Declare six stub objects inside the IIFE: `DataLoader`, `Indexer`, `ScoreEngine`, `FilterState`, `ChartManager`, `UI`
-    - Inline CSS: tab switching (`display: block` / `display: none`), tier badge classes `.tier-1` (gold), `.tier-2` (silver), `.tier-3` (grey), stat cards, filter bar, table, chart containers
+    - Inline CSS: tab switching (`display: block` / `display: none`), five score-tier badge classes, stat cards, filter bar, table, chart containers
     - _Requirements: 11.1, 11.2, 11.3, 11.4, 11.5_
 
 - [x] 2. Implement DataLoader
@@ -79,7 +79,7 @@ Tasks follow the order: scaffolding → data loading → indexing → scoring �
     - `aggregate(userId, 'All')` SHALL equal the field-wise sum of all individual monthly buckets for that user
     - **Validates: Requirements 3.1, 3.2**
   - [x] 6.3 Implement `ScoreEngine._normalise(values)` (min-max) and sub-score computation
-    - Compute `OutputScore`, `PlaybookScore`, `FrequencyScore`, `ImpactScore`, `EfficiencyScore` (raw and inverted) from aggregated bucket totals
+    - Compute `OutputScore`, `PlaybookScore`, `FrequencyScore`, `SessionSizeScore`, `EfficiencyScore` (raw and inverted) from aggregated bucket totals
     - Apply min-max normalisation across all users in FilterWindow; return 0 for all when max equals min
     - _Requirements: 3.2, 3.3, 3.4_
   - [ ]* 6.4 Write property test for NormScore range invariant (Property 6)
@@ -91,12 +91,12 @@ Tasks follow the order: scaffolding → data loading → indexing → scoring �
     - For any two users A and B where A's raw ACU-per-output is strictly less than B's, A's NormEfficiencyScore SHALL be strictly greater than B's
     - **Validates: Requirements 3.4**
   - [x] 6.6 Implement `ScoreEngine._computeTotalScore()` and `ScoreEngine._assignTiers()`
-    - TotalScore formula: `(NormOutput × 0.50) + (NormPlaybook × 0.20) + (NormFrequency × 0.20) + (NormImpact × 0.05) + (NormEfficiency × 0.05) + CreatorBonus`
-    - Tier 1 = top `Math.ceil(N × 0.10)`, Tier 2 = next `Math.ceil((N − tier1Count) × (0.20 / 0.90))`, Tier 3 = remainder
+    - TotalScore formula: `min(100, weighted component score + min(CreatorBonus, 5))`, where the weighted component score is `(NormOutput × 0.50) + (NormPlaybook × 0.20) + (NormFrequency × 0.20) + (NormSessionSize × 0.05) + (NormEfficiency × 0.05)`; display as a percentage.
+    - Per-month score tiers: Power >51, Proficient >40, Standard >30, Basic >20, Limited ≤20
     - _Requirements: 3.5, 3.6_
   - [ ]* 6.7 Write property test for TotalScore decomposition (Property 8)
     - **Property 8: TotalScore decomposition**
-    - TotalScore SHALL equal exactly `(NormOutput × 0.50) + (NormPlaybook × 0.20) + (NormFrequency × 0.20) + (NormImpact × 0.05) + (NormEfficiency × 0.05) + CreatorBonus`
+    - TotalScore SHALL equal exactly `(NormOutput × 0.50) + (NormPlaybook × 0.20) + (NormFrequency × 0.20) + (NormSessionSize × 0.05) + (NormEfficiency × 0.05) + min(CreatorBonus, 5)`, capped at 100
     - **Validates: Requirements 3.5**
   - [ ]* 6.8 Write property test for Tier coverage invariant (Property 9)
     - **Property 9: Tier coverage invariant**
@@ -122,23 +122,23 @@ Tasks follow the order: scaffolding → data loading → indexing → scoring �
     - Attach `change` event listeners that call `FilterState.set(key, value)`
     - _Requirements: 4.1, 4.2, 4.3, 4.4, 4.5_
 
-- [ ] 9. Implement stat cards and tab switching
-  - [-] 9.1 Implement `UI._renderStatCards(stats)` and tab switching logic
-    - Render four stat cards: "Total Sessions", "Power Users", "Limited Users", "Sessions with Org Context"
+- [x] 9. Implement stat cards and tab switching
+  - [x] 9.1 Implement `UI._renderStatCards(stats)` and tab switching logic
+    - Render three stat cards: "Total Sessions", "Power Users", "Limited Users"
     - Tab switching: set `display: block` on selected pane, `display: none` on others; attach click listeners to `<nav>` buttons
     - _Requirements: 5.1, 5.2, 5.3, 5.4, 5.5, 5.6, 11.5_
 
-- [ ] 10. Implement Leaderboard table and sorting
-  - [-] 10.1 Implement `UI.renderLeaderboard(results)` with a sortable table
+- [x] 10. Implement Leaderboard table and sorting
+  - [x] 10.1 Implement `UI.renderLeaderboard(results)` with a sortable table
     - Build the table as a single `innerHTML` string assignment
-    - Columns: Rank, Name, Department, Job Function, Tier (badge), Total Score, Output Score, Playbook Score, Frequency Score, Impact Score, Efficiency Score, Creator Bonus
+    - Columns: Rank, Name, Department, Job Function, Tier (badge), Total Score, Output Score, Playbook Score, Frequency Score, Session Size Score, Efficiency Score, Creator Bonus
     - Display all scores to 2 decimal places; default sort is Rank ascending
     - Attach column-header click listeners to toggle sort direction; clicking same header reverses sort
     - Attach row click listeners that call `UI.renderUserInsight(userId, results)`
     - _Requirements: 7.1, 7.2, 7.3, 7.4, 7.5, 10.1_
 
-- [ ] 11. Implement User Session Insight view
-  - [~] 11.1 Implement `UI.renderUserInsight(userId, results)`
+- [x] 11. Implement User Session Insight view
+  - [x] 11.1 Implement `UI.renderUserInsight(userId, results)`
     - Show `#user-insight` pane; hide active tab pane
     - Back button: hide insight pane, restore Leaderboard table
     - Sessions table: Session ID (8 chars), Date (YYYY-MM-DD), Status, Category, Session Size (ACUs 2dp), Output Type (PR / Doc / PR+Doc / —), PRs count, Docs count, Duration (hrs 2dp); single `innerHTML` assignment
@@ -147,38 +147,38 @@ Tasks follow the order: scaffolding → data loading → indexing → scoring �
     - Stat cards at the top using same FilterWindow values
     - _Requirements: 8.1, 8.2, 8.3, 8.4, 8.5, 8.6, 8.7, 8.8_
 
-- [ ] 12. Implement Creator Bonus table
-  - [-] 12.1 Implement `UI.renderCreatorBonus(results)`
+- [x] 12. Implement Creator Bonus table
+  - [x] 12.1 Implement `UI.renderCreatorBonus(results)`
     - Columns: Creator Name, Department, Playbook Bonus, Automation Bonus, Knowledge Note Bonus, Total Bonus
     - Display only rows where Total Bonus > 0
     - Single `innerHTML` assignment; same sort-on-header-click behaviour as Leaderboard
     - _Requirements: 9.1, 9.2, 9.6, 10.1_
 
-- [ ] 13. Implement ChartManager and Overview tab charts
-  - [ ] 13.1 Implement `ChartManager.create(canvasId, config)` with destroy-before-create semantics
+- [x] 13. Implement ChartManager and Overview tab charts
+  - [x] 13.1 Implement `ChartManager.create(canvasId, config)` with destroy-before-create semantics
     - Store Chart instances in `_instances` keyed by `canvasId`
     - Destroy existing instance before creating a new one
     - If `window.Chart` is undefined, render "Chart.js failed to load." text inside the chart container
     - _Requirements: 6.4, 6.5_
-  - [~] 13.2 Implement `UI.renderOverview(results)` with three charts
+  - [x] 13.2 Implement `UI.renderOverview(results)` with three charts
     - Horizontal bar chart "Top-10 Scorers": top 10 TotalScore, name on Y-axis, score on X-axis
-    - Donut chart "Session Size Distribution": ACU buckets 0–1, 1–2, 2–5, 5+
+    - Donut chart "Session Size Distribution": XS (≤20 ACUs), S (>20–50), M (>50–100), L (>100–200), XL (>200)
     - Donut chart "Sessions by Department": count per department
     - Each chart rendered via `ChartManager.create()`; destroy and recreate on every filter change
     - _Requirements: 6.1, 6.2, 6.3, 6.4_
 
-- [ ] 14. Implement Score Trend line chart in User Session Insight
-  - [~] 14.1 Implement the "Score Trend" line chart inside `renderUserInsight`
+- [x] 14. Implement Score Trend line chart in User Session Insight
+  - [x] 14.1 Implement the "Score Trend" line chart inside `renderUserInsight`
     - X-axis: all calendar months from earliest loaded data month to latest FilterWindow month
     - Y-axis: user's TotalScore per month (recompute per-month ScoreEngine output for this user)
     - Rendered via `ChartManager.create()`
     - _Requirements: 8.2_
 
-- [~] 15. Checkpoint — Ensure full app renders correctly with local data
+- [x] 15. Checkpoint — Ensure full app renders correctly with local data
   - Ensure all tests pass and the app opens in a browser with the sample data files served locally, ask the user if questions arise.
 
-- [ ] 16. Implement `build.js` and `index.dist.html` generation
-  - [~] 16.1 Write `build.js` as a dependency-free Node.js script
+- [x] 16. Implement `build.js` and `index.dist.html` generation
+  - [x] 16.1 Write `build.js` as a dependency-free Node.js script
     - Read `index.html`
     - Read all 7 JSON files from `data/` using `fs.readFileSync`
     - Serialise them into a `window.__DATA__ = { sessions, assets, orgDirectory, documentReviews, knowledgeNoteOwners, knowledgeNoteUsage, automationTriggers }` assignment
@@ -187,14 +187,14 @@ Tasks follow the order: scaffolding → data loading → indexing → scoring �
     - _Requirements: 11.1, 11.3_
 
 - [ ] 17. Error handling and edge cases
-  - [~] 17.1 Implement and verify all error-handling paths
+  - [ ] 17.1 Implement and verify all error-handling paths
     - `user_id` not in `org_directory`: session counted in FilterWindow stats but user excluded from scoring tables
     - All users share the same raw score: `minMax` returns 0 for all
     - FilterWindow = 0 users: stat cards show 0, charts render empty state, tables show empty-state messages
     - `triggered_by_user_id` is null: automation trigger record skipped
     - _Requirements: 1.4, 3.3_
 
-- [~] 18. Final checkpoint — full integration verification
+- [x] 18. Final checkpoint — full integration verification
   - Ensure all tests pass and `build.js` produces a working `index.dist.html`, ask the user if questions arise.
 
 ## Notes

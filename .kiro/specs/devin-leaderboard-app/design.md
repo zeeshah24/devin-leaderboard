@@ -1,8 +1,8 @@
-# Design Document — Devin Leaderboard App
+# Design Document — Devin Usage Leaderboard
 
 ## Overview
 
-The Devin Leaderboard App is a single `index.html` web application that loads Devin API session data and enrichment files, computes a weighted usage score for each user, and presents an interactive leaderboard with filtering, drill-down, and creator-bonus views.
+The Devin Usage Leaderboard is a browser application that loads Devin API session data and enrichment files, computes a weighted usage score for each user, and presents an interactive leaderboard with filtering, drill-down, and creator-bonus views.
 
 The app ships as **two artifacts**:
 
@@ -17,7 +17,7 @@ The app ships as **two artifacts**:
 
 ## Architecture
 
-All HTML, CSS, and JavaScript live inline in one file. The JavaScript is wrapped in a single IIFE to avoid global-scope pollution. Six logical subsystems are defined inside that IIFE:
+The source HTML and CSS live in `index.html`; application JavaScript is split between `index.html` and `scoring.js`. The build script embeds `scoring.js` and all seven data files into `index.dist.html`. The main application logic is wrapped in an IIFE to avoid global-scope pollution. Six logical subsystems are defined inside that IIFE; `scoring.js` separately exposes the immutable scoring configuration:
 
 ```
 index.html
@@ -287,7 +287,7 @@ function aggregate(userId, monthFilter) {
 | OutputScore | `agg.outputCount` |
 | PlaybookScore | `agg.playbookCount` |
 | FrequencyScore | `agg.sessionCount` |
-| ImpactScore | `agg.totalACUs + agg.totalDurationHours` |
+| SessionSizeScore | `agg.totalACUs` |
 | EfficiencyScore (raw) | `agg.outputCount > 0 ? agg.totalACUs / agg.outputCount : 0` |
 | EfficiencyScore (inverted) | `maxRawEff - rawEff` (computed across all FilterWindow users) |
 
@@ -310,10 +310,12 @@ Applied independently to each of the five components across all users in the Fil
 TotalScore = (NormOutput × 0.50)
            + (NormPlaybook × 0.20)
            + (NormFrequency × 0.20)
-           + (NormImpact × 0.05)
+           + (NormSessionSize × 0.05)
            + (NormEfficiency × 0.05)
-           + CreatorBonus
+           + min(CreatorBonus, 5)
 ```
+
+Weights, creator bonus cap, score maximum, and tier cutoffs live in `scoring.js`. Clamp TotalScore to the 0–100 range and render it as a percentage. The Creator Bonus table continues to show uncapped usage counts by bonus type. Scores and tiers are computed for the active month filter; a specific month selection produces per-user monthly scores.
 
 CreatorBonus for the active FilterWindow:
 ```js
@@ -407,8 +409,8 @@ window.__DATA__ = {
 {
   user_id, name, department, jobFunction,
   rank, tier,
-  rawOutput, rawPlaybook, rawFrequency, rawImpact, rawEfficiency,
-  normOutput, normPlaybook, normFrequency, normImpact, normEfficiency,
+  rawOutput, rawPlaybook, rawFrequency, rawSessionSize, rawEfficiency,
+  normOutput, normPlaybook, normFrequency, normSessionSize, normEfficiency,
   creatorBonus,
   totalScore,
   // for Creator Bonus tab:
@@ -424,7 +426,7 @@ window.__DATA__ = {
 
 ```
 <header>
-  <h1>Devin Leaderboard</h1>
+  <h1>Devin Usage Leaderboard</h1>
   <div id="filters">
     <select id="filter-month">…</select>
     <select id="filter-dept">…</select>
@@ -455,22 +457,21 @@ Rendered identically in Overview, Leaderboard, Creator Bonus, and User Session I
 | Card | Value |
 |---|---|
 | Total Sessions | count of sessions in FilterWindow |
-| Power Users | count of Tier 1 users in FilterWindow |
-| Limited Users | count of Tier 3 users in FilterWindow |
-| Sessions with Org Context | sessions where `user_id` resolves in `userById` |
+| Power Users | count of users with TotalScore > 51 in FilterWindow |
+| Limited Users | count of users with TotalScore ≤ 20 in FilterWindow |
 
 ### Overview tab
 
 - Horizontal bar chart **"Top-10 Scorers"** — top 10 TotalScore, name on Y, score on X
-- Donut chart **"Session Size Distribution"** — ACU buckets: 0–1, 1–2, 2–5, 5+
+- Donut chart **"Session Size Distribution"** — XS (≤20 ACUs), S (>20–50), M (>50–100), L (>100–200), XL (>200)
 - Donut chart **"Sessions by Department"** — count per department
 
 ### Leaderboard tab
 
-Sortable table columns: Rank | Name | Department | Job Function | Tier | Total Score | Output Score | Playbook Score | Frequency Score | Impact Score | Efficiency Score | Creator Bonus
+Sortable table columns: Rank | Name | Department | Job Function | Tier | Total Score | Output Score | Playbook Score | Frequency Score | Session Size Score | Efficiency Score | Creator Bonus
 
 - Default sort: Rank ascending
-- Tier badge classes: `.tier-1` (gold), `.tier-2` (silver), `.tier-3` (grey)
+- Tier badges use `.tier-power`, `.tier-proficient`, `.tier-standard`, `.tier-basic`, and `.tier-limited`; tiers are score cutoffs, not percentiles.
 - Scores displayed to 2 decimal places
 - Row click → open User Session Insight for that user
 
@@ -479,6 +480,8 @@ Sortable table columns: Rank | Name | Department | Job Function | Tier | Total S
 - **Back button** → restores Leaderboard table
 - **Line chart "Score Trend"** — user's monthly TotalScore from earliest data month to latest FilterWindow month
 - **Sessions table** — Session ID (8 chars) | Date (YYYY-MM-DD) | Status | Category | Session Size (ACUs, 2dp) | Output Type (PR / Doc / PR+Doc / —) | PRs | Docs | Duration (hrs, 2dp)
+- User-specific metrics show session count, PR-created session count, document-created session count, and average monthly TotalScore over the active window.
+- Sessions, PR Output, and Doc Output lists are each paginated at 10 rows per page with independent previous/next navigation.
 - **PR Output section** — Session Date | PR URL | PR State
 - **Doc Output section** — Session Date | Attachment Name | Review Status (from `reviewByAttId`, else "—")
 - Empty states: "No PR output in this window." / "No document output in this window."
@@ -574,7 +577,7 @@ Sortable table columns: Creator Name | Department | Playbook Bonus | Automation 
 
 ### Property 8: TotalScore decomposition
 
-*For any* user in the FilterWindow, their TotalScore SHALL equal exactly `(NormOutput × 0.50) + (NormPlaybook × 0.20) + (NormFrequency × 0.20) + (NormImpact × 0.05) + (NormEfficiency × 0.05) + CreatorBonus`.
+*For any* user in the FilterWindow, their TotalScore SHALL equal exactly `(NormOutput × 0.50) + (NormPlaybook × 0.20) + (NormFrequency × 0.20) + (NormSessionSize × 0.05) + (NormEfficiency × 0.05) + min(CreatorBonus, 5)`, capped at 100.
 
 **Validates: Requirements 3.5**
 
@@ -582,7 +585,7 @@ Sortable table columns: Creator Name | Department | Playbook Bonus | Automation 
 
 ### Property 9: Tier coverage invariant
 
-*For any* population of N users sorted by TotalScore, the number of Tier 1 users SHALL be `Math.ceil(N × 0.10)`, the number of Tier 2 users SHALL be `Math.ceil((N − tier1Count) × (0.20 / 0.90))`, and every remaining user SHALL be Tier 3; the three counts SHALL sum to N.
+For a given monthly score, Power is >51, Proficient is >40, Standard is >30, Basic is >20, and Limited is ≤20.
 
 **Validates: Requirements 3.6**
 
